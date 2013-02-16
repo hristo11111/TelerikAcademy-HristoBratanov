@@ -1,0 +1,321 @@
+body,div {
+	margin: 0px;
+	padding: 0px;
+}
+
+.Container {
+	color: #3A527A;
+	margin-top: 10px;
+	margin-left: 10px;
+	position: absolute;
+	width: 428px;
+	height: 388px;
+	background-color: #dceeff;
+	border-radius: 5px;
+	background-image: url('images/calculator.png'), url('images/buttons.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: 12px 5px, 317px 0px;
+}
+
+.CalculatorImageText {
+	position: relative;
+	top: 5px;
+	left: 30px;
+	font-size: 14px;
+}
+
+.Menu,.Calculator,.CalcField,.Bits,.NumSystem,.Integer {
+	border-radius: 2px;
+}
+
+.CalcField,.Bits,input.Enabled,input.Disabled.M {
+	-webkit-box-shadow: 0px 0px 1px 1px white inset;
+	box-shadow: 0px 0px 1px 1px white inset;
+}
+
+.Bits,.NumSystem,.Integer {
+	background-color: inherit;
+}
+
+input {
+	border-radius: 2px;
+}
+
+.Menu {
+	position: absolute;
+	top: 29px;
+	bottom: 8px;
+	right: 8px;
+	left: 8px;
+	width: 410px;
+	height: 350px;
+	background-color: #d3daed;
+	border: 1px solid #95A4B6;
+	background: #ffffff; /* Old browsers */
+background: -webkit-linear-gradient(top, #ffffff 0%, #f0f3f9 1%, #dae2f2 3%, #d7def0 100%);
+
+	background: -moz-linear-gradient(top, #ffffff 0%, #f0f3f9 1%, #dae2f2 3%, #d7def0 100%);
+	background: -o-linear-gradient(top, #ffffff 0%, #f0f3f9 1%, #dae2f2 3%, #d7def0 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%, #f0f3f9 1%, #dae2f2 3%, #d7def0 100%);
+	background: linear-gradient(top, #ffffff 0%, #f0f3f9 1%, #dae2f2 3%, #d7def0 100%); /* W3C */
+-image  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d7def0',GradientType=0 ); /* IE6-9 */
+}
+
+.Menu table.MenuElement {
+	position: relative;
+	height: 12px;
+	width: 116px;
+	top: 0px;
+	left: 3px;
+	font-size: 12px;
+}
+
+.Calculator {
+	position: relative;
+	top: -3px;
+	width: 410px;
+	height: 332px;
+	background-color: #d3daed;
+	border-top: 1px solid #95A4B6;
+	background: #edf4fd; /* Old browsers */
+background: -webkit-linear-gradient(top, #edf4fd 6%, #d9e4f1 20%, #d9e4f1 53%, #d9e4f1 100%);
+
+	background: -moz-linear-gradient(top, #edf4fd 6%, #d9e4f1 20%, #d9e4f1 53%, #d9e4f1 100%);
+	background: -o-linear-gradient(top, #edf4fd 6%, #d9e4f1 20%, #d9e4f1 53%, #d9e4f1 100%);
+	background: -ms-linear-gradient(top, #edf4fd 6%, #d9e4f1 20%, #d9e4f1 53%, #d9e4f1 100%);
+	background: linear-gradient(top, #edf4fd 6%, #d9e4f1 20%, #d9e4f1 53%, #d9e4f1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf4fd', endColorstr='#d9e4f1',GradientType=0 ); /* IE6-9 */
+}
+
+.CalcField {
+	position: relative;
+	top: 9px;
+	left: 10px;
+	width: 388px;
+	height: 48px;
+	background-color: #d3daed;
+	border: 1px solid #95A4B6;
+	font-weight: 600;
+	background: #f4f9ff; /* Old browsers */
+background: -webkit-linear-gradient(top, #f4f9ff 0%, #e7f0fa 4%, #e7f0fa 32%, #f3f8fd 55%, #ffffff 79%);
+
+	background: -moz-linear-gradient(top, #f4f9ff 0%, #e7f0fa 4%, #e7f0fa 32%, #f3f8fd 55%, #ffffff 79%);
+	background: -o-linear-gradient(top, #f4f9ff 0%, #e7f0fa 4%, #e7f0fa 32%, #f3f8fd 55%, #ffffff 79%);
+	background: -ms-linear-gradient(top, #f4f9ff 0%, #e7f0fa 4%, #e7f0fa 32%, #f3f8fd 55%, #ffffff 79%);
+	background: linear-gradient(top, #f4f9ff 0%, #e7f0fa 4%, #e7f0fa 32%, #f3f8fd 55%, #ffffff 79%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f9ff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.CalcField p {
+	right: 3px;
+	bottom: 5px;
+	position: relative;
+	font-size: 23px;
+	font-family: Consolas, monospace;
+	text-align: right;
+	font-weight: 500;
+}
+
+.Bits {
+	position: relative;
+	top: 15px;
+	left: 10px;
+	width: 388px;
+	height: 60px;
+	border: 1px solid #95A4B6;
+}
+
+.Bits table {
+	border-collapse: collapse;
+	position: relative;
+	top: 3px;
+	right: 5px;
+	border: none;
+	width: 101%;
+	height: 0px;
+	font-size: 13px;
+	font-height: 10px;
+}
+
+.Bits table tr {
+	text-align: center;
+	line-height: 12px;
+}
+
+.Bits table td {
+	text-align: center;
+	padding-bottom: 0px;
+	height: 0px;
+}
+
+.Bits table td.LeftAlign {
+	text-align: left;
+	padding-left: 10px;
+	font-family: Consolas, monospace;
+}
+
+.Bits table td.RightAlign {
+	text-align: right;
+	padding-right: 10px;
+	font-family: Consolas, monospace;
+}
+
+.Bits .Zeros {
+	font-weight: bold;
+	font-family: Consolas, monospace;
+	font-size: 12px;
+}
+
+.NumSystem {
+	position: relative;
+	top: 21px;
+	left: 10px;
+	width: 72px;
+	height: 89px;
+	border: 1px solid #95A4B6;
+}
+
+label {
+	font-size: 13px;
+	vertical-align: 1px;
+}
+
+.Integer {
+	position: relative;
+	top: 27px;
+	left: 10px;
+	width: 72px;
+	height: 89px;
+	border: 1px solid #95A4B6;
+}
+
+.Radio {
+	margin-top: 4px;
+}
+
+table {
+	position: relative;
+	top: -164px;
+	right: -86px;
+	border: none;
+	width: 318px;
+	height: 195px;
+}
+
+input.Disabled {
+	color: #3A527A;
+	background-color: transparent;
+	font-size: 15px;
+	border-style: none;
+	border: 1px solid #95A4B6;
+	height: 27px;
+	width: 35px;
+}
+
+input.Disabled.M {
+	color: #3A527A;
+	background-color: transparent;
+	font-size: 12px;
+	border-style: none;
+	border: 1px solid #95A4B6;
+	height: 27px;
+	width: 35px;
+}
+
+input.Disabled.Sign {
+	color: #3A527A;
+	background-color: transparent;
+	font-size: 11px;
+	border-style: none;
+	border: 1px solid #95A4B6;
+	height: 27px;
+	width: 35px;
+}
+
+input.Disabled.M:hover {
+	background: #ffce68; /* Old browsers */
+background: -webkit-linear-gradient(top, #ffce68 47%, #ffffc9 100%);
+
+	background: -moz-linear-gradient(top, #ffce68 47%, #ffffc9 100%);
+	background: -o-linear-gradient(top, #ffce68 47%, #ffffc9 100%);
+	background: -ms-linear-gradient(top, #ffce68 47%, #ffffc9 100%);
+	background: linear-gradient(top, #ffce68 47%, #ffffc9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce68', endColorstr='#ffffc9',GradientType=0 ); /* IE6-9 */
+}
+
+input.Enabled {
+	font-size: 11px;
+	border-style: none;
+	border: 1px solid #95A4B6;
+	height: 27px;
+	width: 35px;
+	padding-left: 5px;
+	color: #3A527A;
+}
+
+input.Enabled.Dark:hover {
+	background: #fdecd9; /* Old browsers */
+background: -webkit-linear-gradient(top, #fdecd9 52%, #fbd382 52%, #fbef95 100%);
+
+	background: -moz-linear-gradient(top, #fdecd9 52%, #fbd382 52%, #fbef95 100%);
+	background: -o-linear-gradient(top, #fdecd9 52%, #fbd382 52%, #fbef95 100%);
+	background: -ms-linear-gradient(top, #fdecd9 52%, #fbd382 52%, #fbef95 100%);
+	background: linear-gradient(top, #fdecd9 52%, #fbd382 52%, #fbef95 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdecd9', endColorstr='#fbef95',GradientType=0 ); /* IE6-9 */
+}
+
+input.Enabled.NUM:hover {
+	background: #fdecd9; /* Old browsers */
+background: -webkit-linear-gradient(top, #fdecd9 52%, #fbd382 52%, #fbef95 100%);
+
+	background: -moz-linear-gradient(top, #fdecd9 52%, #fbd382 52%, #fbef95 100%);
+	background: -o-linear-gradient(top, #fdecd9 52%, #fbd382 52%, #fbef95 100%);
+	background: -ms-linear-gradient(top, #fdecd9 52%, #fbd382 52%, #fbef95 100%);
+	background: linear-gradient(top, #fdecd9 52%, #fbd382 52%, #fbef95 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdecd9', endColorstr='#fbef95',GradientType=0 ); /* IE6-9 */
+}
+
+input.Arrow {
+	font-size: 17px;
+}
+
+input.Enabled.Result {
+	height: 59px;
+	font-size: 20px;
+}
+
+input.Enabled.Null {
+	width: 74px;
+	font-size: 14px;
+	background: #f4f9fc; /* Old browsers */
+background: -webkit-linear-gradient(top, #f4f9fc 1%, #e9f0f7 52%, #e9f0f7 59%, #e9f0f7 100%);
+
+	background: -moz-linear-gradient(top, #f4f9fc 1%, #e9f0f7 52%, #e9f0f7 59%, #e9f0f7 100%);
+	background: -o-linear-gradient(top, #f4f9fc 1%, #e9f0f7 52%, #e9f0f7 59%, #e9f0f7 100%);
+	background: -ms-linear-gradient(top, #f4f9fc 1%, #e9f0f7 52%, #e9f0f7 59%, #e9f0f7 100%);
+	background: linear-gradient(top, #f4f9fc 1%, #e9f0f7 52%, #e9f0f7 59%, #e9f0f7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f9fc', endColorstr='#e9f0f7',GradientType=0 ); /* IE6-9 */
+}
+
+input.Enabled.NUM {
+	font-size: 14px;
+	background: #f4f9fc; /* Old browsers */
+background: -webkit-linear-gradient(top, #f4f9fc 1%, #e9f0f7 52%, #e9f0f7 59%, #e9f0f7 100%);
+
+	background: -moz-linear-gradient(top, #f4f9fc 1%, #e9f0f7 52%, #e9f0f7 59%, #e9f0f7 100%);
+	background: -o-linear-gradient(top, #f4f9fc 1%, #e9f0f7 52%, #e9f0f7 59%, #e9f0f7 100%);
+	background: -ms-linear-gradient(top, #f4f9fc 1%, #e9f0f7 52%, #e9f0f7 59%, #e9f0f7 100%);
+	background: linear-gradient(top, #f4f9fc 1%, #e9f0f7 52%, #e9f0f7 59%, #e9f0f7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f9fc', endColorstr='#e9f0f7',GradientType=0 ); /* IE6-9 */
+}
+
+input.Enabled.Dark {
+	background: #edf3f9; /* Old browsers */
+background: -webkit-linear-gradient(top, #edf3f9 1%, #e2eaf3 43%, #d5e0ed 53%, #d5e0ed 100%);
+
+	background: -moz-linear-gradient(top, #edf3f9 1%, #e2eaf3 43%, #d5e0ed 53%, #d5e0ed 100%);
+	background: -o-linear-gradient(top, #edf3f9 1%, #e2eaf3 43%, #d5e0ed 53%, #d5e0ed 100%);
+	background: -ms-linear-gradient(top, #edf3f9 1%, #e2eaf3 43%, #d5e0ed 53%, #d5e0ed 100%);
+	background: linear-gradient(top, #edf3f9 1%, #e2eaf3 43%, #d5e0ed 53%, #d5e0ed 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf3f9', endColorstr='#d5e0ed',GradientType=0 ); /* IE6-9 */
+}

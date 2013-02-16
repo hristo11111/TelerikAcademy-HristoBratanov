@@ -1,0 +1,36 @@
+body, ul, li, img, nav, input {
+  margin: 0;
+  padding: 0; }
+
+body ul {
+  list-style-type: none;
+  margin-left: 15px;
+  margin-top: 5px; }
+  body ul li {
+    display: inline-block;
+    margin-right: 10px; }
+    body ul li img {
+      width: 150px;
+      height: 150px; }
+body input[type="radio"] {
+  display: none; }
+body input[type="radio"]:checked + label span {
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-left: 15px;
+  margin-top: 10px; }
+body input[type="radio"]:checked + label #bearSpan {
+  background-image: url("images/bear.jpg"); }
+body input[type="radio"]:checked + label #catanddogSpan {
+  background-image: url("images/catanddog.jpg"); }
+body input[type="radio"]:checked + label #eagleSpan {
+  background-image: url("images/eagle.jpg"); }
+body input[type="radio"]:checked + label #lionSpan {
+  background-image: url("images/lion.jpg"); }
+body input[type="radio"]:checked + label #monkeySpan {
+  background-image: url("images/monkey.jpg"); }
+body input[type="radio"]:checked + label #tigersSpan {
+  background-image: url("images/tigers.jpg"); }
+

@@ -1,0 +1,133 @@
+body, header, h1, section, article, h1, a, aside, footer, p {
+  margin: 0;
+  padding: 0; }
+
+.clearfix, section, aside, body > footer {
+  zoom: 1; }
+  .clearfix:before, section:before, aside:before, body > footer:before {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both; }
+
+body {
+  color: white; }
+
+header {
+  margin-left: 10px;
+  margin-top: 25px; }
+  header #header-container {
+    display: block; }
+  header #logo-container {
+    float: left;
+    display: block; }
+  header #reg-form-container {
+    float: right;
+    display: block;
+    margin-right: 55px; }
+    header #reg-form-container input {
+      background-color: #9215f2;
+      border: 2px solid #9b5dc9;
+      border-radius: 8px;
+      width: 135px;
+      margin-left: 5px; }
+    header #reg-form-container button {
+      color: white;
+      background-color: #c57df4;
+      border: 2px outset #9b5dc9;
+      border-radius: 6px;
+      width: 89px;
+      height: 28px;
+      position: relative;
+      left: -8px; }
+  header nav {
+    display: inline-block;
+    width: 75%;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-top: 25px;
+    margin-left: 15px; }
+    header nav ul {
+      margin-left: -24px; }
+    header nav ul li {
+      display: inline-block;
+      margin-right: 9px; }
+      header nav ul li .sub-nav-list {
+        display: none; }
+      header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px; }
+    header nav ul li:hover > ul {
+      display: block;
+      margin-left: 15px;
+      margin-top: -10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      position: absolute; }
+    header nav ul li:hover > a {
+      text-decoration: underline; }
+
+section {
+  float: left;
+  width: 71%;
+  margin-left: 14px;
+  margin-top: 25px; }
+  section article {
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-top: 15px;
+    padding: 13px 28px 38px 14px; }
+    section article header {
+      margin-top: 10px; }
+      section article header h1 {
+        font-size: 15px; }
+    section article p {
+      font-size: 13px;
+      margin-top: 3px; }
+      section article p a {
+        text-decoration: none; }
+      section article p a:hover {
+        text-decoration: underline; }
+      section article p a:visited {
+        color: #c67cf6; }
+    section article footer {
+      float: right;
+      margin-top: 5px; }
+
+aside {
+  width: 26%;
+  float: left;
+  margin-top: 36px; }
+  aside a {
+    text-decoration: none; }
+  aside a:hover {
+    text-decoration: underline; }
+  aside ul {
+    list-style-type: none; }
+  aside > ul > li {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 0px 10px 16px 13px; }
+    aside > ul > li p {
+      font-size: 13px; }
+      aside > ul > li p a:visited {
+        color: #a06cc7; }
+    aside > ul > li ul li {
+      background-image: url("images/li-dot.png");
+      background-repeat: no-repeat;
+      background-position: 0% 45%;
+      padding-left: 26px; }
+    aside > ul > li h2 {
+      font-size: 15px;
+      margin-left: -4px; }
+    aside > ul > li > ul:nth-child(2) {
+      margin-left: -22px; }
+
+body > footer {
+  text-align: center; }
+  body > footer p {
+    margin-top: 29px;
+    margin-bottom: 26px; }
+

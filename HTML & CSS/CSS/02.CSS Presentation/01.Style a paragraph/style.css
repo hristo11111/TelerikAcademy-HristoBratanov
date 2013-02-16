@@ -1,0 +1,23 @@
+body, p {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: edwardian;
+    src: url('fonts/edwardianscriptitc.ttf');
+    
+}
+p:first-line {
+    font-weight: bold;
+}
+
+p:first-letter {
+    font-family: edwardian;
+    font-size: 200%;
+}
+
+p {
+    color: #0094ff;
+    font-family: Consolas;
+}

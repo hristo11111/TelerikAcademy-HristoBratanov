@@ -1,0 +1,48 @@
+section, table {
+    margin: 0;
+    padding: 0;
+}
+table {
+    font-family: Arial;
+}
+table#format {
+    border-spacing: 8px;
+    width: 350px;
+}
+tr td:first-child {
+    width: 120px;
+}
+td, th {
+    vertical-align: text-top;
+}
+section { 
+    height: 250px;
+    width: 400px;
+    background-color: #6b6a6a;
+}
+th.ID {
+    font-size: 22px;
+    font-weight: 100;
+    text-align: left;
+}
+td.coll1 {
+    color: #e6e7e6;
+    font-style: italic;
+}
+.fontOrange {
+    color: #e3e1b5;
+}
+.fontRed {
+    color:#f00;
+}
+.fontGray {
+    color: #c5c7c3;
+}
+.fontDarkOrange {
+    color: #e0783d;
+}
+.circle:before {
+    content: ' \25CF';
+    font-size: 24px;
+    color: #86cc90;
+}

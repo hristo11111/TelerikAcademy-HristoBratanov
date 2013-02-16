@@ -1,0 +1,112 @@
+body, section, div {
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper {
+    width: 688px;
+    height: 500px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+    header {
+        height: 0px;
+        margin-left: 141px;
+        font-size: 16px;
+        position: relative;
+        top: -8px;
+    }
+        h1 {
+            font-weight: bold;
+            display: inline-block;
+        }
+
+            h1 a {
+                color: #52cbf8;
+            }
+.horizontalLine {
+    width: 638px;
+    background-color: #393939;
+    height: 455.94px;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+
+.afterGrey {
+    position: relative;
+    width: 638px;
+    background-color: white;
+    height: 452.94px;
+    top: 2px;
+}
+
+    .afterGrey section {
+        position:relative;
+        width: 445px;
+        height: 434.12px;
+        border: 2px solid #393939;
+        margin-left: -9px;
+        top: 9px;
+    }
+
+    .afterGrey div {
+        width: 210px;
+        height: 125px;
+        border: 2px solid #393939;
+        margin-left: 5px;
+        margin-top: 12px;
+        float: left;
+    }
+
+    div p:first-child {
+        position: relative;
+        width: 126px;
+        padding: 0px 7px 0px 7px;
+        top: -27px;
+        right: -35px;
+        background-color: white;
+    }
+
+    div img {
+        margin-top: -41px;
+        margin-left: 5px;
+    }
+
+    .right {
+        margin-left: 126px;
+        margin-top: -5px;
+    }
+
+    .first {
+        margin-top: -51px;
+    }
+
+    div p:last-child {
+        margin-top: -35px;
+        margin-left: 30px;
+    }
+
+aside {
+    position: relative;
+    margin-left: 429px;
+    margin-top: -400px;
+    font-size: 18px;
+    width: 217px;
+
+}
+
+    .minPrice, .maxPrice, .minRam, .maxRam {
+        display: inline-block;
+        margin-left: 10px;
+        padding-left: 24px;
+        margin-right: -3px;
+    }
+
+    input {
+        width: 154px;
+        margin-left: 45px;
+    }
