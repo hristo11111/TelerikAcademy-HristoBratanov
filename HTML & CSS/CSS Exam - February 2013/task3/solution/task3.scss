@@ -1,0 +1,122 @@
+body, form, fieldset, input, div, legend
+{
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+font-size: 16px
+
+}
+
+#wrapper {
+	padding: 25px;
+}
+form {
+border: 1px solid black;
+border-radius: 15px;
+width: 380px;
+height: 320px;
+padding: 15px;
+background: #68d1ff; /* Old browsers */
+background: -moz-linear-gradient(top,  #68d1ff 0%, #8cfffb 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#68d1ff), color-stop(100%,#8cfffb)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #68d1ff 0%,#8cfffb 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #68d1ff 0%,#8cfffb 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #68d1ff 0%,#8cfffb 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #68d1ff 0%,#8cfffb 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68d1ff', endColorstr='#8cfffb',GradientType=0 ); /* IE6-9 */
+	fieldset {
+	border: 3px solid black;
+	text-align: right;
+	border-radius: 5px;
+	padding: 5px 15px;
+		legend {
+		font-style: italic;
+		font-size: 1.3em;
+		margin-right: 5px;
+		padding: 0px 15px;
+		}
+		input {
+		border-radius: 5px;
+		border: 1px solid #008fce;
+		padding: 5px 15px;
+		outline: none;
+		margin-bottom: 1px;
+		background: #69d2ff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #69d2ff 0%, #8bfefb 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#69d2ff), color-stop(100%,#8bfefb)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #69d2ff 0%,#8bfefb 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #69d2ff 0%,#8bfefb 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #69d2ff 0%,#8bfefb 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #69d2ff 0%,#8bfefb 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69d2ff', endColorstr='#8bfefb',GradientType=0 ); /* IE6-9 */
+
+		}
+
+	}
+	
+	input[type="number"] {
+	width: 35px;
+	padding: 5px;
+	text-align: left;
+	}
+
+	input[type="password"] {
+	input: dsada
+	}
+
+	button {
+	position: relative;
+	margin-left: 115px;
+	margin-top: 15px;
+	font-size: 1.2em;
+	border-radius: 5px;
+	padding: 5px 15px;
+	border: 0px;
+	border-bottom: 1px solid black;
+	background: #69d2ff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #69d2ff 0%, #8bfefb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#69d2ff), color-stop(100%,#8bfefb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #69d2ff 0%,#8bfefb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #69d2ff 0%,#8bfefb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #69d2ff 0%,#8bfefb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #69d2ff 0%,#8bfefb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69d2ff', endColorstr='#8bfefb',GradientType=0 ); /* IE6-9 */
+	}
+
+	button:hover {
+	background: #9be1ff;
+	}
+
+	input[type="reset"]
+	{
+	float: right;
+	position: relative;
+	margin-left: 115px;
+	margin-top: -36px;
+	font-size: 1.2em;
+	border-radius: 5px;
+	padding: 5px 15px;
+	border: 0px;
+	border-bottom: 1px solid black;
+	background: #69d2ff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #69d2ff 0%, #8bfefb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#69d2ff), color-stop(100%,#8bfefb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #69d2ff 0%,#8bfefb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #69d2ff 0%,#8bfefb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #69d2ff 0%,#8bfefb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #69d2ff 0%,#8bfefb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69d2ff', endColorstr='#8bfefb',GradientType=0 ); /* IE6-9 */
+	}
+
+	input[type="reset"]:hover {
+	background: #9be1ff;
+
+	}
+}
+
+fieldset:last-of-type {
+	margin-bottom: 5px;
+	}
