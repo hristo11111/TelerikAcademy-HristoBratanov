@@ -1,0 +1,5 @@
+Point(3, 4, 7)
+Point(6, 8, 9)
+Point(9, 1, 8)
+Point(4, 5, 8)
+Point(2, 3, 1)
