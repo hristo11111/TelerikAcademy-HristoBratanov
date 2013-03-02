@@ -1,0 +1,28 @@
+﻿
+<!--Write an if statement that examines two integer variables and exchanges 
+    their values if the first one is greater than the second one.-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Exchange</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>				 
+	<script src="scripts/js-console.js"></script>    <script>
+        var num1 = 16;
+        var num2 = 12;
+        if (num1 > num2) {
+            var temp = num1;
+            num1 = num2;
+            num2 = temp;
+            jsConsole.writeLine("num1 is bigger than num2");
+            jsConsole.writeLine("num1 = " + num1 + " and num2 = " + num2);
+        }
+        else {
+            jsConsole.writeLine("num1 is not bigger than num2");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿
+<!--Write an if statement that examines two integer variables and exchanges 
+    their values if the first one is greater than the second one.-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JS Console - Example</title>
+	<link href="styles/js-console1.css" rel="stylesheet" />
+	<style>
+		#number {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+	<label for="tb-number">Number: </label>
+	<input type="text" id="tb-number" />
+	<br />
+	<a href="#" onclick="onEvenOddButtonClick()">Convert in English</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console1.js">	  
+	</script>
+	<script>
+	    function onEvenOddButtonClick() {
+	        var number = jsConsole.readFloat("#tb-number");
+	        switch (number) {
+	            case 1: jsConsole.writeLine("one"); break;
+	            case 2: jsConsole.writeLine("two"); break;
+	            case 3: jsConsole.writeLine("three"); break;
+	            case 4: jsConsole.writeLine("four"); break;
+	            case 5: jsConsole.writeLine("five"); break;
+	            case 6: jsConsole.writeLine("six"); break;
+	            case 7: jsConsole.writeLine("seven"); break;
+	            case 8: jsConsole.writeLine("eight"); break;
+	            case 9: jsConsole.writeLine("nine"); break;
+	            default: jsConsole.writeLine("incorrect digit"); break;
+	        }
+	    }
+	</script>
+</body>
+</html>
