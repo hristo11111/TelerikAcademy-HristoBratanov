@@ -29,3 +29,24 @@ public static class Timer
         timer(interval);
     }
 }
+
+//second version
+
+//  int interval = Int32.Parse(Console.ReadLine());
+//  Stopwatch sw = new Stopwatch();
+//  sw.Start();
+//  Func<int, bool> sleep = (x) =>
+//  {
+//      if (x * 1000 == sw.ElapsedMilliseconds)
+//          return true;
+//      else
+//          return false;
+//  };
+//  while (true)
+//  {
+//      if (sleep(interval) == true)
+//      {
+//          Console.WriteLine("surprise");
+//          sw.Restart();
+//      }
+//  }
