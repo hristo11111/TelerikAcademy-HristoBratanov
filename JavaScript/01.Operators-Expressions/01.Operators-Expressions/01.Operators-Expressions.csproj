@@ -57,12 +57,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="scripts\js-console.js" />
+    <Content Include="scripts\js-console1.js" />
+    <Content Include="styles\js-console.css" />
+    <Content Include="styles\js-console.min.css" />
+    <Content Include="styles\js-console1.css" />
+    <Content Include="styles\js-console1.min.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="styles\js-console.less" />
+    <Content Include="styles\js-console1.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
