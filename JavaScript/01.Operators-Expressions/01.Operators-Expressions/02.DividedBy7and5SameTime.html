@@ -1,0 +1,58 @@
+﻿<!--Write a boolean expression that checks for given integer if it can be
+     divided (without remainder) by 7 and 5 in the same time.-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Divided by 7 and 5 at the same time</title>
+    <link href="styles/js-console1.css" rel="stylesheet" />
+    <style>
+        #number {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+    </style>
+</head>
+<body>
+    <label for="number">Enter number</label>
+    <input type="text" id="number" />
+    <a href="#" onclick="Divisible57()">Divisible by 5 && 7?</a>
+    <div id="console">
+    </div>
+    <script src="scripts/js-console1.js">
+    </script>
+    <script>
+        function Divisible57() {
+            var number = jsConsole.readInteger("#number");
+            if (number % 5 == 0 && number % 7 == 0) {
+                jsConsole.writeLine("Yes");
+            }
+
+            else {
+                jsConsole.writeLine("No");
+            }
+
+        }
+
+    </script>
+</body>
+</html>

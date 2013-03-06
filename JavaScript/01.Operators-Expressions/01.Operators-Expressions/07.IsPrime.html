@@ -1,0 +1,58 @@
+﻿<!--Write an expression that checks if given positive 
+    integer number n (n ≤ 100) is prime. E.g. 37 is prime.-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Is Prime!</title>
+    <link href="styles/js-console1.css" rel="stylesheet" />
+    <style>
+        #number {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+    </style>
+</head>
+<body>
+    <label for="number">Number (from 2 to 100 incl.):</label>
+    <input type="text" id="number" />
+    <a href="#" onclick="IsPrime()">Is prime?</a>
+    <div id="console">
+    </div>
+    <script src="scripts/js-console1.js">
+    </script>
+    <script>
+        function IsPrime() {
+        var number = jsConsole.readInteger("#number");
+        var isPrime = true;
+        for (var divider = 2; divider <= Math.sqrt(number); divider++)
+        {
+            if ((number % divider) == 0)
+            {
+                isPrime = false;
+            }           
+        }
+        jsConsole.writeLine(number + " is even: " + isPrime);
+        }
+    </script>
+</body>
+</html>

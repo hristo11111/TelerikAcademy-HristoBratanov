@@ -1,0 +1,53 @@
+﻿<!--Write an expression that calculates rectangle’s area by given width and height.-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Rectangle area</title>
+    <link href="styles/js-console1.css" rel="stylesheet" />
+    <style>
+        #number {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+    </style>
+</head>
+<body>
+    <label for="width">Width:</label>
+    <input type="text" id="width" />
+    <label for="height">Height:</label>
+    <input type="text" id="height" />
+    <a href="#" onclick="Rectangle()">Calculate rectangle:</a>
+    <div id="console">
+    </div>
+    <script src="scripts/js-console1.js">
+    </script>
+    <script>
+        function Rectangle() {
+            var width = jsConsole.readFloat("#width");
+            var height = jsConsole.readFloat("#height");
+            jsConsole.writeLine(width * height);
+        }
+
+    </script>
+</body>
+</html>

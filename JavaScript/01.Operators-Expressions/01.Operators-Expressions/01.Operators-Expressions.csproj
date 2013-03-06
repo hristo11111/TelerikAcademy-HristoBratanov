@@ -57,6 +57,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="01.OddOrEven.html" />
+    <Content Include="02.DividedBy7and5SameTime.html" />
+    <Content Include="03.RectangleArea.html" />
+    <Content Include="04.CheckIntegerDigit.html" />
+    <Content Include="05.BoolExpressionFindABit.html" />
+    <Content Include="06.PointInCircle.html" />
+    <Content Include="07.IsPrime.html" />
+    <Content Include="08.TrapezoidArea.html" />
+    <Content Include="09.PointInCircleOutRectangle.html" />
     <Content Include="scripts\js-console.js" />
     <Content Include="scripts\js-console1.js" />
     <Content Include="styles\js-console.css" />
