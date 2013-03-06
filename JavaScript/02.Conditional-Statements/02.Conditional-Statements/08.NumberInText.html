@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Number in text</title><link href="styles/js-console1.css" rel="stylesheet" />
+	<style>
+		#number {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="tb-first">Enter number: </label>
+	<input type="text" id="number"/>
+	<a href="#" onclick="BiggestVar()">Show biggest variable!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console1.js">	  
+	</script>		  
+	<script>
+	    function BiggestVar() {
+	        var number = jsConsole.readFloat("#number");
+
+	        var hundreds, tens, ones;
+	        if (number >= 0 && number <= 999) {
+	            if (number == 0) {
+	                jsConsole.writeLine("zero");
+	            }
+	            hundreds = Math.floor(number / 100);
+	            switch (hundreds) {
+	                case 1: jsConsole.write("one hundred "); break;
+	                case 2: jsConsole.write("two hundred "); break;
+	                case 3: jsConsole.write("three hundred "); break;
+	                case 4: jsConsole.write("four hundred "); break;
+	                case 5: jsConsole.write("five hundred "); break;
+	                case 6: jsConsole.write("six hundred "); break;
+	                case 7: jsConsole.write("seven hundred "); break;
+	                case 8: jsConsole.write("eight hundred "); break;
+	                case 9: jsConsole.write("nine hundred "); break;
+	            }
+	            tens = Math.floor((number % 100) / 10);
+	            switch (tens) {
+	                case 2: jsConsole.write("twenty "); break;
+	                case 3: jsConsole.write("thirty "); break;
+	                case 4: jsConsole.write("fourty "); break;
+	                case 5: jsConsole.write("fifty "); break;
+	                case 6: jsConsole.write("sixty "); break;
+	                case 7: jsConsole.write("seventy "); break;
+	                case 8: jsConsole.write("eighty "); break;
+	                case 9: jsConsole.write("ninety "); break;
+	            }
+	            ones = number % 10;
+	            if (tens == 1) {
+	                if (hundreds != 0) {
+	                    jsConsole.writeLine("and ");
+	                }
+	                switch (ones) {
+	                    case 0: jsConsole.writeLine("ten"); break;
+	                    case 1: jsConsole.writeLine("eleven"); break;
+	                    case 2: jsConsole.writeLine("twelve"); break;
+	                    case 3: jsConsole.writeLine("thirteen"); break;
+	                    case 4: jsConsole.writeLine("fourteen"); break;
+	                    case 5: jsConsole.writeLine("fifteen"); break;
+	                    case 6: jsConsole.writeLine("sixteen"); break;
+	                    case 7: jsConsole.writeLine("seventeen"); break;
+	                    case 8: jsConsole.writeLine("eighteen"); break;
+	                    case 9: jsConsole.writeLine("nineteen"); break;
+	                }
+	            }
+	            else {
+	                if ((hundreds != 0) && (ones != 0) && (tens == 0)) {
+	                    jsConsole.write("and ");
+	                }
+	                switch (ones) {
+	                    case 1: jsConsole.writeLine("one"); break;
+	                    case 2: jsConsole.writeLine("two"); break;
+	                    case 3: jsConsole.writeLine("three"); break;
+	                    case 4: jsConsole.writeLine("four"); break;
+	                    case 5: jsConsole.writeLine("five"); break;
+	                    case 6: jsConsole.writeLine("six"); break;
+	                    case 7: jsConsole.writeLine("seven"); break;
+	                    case 8: jsConsole.writeLine("eight"); break;
+	                    case 9: jsConsole.writeLine("nine"); break;
+	                }
+	            }
+	        }
+	    }
+        </script>
+</body>
+</html>

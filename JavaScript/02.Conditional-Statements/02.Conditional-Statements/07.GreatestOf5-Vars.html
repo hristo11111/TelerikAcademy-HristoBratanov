@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Greatest of 5 variables</title>
+    <link href="styles/js-console1.css" rel="stylesheet" />
+	<style>
+		#number {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="tb-first">Enter first var: </label>
+	<input type="text" id="tb-first"/>
+	<br />
+    <label for="tb-second">Enter second var: </label>
+	<input type="text" id="tb-second"/>
+	<br />
+    <label for="tb-third">Enter third var: </label>
+	<input type="text" id="tb-third"/>
+	<br />
+    <label for="tb-fourth">Enter fourth var: </label>
+	<input type="text" id="tb-fourth"/>
+	<br />
+    <label for="tb-fifth">Enter fifth var: </label>
+	<input type="text" id="tb-fifth"/>
+	<br />
+	<a href="#" onclick="BiggestVar()">Show biggest variable!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console1.js">	  
+	</script>		  
+	<script>
+	    function BiggestVar() {
+	        var variable1 = jsConsole.readFloat("#tb-first");
+	        var variable2 = jsConsole.readFloat("#tb-second");
+	        var variable3 = jsConsole.readFloat("#tb-third");
+	        var variable4 = jsConsole.readFloat("#tb-fourth");
+	        var variable5 = jsConsole.readFloat("#tb-fifth");
+	        var arr = [variable1, variable2, variable3, variable4, variable5];
+	        arr.sort(function (a, b) {
+	            return a - b;
+	        });
+	        jsConsole.writeLine(arr[4]);
+	    }
+    </script>
+</body>
+</html>

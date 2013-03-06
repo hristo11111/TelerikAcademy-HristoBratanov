@@ -1,0 +1,75 @@
+﻿<!--Write a script that enters the coefficients a, b and c of a quadratic equation
+a*x2 + b*x + c = 0
+and calculates and prints its real roots. Note that quadratic equations may have 0, 1 or 2 real roots.-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Quadratic Equation</title>
+    <link href="styles/js-console1.css" rel="stylesheet" />
+	<style>
+		#number {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="tb-first">Enter "a": </label>
+	<input type="text" id="tb-first"/>
+	<br />
+    <label for="tb-second">Enter "b": </label>
+	<input type="text" id="tb-second"/>
+	<br />
+    <label for="tb-third">Enter "c": </label>
+	<input type="text" id="tb-third"/>
+	<br />
+	<a href="#" onclick="QuadraticRoots()">Calculate equation's roots!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console1.js">	  
+	</script>		  
+	<script>
+	    function QuadraticRoots() {
+	        var coeffA = jsConsole.readFloat("#tb-first");
+	        var coeffB = jsConsole.readFloat("#tb-second");
+	        var coeffC = jsConsole.readFloat("#tb-third");
+	        var x1, x2;
+	        var discriminant = (coeffB * coeffB - 4 * coeffA * coeffC);
+	        if (discriminant < 0)
+	        {
+	            jsConsole.writeLine("there is no solution of the quadratic equation");
+	        }
+	        else if (discriminant == 0)
+	        {
+	            x1 = -(coeffB / 2 * coeffA);
+	            jsConsole.writeLine("this equation has one root: x = " + x1);
+	        }
+	        else if (discriminant > 0)
+	        {
+	            x1 = ((-coeffB + Math.sqrt(discriminant)) / (2 * coeffA));
+	            x2 = ((-coeffB - Math.sqrt(discriminant)) / (2 * coeffA));
+	            jsConsole.writeLine("this equation has two roots: x1 = " + x1 + " x2 = " + x2);
+	        }
+	    }
+    </script>
+</body>
+</html>
