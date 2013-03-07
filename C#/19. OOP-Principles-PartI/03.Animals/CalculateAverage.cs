@@ -11,6 +11,7 @@ static class CalculateAverage
         {
             sum += item.Age;
         }
+
         return sum / animals.Count();
     }
 }

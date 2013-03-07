@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 class Matrix_T<T> 
     where T : struct, IComparable, IFormattable, IConvertible, IComparable<T>, IEquatable<T>

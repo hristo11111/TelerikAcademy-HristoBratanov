@@ -38,15 +38,18 @@ class GenericList<T>
             {
                 throw new IndexOutOfRangeException("index out of range");
             }
+
             T element = this.elements[index];
             return element;
         }
+
         set
         {
             if (count <= index || index < 0)
             {
                 throw new IndexOutOfRangeException("index out of range");
             }
+
             T element = this.elements[index];
             element = value;
         }
@@ -59,6 +62,7 @@ class GenericList<T>
         {
             throw new IndexOutOfRangeException("index out of range");
         }
+
         bool[] isRemoved = new bool[count];
         isRemoved[index] = true;
         count--;
@@ -70,11 +74,13 @@ class GenericList<T>
                 int j = i - k;
                 newElements[j] = this.elements[i];
             }
+
             else
             {
                 k = 1;
             }
         }
+
         this.elements = newElements;
     }
 
@@ -85,10 +91,12 @@ class GenericList<T>
         {
             DoubleCapacity();
         }
+
         if (count <= index)
         {
             throw new IndexOutOfRangeException("index out of range");
         }
+
         bool[] isInserted = new bool[count+1];
         isInserted[index] = true;
         count++;
@@ -100,12 +108,14 @@ class GenericList<T>
                 
                 newElements[i] = this.elements[i-k];
             }
+
             else
             {
                 k = 1;
                 newElements[i] = element;
             }
         }
+
         this.elements = newElements;
     }
 
@@ -132,6 +142,7 @@ class GenericList<T>
         {
             Console.WriteLine("index of {0} is {1}", element, index);    
         }
+
         else
         {
             Console.WriteLine("no such element");
@@ -145,6 +156,7 @@ class GenericList<T>
         {
             sb.Append(this.elements[i]);
         }
+
         Console.WriteLine(sb);
     }
 
@@ -155,8 +167,8 @@ class GenericList<T>
         for (int i = 0; i < count; i++)
         {
             newElements[i] = elements[i];
-
         }
+
         this.elements = newElements;
     }
 
@@ -170,6 +182,7 @@ class GenericList<T>
                 min = elements[i];
             }
         }
+
         return min;
     }
 
@@ -183,6 +196,7 @@ class GenericList<T>
                 max = elements[i];
             }
         }
+
         return max;
     }
 
