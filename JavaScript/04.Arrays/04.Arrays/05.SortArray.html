@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sort array using selection sort</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#sequence {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="sequence">Enter numbers (number, number, number etc.): </label>
+	<input type="text" id="sequence"/>
+	<br />
+    
+	<a href="#" onclick="SortArray()">Calculate!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function SortArray() {
+	        var readSequence = jsConsole.read("#sequence");
+	        var sequence = readSequence.split(", ");
+	        var sortedArr = new Array(sequence.length);
+
+	        var len = sequence.length;
+	        var min = sequence[0];
+	        var count = 0;
+	        var index = 0;
+	        while (count < len) {
+	            for (var i = 0; i < sequence.length; i++) {
+	                if (sequence[i] <= min) {
+	                    min = sequence[i]
+	                    index = i;
+	                }
+	            }
+	            sequence.splice(index, 1);
+	            sortedArr[count] = min;
+	            count++;
+	            min = sequence[0]
+	        }
+	        
+	        jsConsole.writeLine(sortedArr.join(", "));
+	    }
+    </script>
+</body>
+</html>

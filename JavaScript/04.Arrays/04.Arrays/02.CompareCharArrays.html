@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Compare char arrays</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#sequence1, #sequence2{
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="sequence1">Enter char array1 (char, char, char etc.): </label>
+	<input type="text" id="sequence1"/>
+    <label for="sequence2">Enter char array1 (char, char, char etc.): </label>
+	<input type="text" id="sequence2"/>
+	<br />
+    
+	<a href="#" onclick="Compare()">Compare!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function Compare() {
+	        var readSequence1 = jsConsole.read("#sequence1");
+	        var sequence1 = readSequence1.split(", ");
+	        var readSequence2 = jsConsole.read("#sequence2");
+	        var sequence2 = readSequence2.split(", ");
+	        for (var i = 0; i < Math.max(sequence1.length, sequence2.length); i++) {
+	            if (sequence1[i] > sequence2[i]) {
+                    jsConsole.writeLine("element " + i + " in array1 is BIGGER than element " + i + " in array2")
+	            }
+	            else if(sequence1[i] < sequence2[i]){
+	                jsConsole.writeLine("element " + i + " in array1 is SMALLER than element " + i + " in array2")
+	            }
+	            else {
+	                jsConsole.writeLine("element " + i + "in array1 is EQUAL than element " + i + "in array2")
+	            }
+	        }
+	    }
+    </script>
+
+</body>
+</html>

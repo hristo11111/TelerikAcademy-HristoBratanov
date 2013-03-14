@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Maximal Increasing Sequence</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#sequence {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="sequence">Enter numbers (number, number, number etc.): </label>
+	<input type="text" id="sequence"/>
+	<br />
+    
+	<a href="#" onclick="CalcMaxSequence()">Calculate!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function CalcMaxSequence() {
+	        var readSequence = jsConsole.read("#sequence");
+	        var sequence = readSequence.split(", ");
+
+	        var maxcount = 1;
+	        var count = 1;
+	        var maxIndex = 0;
+	        var firstElement = sequence[0];
+	        for (var i = 0; i < sequence.length - 1; i++) {
+	            if (parseFloat(sequence[i + 1]) > parseFloat(firstElement)) {
+	                count = count + 1;
+	                if (count > maxcount) {
+	                    maxcount = count;
+	                    maxIndex = i+1;
+	                }
+	            }
+	            else {
+	                count = 1;
+	            }
+	            firstElement = sequence[i + 1];
+	        }
+
+	        jsConsole.write("{");
+	        for (var i = maxIndex - maxcount + 1; i <= maxIndex; i++) {
+	            jsConsole.write(sequence[i]);
+	            if (i != maxIndex) {
+                    jsConsole.write(", ")
+	            }
+	        }
+	        jsConsole.write("}");
+	    }
+    </script>
+</body>
+</html>

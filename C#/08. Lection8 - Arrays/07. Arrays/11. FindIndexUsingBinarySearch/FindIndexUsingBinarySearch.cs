@@ -8,7 +8,7 @@ class FindIndexUsingBinarySearch
 {
     static void Main()
     {
-        int element = 3;
+        int element = 5;
         int[] array = { 1, 3, 4, 6, 8, 99, 100, 123, 124, 145 };
         int iMin = array[0];
         int iMax = array[array.Length - 1];

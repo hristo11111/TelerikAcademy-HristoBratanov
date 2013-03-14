@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find most frequent number in sequence</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#sequence {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="sequence">Enter numbers (number, number, number etc.): </label>
+	<input type="text" id="sequence"/>
+	<br />
+    
+	<a href="#" onclick="FindFrequent()">Calculate!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function FindFrequent() {
+	        var readSequence = jsConsole.read("#sequence");
+	        var sequence = readSequence.split(", ");
+	        
+	        function CompareNumbers(a, b) {
+	            return a-b;
+	        }
+	        sequence.sort(CompareNumbers);
+
+	        var startIndex = 0;
+	        var index = 0;
+	        var count = 0;
+	        var steps = 0;
+	        var maxCount = 1;
+	        var maxElement = sequence[0];
+
+	        while (steps < sequence.length) {
+	            var searchElement = sequence[startIndex];
+	            for (var i = startIndex; i < sequence.length; i++) {
+	                if (searchElement == sequence[i]) {
+	                    count++;
+	                    steps++;
+	                    index = i;
+	                }
+	                else {
+	                    if (count > maxCount) {
+	                        maxCount = count;
+	                        maxElement = sequence[index];
+	                        
+	                    }
+	                    startIndex = index + 1;
+	                    count = 0;
+	                    break;
+	                }
+	            }
+	        }
+	        	        
+	        jsConsole.writeLine(maxElement + "(" + maxCount + " times)");
+	    }
+    </script>
+</body>
+</html>

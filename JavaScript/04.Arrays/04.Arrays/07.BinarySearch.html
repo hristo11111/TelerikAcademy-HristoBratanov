@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Binary search</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#sequence, #number {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="number">Enter number to search: </label>
+	<input type="text" id="number"/>
+    <label for="sequence">Enter sequence (number, number, number etc.): </label>
+	<input type="text" id="sequence"/>
+	<br />
+    
+	<a href="#" onclick="ImplementBinarySearch()">Calculate!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function ImplementBinarySearch() {
+	        var number = jsConsole.readInteger("#number");
+	        var readSequence = jsConsole.read("#sequence");
+	        var sequence = readSequence.split(", ");
+
+	        function SortNumbers(a, b) {
+	            return a - b;
+	        }
+	        sequence.sort(SortNumbers);
+
+	        var start = 0;
+	        var end = sequence.length - 1;
+            var result
+
+            while (end >= start) {
+                pivot = Math.floor((start + end) / 2);
+	            if (number > sequence[pivot]) {
+	                start = pivot + 1;
+	            }
+	            else if (number < sequence[pivot]) {
+	                end = pivot - 1;
+	            }
+	            else {
+	                break;
+	            }
+            }
+            if (sequence[pivot] == number) {
+                jsConsole.writeLine("the index of " + number + "in the sequence is: " + pivot);
+            }
+            else {
+                jsConsole.writeLine("There is not such number!")
+            }
+	        }
+    </script>
+</body>
+</html>

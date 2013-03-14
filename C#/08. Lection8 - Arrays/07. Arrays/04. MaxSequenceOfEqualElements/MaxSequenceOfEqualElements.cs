@@ -10,7 +10,7 @@ class MaxSequenceOfEqualElements
     {
         int maxcount = 1;
         int count = 1;
-        int[] numbers = { 3, 3, 3, 3, 3, 3, 3, 1, 2, 3, 4, 4, 4, 4, 6, 2, 3, 3, 3, 3, 3, 3 };
+        int[] numbers = { 3, 3, 3, 3, 3, 3, 3, 1, 2, 3, 4, 4, 4, 4, 4, 4, 4, 4, 6, 2, 3, 3, 3, 3, 3, 3 };
         int maxValue = numbers[0];
         for (int i = 0; i < numbers.Length - 1; i++)
         {

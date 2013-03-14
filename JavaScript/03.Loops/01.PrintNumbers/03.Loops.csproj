@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="01.PrintNNumbers.html" />
+    <Content Include="02.NotDivisibleBy7and3.html" />
+    <Content Include="03.FindMaxAndMin.html" />
+    <Content Include="04.ObjectsSorting.html" />
     <Content Include="scripts\js-console.js" />
     <Content Include="styles\js-console.css" />
     <Content Include="styles\js-console.min.css" />
