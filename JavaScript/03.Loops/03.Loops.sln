@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Loops", "01.PrintNumbers\03.Loops.csproj", "{A7E6AC8E-BD03-4110-B3A6-3E2DA583BCB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Loops", "03.Loops\03.Loops.csproj", "{A7E6AC8E-BD03-4110-B3A6-3E2DA583BCB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

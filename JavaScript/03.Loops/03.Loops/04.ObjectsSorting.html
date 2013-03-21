@@ -1,0 +1,88 @@
+﻿<!--Write a script that finds the lexicographically smallest and largest property in document, 
+    window and navigator objects-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find Max and Min</title>
+<link href="styles/js-console.css" rel="stylesheet" />
+	<style>
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>    
+	<a href="#" onclick="FindMaxMin()">Print!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function FindMaxMin() {
+	        var min = "zzz";
+	        var max = "aaa";
+	        for (var i in navigator) {
+	            if (i < min) {
+	                min = i;
+	            }
+	        }
+
+	        for (var i in navigator) {
+	            if (i > max) {
+	                max = i;
+	            }
+	        }
+
+	        jsConsole.writeLine("The smallest property of navigator is: " + min);
+	        jsConsole.writeLine("The largest property of navigator is: " + max);
+	        jsConsole.writeLine("-----------------------------------");
+
+	        var min = "zzz";
+	        var max = "aaa";
+	        for (var i in window) {
+	            if (i < min) {
+	                min = i;
+	            }
+	        }
+
+	        for (var i in window) {
+	            if (i > max) {
+	                max = i;
+	            }
+	        }
+
+	        jsConsole.writeLine("The smallest property of window is: " + min);
+	        jsConsole.writeLine("The largest property of window is: " + max);
+	        jsConsole.writeLine("-----------------------------------");
+
+	        var min = "zzz";
+	        var max = "aaa";
+	        for (var i in document) {
+	            if (i < min) {
+	                min = i;
+	            }
+	        }
+
+	        for (var i in document) {
+	            if (i > max) {
+	                max = i;
+	            }
+	        }
+
+	        jsConsole.writeLine("The smallest property of navigator is: " + min);
+	        jsConsole.writeLine("The largest property of navigator is: " + max);
+	    }
+    </script>
+</body>
+</html>
