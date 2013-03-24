@@ -1,49 +1,83 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 
 class BitArray64 : IEnumerable<int>
 {
-    private ulong number;
-    public ulong Number
-    {
-        get
-        {
-            return this.number;
-        }
-        set
-        {
-            if (number > 18446744073709551615 || number < 0)
-            {
-                throw new IndexOutOfRangeException("the input is not in ulong range");
-            }
-            this.number = value;
-        }
-    }
+    ulong number;
+
+    public ulong Number { get; set; }
 
     public BitArray64(ulong number)
     {
         this.Number = number;
     }
 
-    //public IEnumerator<UInt64> GetEnumerator()
-    //{
-    //    BitArray64<UInt64> currentNum = this;
-    //    while (currentNum != null)
-    //    {
-    //        yield return currentNum;
-            
-    //    }
-    //}
-
-
-    public IEnumerator<int> GetEnumerator()
-    {
-        
-    }
-
     IEnumerator IEnumerable.GetEnumerator()
     {
         return this.GetEnumerator();
+    }
+
+    public IEnumerator<int> GetEnumerator()
+    {
+        for (int i = 63; i >= 0; i--)
+        {
+            yield return this[i];
+        }
+    }
+
+    public override bool Equals(object param)
+    {
+        BitArray64 bitArray = param as BitArray64;
+
+        if ((object)bitArray == null)
+        {
+            return false;
+        }
+
+        if (!Object.Equals(this.number, bitArray.number))
+        {
+            return false;
+        }
+
+        return true;
+    }
+    public override int GetHashCode()
+    {
+        return this.number.GetHashCode();
+    }
+    public int this[int index]
+    {
+        get
+        {
+            if (index < 0 || index > 63)
+            {
+                throw new IndexOutOfRangeException("Index must be in range [0, 63].");
+            }
+
+            return (int)((this.number >> index) & 1);
+        }
+    }
+    public static bool operator ==(BitArray64 bitArray1, BitArray64 bitArray2)
+    {
+        return BitArray64.Equals(bitArray1, bitArray2);
+    }
+
+    public static bool operator !=(BitArray64 bitArray1, BitArray64 bitArray2)
+    {
+        return !(BitArray64.Equals(bitArray1, bitArray2));
+    }
+
+
+    //Override ToString() method
+    public override string ToString()
+    {
+        StringBuilder sb = new StringBuilder(64);
+        for (int i = 63; i >= 0; i--)
+        {
+            sb.Append(this[i]);
+        }
+        return sb.ToString();
     }
 }

@@ -8,15 +8,7 @@ class DepositAccount : Account
         this.Balance = balance;
     }
 
-    public override void Deposit(decimal sum)
-    {
-        base.Deposit(sum);
-    }
-
-    public override void Withdraw(decimal sum)
-    {
-        base.Withdraw(sum);
-    }
+    
 
     public override void CalculateInterestAmount(byte months)
     {

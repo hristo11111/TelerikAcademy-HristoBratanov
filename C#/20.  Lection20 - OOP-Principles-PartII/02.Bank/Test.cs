@@ -25,5 +25,8 @@ class Test
         mort.CalculateInterestAmount(2);
         Console.WriteLine(mort.InterestAmount);
 
+        dep.Deposit(12313);
+        Console.WriteLine(dep.Balance);
+
     }
 }
