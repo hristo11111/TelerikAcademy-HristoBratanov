@@ -82,9 +82,9 @@ public abstract class Document : IDocument
         IList<KeyValuePair<string, object>> properties = new List<KeyValuePair<string, object>>();
         SaveAllProperties(properties);
         var sorted =
-                from prop in properties
-                orderby prop.Key
-                select prop;
+            from prop in properties
+            orderby prop.Key
+            select prop;
 
         foreach (var item in sorted)
         {

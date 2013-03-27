@@ -1,0 +1,66 @@
+﻿<!--Write a function that reverses the digits of given decimal number. Example: 256  652-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Reverse digits</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+        <style>
+		    #number {
+			    border: 1px solid black;
+			    padding: 5px 15px;
+			    background-color: black;
+			    color: white;
+			    font-family: Consolas;
+			    margin-bottom: 5px;
+		    }
+
+		    a {
+			    color: black;
+			    border: 1px solid black;
+			    padding: 5px 15px;
+			    text-decoration: none;
+			    display: inline-block;
+			    margin: 15px 0;
+		    }
+
+			    a:hover {
+				    text-decoration: underline;
+			    }
+	    </style>
+    </head>
+    <body>
+        <label for="number">Enter number: </label>
+	    <input type="text" id="number"/>
+        <br />
+    
+	    <a href="#" onclick="printNumber()">Print!</a>
+	    <div id="console">
+	    </div>
+	    <script src="scripts/js-console.js">	  
+	    </script>	
+	    <script>
+	        function printNumber() {
+	            var number = jsConsole.read("#number");
+	            function reverseDigits(number) {
+	                var output = new Array();
+	                var pointIndex = -1;
+	                for (var i = 0; i < number.length; i++) {
+	                    if (number[i] != '.') {
+	                        output.unshift(number[i]);
+	                    }
+	                    else {
+	                        pointIndex = i;
+	                    }
+	                }
+	                if (pointIndex == -1) {
+	                    jsConsole.writeLine(output.join(""));
+	                }
+	                else {
+	                    output.splice(pointIndex, 0, '.');
+	                    jsConsole.writeLine(output.join(""));
+	                }
+	            }
+	            reverseDigits(number);
+	        }        </script>    </body></html>

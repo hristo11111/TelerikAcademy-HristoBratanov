@@ -1,0 +1,65 @@
+﻿<!--Write a function that counts how many times given number appears in given array. 
+Write a test function to check if the function is working correctly.-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Number appearance in array</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+        <style>
+		    #array, #number {
+			    border: 1px solid black;
+			    padding: 5px 15px;
+			    background-color: black;
+			    color: white;
+			    font-family: Consolas;
+			    margin-bottom: 5px;
+		    }
+
+		    a {
+			    color: black;
+			    border: 1px solid black;
+			    padding: 5px 15px;
+			    text-decoration: none;
+			    display: inline-block;
+			    margin: 15px 0;
+		    }
+
+			    a:hover {
+				    text-decoration: underline;
+			    }
+	    </style>
+    </head>
+    <body>
+        <!--не съм сложил тест!!!!!!-->
+
+        <label for="array">Enter sequence (number, number, number): </label>
+	    <input type="text" id="array"/>
+        <br />
+        <label for="word">Enter number: </label>
+	    <input type="text" id="number"/>
+        <br />
+    
+	    <a href="#" onclick="printAppearances()">Print!</a>
+	    <div id="console">
+	    </div>
+	    <script src="scripts/js-console.js">	  
+	    </script>	
+	    <script>
+	        function printAppearances() {
+	            function findAppearances(array, number) {
+	                var count = 0;
+	                for (var i = 0; i < array.length; i++) {
+	                    if (number === array[i])
+	                    {
+	                        count++;
+	                    }
+	                }
+	                return count;
+	            }
+	            var arr = jsConsole.read("#array");
+	            var array = arr.split(',');
+	            var number = jsConsole.read("#number");
+	            jsConsole.writeLine("the appearances of " + number + " are " + findAppearances(array,number));
+	        }        </script>    </body></html>

@@ -1,0 +1,62 @@
+﻿<!--Write a Function that returns the index of the first element in array that is bigger 
+    than its neighbors, or -1, if there’s no such element.
+    Use the function from the previous exercise.-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Check for index of number bigger than neighbours</title>
+        <link href="styles/js-console.css" rel="stylesheet" />
+        <style>
+		    #array {
+			    border: 1px solid black;
+			    padding: 5px 15px;
+			    background-color: black;
+			    color: white;
+			    font-family: Consolas;
+			    margin-bottom: 5px;
+		    }
+
+		    a {
+			    color: black;
+			    border: 1px solid black;
+			    padding: 5px 15px;
+			    text-decoration: none;
+			    display: inline-block;
+			    margin: 15px 0;
+		    }
+
+			    a:hover {
+				    text-decoration: underline;
+			    }
+	    </style>
+    </head>
+    <body>
+        <label for="array">Enter sequence (number, number, number): </label>
+	    <input type="text" id="array"/>
+        <br />
+    
+	    <a href="#" onclick="printResult()">Print!</a>
+	    <div id="console">
+	    </div>
+	    <script src="scripts/js-console.js">	  
+	    </script>	
+	    <script>
+	        function printResult() {
+	            function findIndexIfBigger(array) {
+	                var index = -1;
+	                for (var i = 1; i < array.length - 1; i++) {
+	                    if (array[i] > array[i - 1] && array[i] > array[parseInt(i) + 1]) {
+	                        jsConsole.writeLine("the index of first element in the array bigger than its neighbours is " + i);
+	                        index = i;
+	                    }
+	                }
+	                if (index == -1) {
+	                    jsConsole.writeLine("there is no such element so return " + index);
+	                }
+	            }
+	            var arr = jsConsole.read("#array");
+	            var array = arr.split(',');
+	            findIndexIfBigger(array);
+	        }        </script>    </body></html>
