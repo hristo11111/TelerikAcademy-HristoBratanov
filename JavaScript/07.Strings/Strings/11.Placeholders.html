@@ -1,0 +1,58 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Placeholders</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#input {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="input">Enter text: </label>
+	<input type="text" id="input"/>
+    <br />
+    <a href="#" onclick="printResult()">Print!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>	
+
+	<script>	    function stringFormat(input) {
+	        var i;
+	        var lastFormatBracketIndex = input.lastIndexOf('}');
+	        var format = input.substring(1, lastFormatBracketIndex + 1);
+	        var strings = input.substring(lastFormatBracketIndex + 3, input.length - 1);
+	        strings = strings.split('"').join('');
+	        var stringsArr = strings.split(",");
+	        
+	        for (i = 0; i < stringsArr.length; i++) {
+	            var placeholder = new RegExp('\\{' + i + '\\}', 'g');	            
+	            format = format.replace(placeholder, stringsArr[i]);
+	        }
+
+	        return format;
+	    }	    function printResult() {
+	        var input = jsConsole.read("#input"); //"{0}, {1}, {0} text {2}",1,"Pesho","Gosho";
+	        jsConsole.writeLine(stringFormat(input));
+	    }    </script></body></html>

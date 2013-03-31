@@ -1,0 +1,68 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Polindromes</title>
+    
+	<script>
+	    function Solve(args) {
+	        var num1 = parseInt(args[0]);
+	        var num2 = parseInt(args[1]);
+	        var num3 = parseInt(args[2]);
+	        var rows = parseInt(args[3]);
+
+	        var limit = 0;
+	        for (var i = 0; i <= rows; i++) {
+	            limit += i;
+	        }
+
+	        var nums = [];
+	        nums.push(num1);
+	        nums.push(num2);
+	        nums.push(num3);
+
+	        var tempNum2;
+	        var tempNum3;
+	        
+
+	        while ((limit - 3) != 0) {
+	            tempNum2 = num2;
+	            tempNum3 = num3;
+	            num3 = num1 + num2 + num3;
+	            num2 = tempNum3;
+	            num1 = tempNum2;
+	            limit--;
+	            nums.push(num3);
+	        }
+
+	        var result = "";
+	        var count = 0;
+	        var end = 1;
+	        for (var i = 0; i < nums.length; i++) {
+	            result += nums[i];
+	            count++;
+	            if (count == end) {
+	                result += '\n'
+	                count = 0;
+	                end++;
+	            }
+	            else if (count != 0) {
+	                result += ' ';
+	            }
+	        }
+
+	        return result;
+	    }
+
+	    function printResult() {
+	        var args = [];
+	        args[0] = "1";
+	        args[1] = "-1";
+	        args[2] = "1";
+	        args[3] = "4";
+
+	        console.log(Solve(args));
+	    }    </script>
+</head>
+    <body onload ="printResult()">
+</body></html>

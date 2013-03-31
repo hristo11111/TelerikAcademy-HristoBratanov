@@ -30,7 +30,6 @@ Use function overloading-->
 			    a:hover {
 				    text-decoration: underline;
 			    }
-                /*не радбити в този си вид !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	    </style>
     </head>
     <body>
@@ -73,17 +72,18 @@ Use function overloading-->
 
 	                switch (arguments.length) {
 	                    case 2: {
-	                        getOccurencesCaseInsensitive();
+	                        return getOccurencesCaseInsensitive(word);
 	                        break;
 	                    }
 	                    case 3: {
-	                        isCaseSensitive ? getOccurencesCaseSensitive(word) : getOccurencesCaseInsensitive(word);
+	                        return isCaseSensitive ? getOccurencesCaseSensitive(word) : getOccurencesCaseInsensitive(word);
+	                        break;
 	                    }
 	                }
 	            }
 
-	            input = "dadada da da ne da"
-                search = "da";
-	            jsConsole.writeLine("the word = " + search + " occures " + findOccurences(input, search, false) + " times in the text if case insensitive");
-	            jsConsole.writeLine("the word = " + searchWord + " occures " + findOccurences(input, search, true) + " times in the text if case sensitive");
+	            input = jsConsole.read("#text");
+	            search = jsConsole.read("#word");
+	            jsConsole.writeLine("the word = " + search + ", occures " + findOccurences(input, search, false) + " times in the text if case insensitive");
+	            jsConsole.writeLine("the word = " + search + ", occures " + findOccurences(input, search, true) + " times in the text if case sensitive");
 	        }        </script>    </body></html>

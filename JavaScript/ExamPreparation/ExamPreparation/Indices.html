@@ -1,0 +1,62 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Polindromes</title>
+    
+	<script>
+	    function Solve(args) {
+	        var valley = args[0].split(", ");
+	        var patternsCount = parseInt(args[1]);
+	        var patterns = [];
+	        for (var i = 0; i < patternsCount; i++) {
+	            var pattern = args[i + 2].split(", ");
+	            for (var j = 0; j < pattern.length; j++) {
+	                pattern[j] = parseInt(pattern[j]);
+	            }
+	            patterns.push(pattern);
+	        }
+
+	        var patternIndex = parseInt(0);
+
+
+	        var maxSum = Number.MIN_VALUE;
+
+
+	        for (var m = 0; m < patternsCount; m++) {
+	            var currentPattern = patterns[m];
+	            var patternIndex = parseInt(0);
+	            var visited = {};
+	            var sum = parseInt(0);
+	            var valleyIndex = parseInt(0);
+	            while (valleyIndex >= 0 && valleyIndex < valley.length && !visited[valleyIndex]) {
+	                sum = sum + parseInt(valley[valleyIndex]);
+	                visited[valleyIndex] = true;
+	                valleyIndex = valleyIndex + currentPattern[patternIndex];
+	                patternIndex++;
+	                if (patternIndex == currentPattern.length) {
+	                    patternIndex = 0;
+	                }
+	            }
+
+	            if (sum > maxSum) {
+	                maxSum = sum;
+	            }
+	        }
+
+	        return maxSum;
+	    }
+	    
+	    function printResult() {
+	        var args = [];
+	        args[0] = "1, 3, -6, 7, 4, 1, 12";
+	        args[1] = "3";
+	        args[2] = "1, 2, -3";
+	        args[3] = "1, 3, -2";
+	        args[4] = "1, -1";
+
+	        console.log(Solve(args));
+	    }    </script>
+</head>
+    <body onload ="printResult()">
+</body></html>

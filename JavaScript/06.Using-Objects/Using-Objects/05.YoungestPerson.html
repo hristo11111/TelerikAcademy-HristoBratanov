@@ -1,0 +1,49 @@
+﻿<!--Write a function that finds the youngest person in a given array of persons and prints his/hers full name
+Each person have properties firstname, lastname and age, as shown:
+
+example:
+var persons = [
+  {firstname : "Gosho", lastname: "Petrov", age: 32}, 
+  {firstname : "Bay", lastname: "Ivan", age: 81},…];-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Youngest person</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <a href="#" onclick="printResult()">Print!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		
+	<script>	    function person(fname, lname, age) {
+	        return {
+	            fname : fname,
+	            lname : lname,
+	            age : parseInt(age),
+	            toString: function () { return this.fname + " " + this.lname }
+	            }
+	    }	    function printResult() {
+	        var persons = [person("Joro", "Petrov", 12),                           person("Georgi", "Zhekov", 24),                           person("Alex", "Petkov", 1)]	        var minAge = persons[0].age;	        var minIndex = 0 * 1;	        for (var i = 1; i < persons.length; i++) {
+	            if (minAge > persons[i].age) {
+	                minAge = persons[i].age;	                minIndex = i;
+	            }
+	        }	        jsConsole.writeLine(persons[minIndex]);
+	    }    </script></body></html>

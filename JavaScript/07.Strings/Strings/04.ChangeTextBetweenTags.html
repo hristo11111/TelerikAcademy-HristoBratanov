@@ -1,0 +1,112 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Change text between tags</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#input {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="input">Enter text: </label>
+	<input type="text" id="input"/>
+    <br />
+    <a href="#" onclick="printResult()">Print!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>	
+
+	<script>	    function changeText(input) {
+	        var startIndex = parseInt(0);
+	        while (true) {
+	            var indexOfStartTag = input.indexOf("<upcase>", startIndex);
+	            if (indexOfStartTag == -1) {
+	                break;
+	            }
+
+	            else {
+	                var indexOfEndTag = input.indexOf("</upcase>", indexOfStartTag + 8);
+	                if (indexOfEndTag == -1) {
+	                    break;
+	                }
+	                else {
+	                    input = input.substring(0, indexOfStartTag + 8) + input.substring(indexOfStartTag, indexOfEndTag).toUpperCase() + input.substring(indexOfEndTag +9, input.length);
+	                }
+	            }
+	            startIndex = indexOfEndTag + 9;
+	        }
+
+	        startIndex = parseInt(0);
+	        while (true) {
+	            var indexOfStartTag = input.indexOf("<lowcase>", startIndex);
+	            if (indexOfStartTag == -1) {
+	                break;
+	            }
+
+	            else {
+	                var indexOfEndTag = input.indexOf("</lowcase>", indexOfStartTag + 9);
+	                if (indexOfEndTag == -1) {
+	                    break;
+	                }
+	                else {
+	                    input = input.substring(0, indexOfStartTag + 9) + input.substring(indexOfStartTag, indexOfEndTag).toLowerCase() + input.substring(indexOfEndTag + 10, input.length);
+	                }
+	            }
+	            startIndex = indexOfEndTag + 10;
+	        }
+
+	        startIndex = parseInt(0);
+	        while (true) {
+	            var indexOfStartTag = input.indexOf("<mixcase>", startIndex);
+	            if (indexOfStartTag == -1) {
+	                break;
+	            }
+
+	            else {
+	                var indexOfEndTag = input.indexOf("</mixcase>", indexOfStartTag + 9);
+	                if (indexOfEndTag == -1) {
+	                    break;
+	                }
+	                else {
+	                    var substrForMixing = input.substring(indexOfStartTag + 9, indexOfEndTag);
+	                    for (var i = 0; i < substrForMixing.length; i++) {
+	                        if (i % 2 == 0) {
+	                            substrForMixing = substrForMixing.replace(substrForMixing[i], substrForMixing[i].toUpperCase());
+	                        }
+	                        else {
+	                            substrForMixing = substrForMixing.replace(substrForMixing[i], substrForMixing[i].toLowerCase());
+	                        }
+	                    }
+	                    input = input.substring(0, indexOfStartTag + 9) + substrForMixing + input.substring(indexOfEndTag + 10, input.length);
+	                }
+	            }
+	            startIndex = indexOfEndTag + 10;
+	        }
+
+	        return input;
+	    }	    function printResult() {
+	        var input = jsConsole.read("#input");
+	        jsConsole.writeLine(changeText(input));
+	    }    </script></body></html>

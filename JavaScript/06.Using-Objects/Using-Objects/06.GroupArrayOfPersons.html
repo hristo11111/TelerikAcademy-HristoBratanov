@@ -1,0 +1,49 @@
+﻿<!--Write a function that groups an array of persons by age, first or last name. 
+The function must return an associative array, with keys - the groups, 
+and values -arrays with persons in this groups
+Use function overloading (i.e. just one function)
+
+example:
+var persons = {…};
+var groupedByFname = group(persons,"firstname");
+var groupedByAge= group(persons,"age");-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Group Array Of Persons</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <a href="#" onclick="printResult()">Print!</a>
+	<div id="console">
+	</div>                                 <!-- ne e zavyrshena!!!!!!!!!!!!!!!!!!!!!!-->
+	<script src="scripts/js-console.js">	  
+	</script>		
+	<script>	    	    //function printResult() {
+	    //    var persons = [person("Joro", "Petrov", 12),        //                   person("Pencho", "Daskalov", 12),        //                   person("Georgi", "Zhekov", 24),        //                   person("Georgi", "Zaichev", 28),        //                   person("Georgi", "Kalugerov", 45),        //                   person("Dimityr", "Petkov", 1),        //                   person("Ivailo", "Petkov", 12),        //                   person("Joro", "Petkov", 87),        //                   person("Ivan", "Petkov", 32)]	       	    var persons = [
+              { firstname: "George", lastname: "Petrov", age: 32 },
+              { firstname: "Petar", lastname: "Ivanov", age: 32 },
+              { firstname: "George", lastname: "Ivanov", age: 44 },
+              { firstname: "Petar", lastname: "Lazarov", age: 9 },
+              { firstname: "Stoyan", lastname: "Aleksandrov", age: 9 },
+	    ];
+
+	    	    var groupedByFname = group(persons, "fname");	    var groupedByLname = group(persons, "lname");	    var groupedByAge = group(persons, "age");	    function group(persons, criteria) {
+
+	    }    </script></body></html>

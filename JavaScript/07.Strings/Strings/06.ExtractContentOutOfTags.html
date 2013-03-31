@@ -1,0 +1,68 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Extract content out of tags</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#input {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="input">Enter text: </label>
+	<input type="text" id="input"/>
+    <br />
+    <a href="#" onclick="printResult()">Print!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>	
+
+	<script>
+	    function extractContent(html) {
+	        var afterTag = false;
+	        var result = "";
+	        for (var i = 0; i < html.length; i++) {
+	            if (afterTag) {
+	                if (html[i] == '<') {
+	                    afterTag = false;
+	                }
+
+	                else {
+	                    result += html[i];
+	                    if (html[i + 1] == '<') {
+	                        result.concat(" ");
+	                    }
+	                }
+	            }
+	            if (html[i] == '>' && i + 1 < html.length) {
+	                afterTag = true;
+	                continue;
+	            }
+	        }
+
+	        return result;
+	    }	    function printResult() {
+	        var input = jsConsole.read("#input");
+	        jsConsole.writeLine(extractContent(input));
+	    }    </script></body></html>

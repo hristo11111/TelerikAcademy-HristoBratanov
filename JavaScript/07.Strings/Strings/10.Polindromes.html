@@ -1,0 +1,79 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Polindromes</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#input {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="input">Enter text: </label>
+	<input type="text" id="input"/>
+    <br />
+    <a href="#" onclick="printResult()">Print!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>	
+
+	<script>
+	    function findPolindromes (input) {
+	        var pattern = "\w+";
+	        var words = input.match(/\w+/g);
+
+	        for (var i = 0; i < words.length; i++)
+	        {
+	            if (words[i].length == 1)
+	            {
+	                words.splice(i, 1);
+	                i--;
+	            }
+	        }
+
+	        for (var i = 0; i < words.length; i++)
+	        {
+	            if (checkIfPolindromes(words[i]) == true)
+	            {
+	                jsConsole.writeLine(words[i]);
+	            }   
+	        }
+	    }
+
+        function checkIfPolindromes(word)
+	    {
+        var isPolindrome = true;
+            for (var i = 0; i < word.length/2; i++)
+	        {
+                if (word[i] != word[word.length - i - 1])
+	            {
+                    isPolindrome = false;
+	            }
+	        }
+
+        return isPolindrome;
+	    }	    function printResult() {
+	        var input = jsConsole.read("#input");
+	        findPolindromes(input);
+	    }    </script></body></html>

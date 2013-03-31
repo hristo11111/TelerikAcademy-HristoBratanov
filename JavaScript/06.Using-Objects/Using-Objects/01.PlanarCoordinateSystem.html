@@ -1,0 +1,109 @@
+﻿<!--Write functions for working with shapes in  standard Planar coordinate system
+Points are represented by coordinates P(X, Y)
+Lines are represented by two points, marking their beginning and ending
+L(P1(X1,Y1),P2(X2,Y2))
+Calculate the distance between two points
+Check if three segment lines can form a triangle-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Planar coordinate system</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#firstXCoord, #secondXCoord, #thirdXCoord, #firstYCoord, #secondYCoord, #thirdYCoord {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="firstXCoord">Enter xCoord for first segment: </label>
+	<input type="text" id="firstXCoord"/>
+    <label for="firstYCoord">Enter yCoord for first segment: </label>
+	<input type="text" id="firstYCoord"/>
+    <br />
+    <label for="secondXCoord">Enter xCoord for second segment: </label>
+	<input type="text" id="secondXCoord"/>
+    <label for="secondYCoord">Enter yCoord for second segment: </label>
+	<input type="text" id="secondYCoord"/>
+    <br />
+    <label for="thirdXCoord">Enter xCoord for third segment: </label>
+	<input type="text" id="thirdXCoord"/>
+    <label for="thirdYCoord">Enter yCoord for third segment: </label>
+	<input type="text" id="thirdYCoord"/>
+    <br />
+
+	<a href="#" onclick="printResult()">Print!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+	    function buildPoint(xCoord,yCoord) {
+	        return {
+	            xCoord: xCoord,
+                yCoord: yCoord,
+	        }
+	    }
+
+	    function buildSegment(point1, point2) {
+	        return {
+	            point1: point1,
+                point2: point2,
+	        }
+	    }
+
+	    function printResult() {
+	        var xFirst = jsConsole.read("#firstXCoord");
+	        var yFirst = jsConsole.read("#firstYCoord");
+	        var xSecond = jsConsole.read("#secondXCoord");
+	        var ySecond = jsConsole.read("#secondYCoord");
+	        var xThird = jsConsole.read("#thirdXCoord");
+	        var yThird = jsConsole.read("#thirdYCoord");
+
+	        var point1 = buildPoint(xFirst, yFirst);
+	        var point2 = buildPoint(xSecond, ySecond);
+	        var point3 = buildPoint(xThird, yThird);
+
+	        function calculateDistance(p1, p2) {
+	            var distanceP1AndP2 = Math.sqrt((p1.xCoord - p2.xCoord) * (p1.xCoord - p2.xCoord)
+                                  + (p1.yCoord - p2.yCoord) * (p1.yCoord - p2.yCoord));
+
+	            return distanceP1AndP2;
+	        }
+
+	        function checkIfTriangle(segm1, segm2, segm3) {
+	            if (segm1 < (segm2 + segm3) && (segm2 < segm1 + segm3 && segm3 < segm1 + segm2)) {
+	                jsConsole.writeLine("the three segments form a triangle")
+	            }
+	            else {
+	                jsConsole.writeLine("the three segments do not form a triangle")
+	            }
+	        }
+
+	        var firstSegment = calculateDistance(point1, point2);
+	        var secondSegment = calculateDistance(point1, point3);
+	        var thirdSegment = calculateDistance(point2, point3);
+
+	        jsConsole.writeLine("distance between Point1 and Point2 is " + calculateDistance(point1, point2));
+	        checkIfTriangle(firstSegment, secondSegment, thirdSegment);
+	    }    </script></body></html>

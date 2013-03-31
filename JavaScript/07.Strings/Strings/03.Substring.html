@@ -1,0 +1,70 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find substring</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#input, #searchFor {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="input">Enter text: </label>
+	<input type="text" id="input"/>
+    <br />	
+    <label for="searchFor">Substring: </label>
+	<input type="text" id="searchFor"/>
+    <br />	
+    <a href="#" onclick="printResult()">Print!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>	
+
+	<script>	    function countSubstring(input, searchFor) {
+	        var startIndex = parseInt(0);
+	        var count = parseInt(0);
+
+	        input = input.toLowerCase();
+	        searchFor = searchFor.toLowerCase();
+	        while (true)
+	        {
+	            var occur = input.indexOf(searchFor, startIndex);
+	            if (occur == -1)
+	            {
+	                break;
+	            }
+
+	            else
+	            {
+	                count++;
+	            }
+
+	            startIndex = occur + searchFor.length;
+	        }
+
+	        return count;
+	    }	    	    function printResult() {
+	        var input = jsConsole.read("#input");	        var searchFor = jsConsole.read("#searchFor");
+	        jsConsole.writeLine("the substring '" + searchFor + "' occures " + countSubstring(input, searchFor) + " times in the text");
+	    }    </script></body></html>

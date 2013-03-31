@@ -1,0 +1,79 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Parse url</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#input {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="input">Enter URL: </label>
+	<input type="text" id="input"/>
+    <br />
+    <a href="#" onclick="printResult()">Print!</a> 
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>	
+
+	<script>
+	    function tags(text) {
+	        var protocol = "";
+	        var server = "";
+	        var resource = "";
+	        var indexPoints = text.indexOf(":");
+	        var indexOfW = text.indexOf("w");
+	        var indexOfSlash = text.indexOf("/");
+	        var end = 0;
+	        for (var i = 0; i < indexPoints; i++) {
+	            protocol += text[i];
+	        }
+	        indexOfSlash = text.indexOf("/", indexOfSlash + 2);
+
+	        for (var i = indexOfW; i < indexOfSlash; i++) {
+	            server += text[i];
+	        }
+
+	        for (var i = indexOfSlash; i < text.length; i++) {
+	            resource += text[i];
+	        }
+	        return protocolsCreater(protocol, server, resource);
+	    }
+
+	    function protocolsCreater(protocol, server, resource) {
+	        return {
+	            protocol: protocol,
+	            server: server,
+	            resource: resource,
+	            toString: function () {
+	                return "protocol: " + "\"" + this.protocol + "\"," + "</br>" + "server: " + "\"" + this.server + "\"," + "</br>" + "resource:" + "\"" + this.resource + "\"";
+	            }
+	        };
+	    }	    function printResult() {
+	        var input = jsConsole.read("#input");
+	        jsConsole.writeLine(tags(input));
+	        var a = protocolsCreater(protocol, server, resource);
+	        jsConsole.writeLine(a);
+	    }    </script></body></html>

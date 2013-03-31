@@ -1,0 +1,59 @@
+﻿<!--Write a function that removes all elements with a given value
+
+Attach it to the array class
+Read about prototype and how to attach methods-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Using Prototype - delete Element From Array</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		#sequence, #value {
+			border: 1px solid black;
+			padding: 5px 15px;
+			background-color: black;
+			color: white;
+			font-family: Consolas;
+			margin-bottom: 5px;
+		}
+
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <label for="sequence">Enter sequence (element,element,element,... etc.): </label>
+	<input type="text" id="sequence"/>
+    <br />
+    <label for="value">Value to remove: </label>
+	<input type="text" id="value"/>
+    <br />
+
+	<a href="#" onclick="printResult()">Print!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>	    Array.prototype.remove = function(val) {	        for (var i = 0; i < this.length; i++) {	            if (this[i] == val) {
+                    this.splice(i, 1)
+	            }	        }	    }	    function printResult() {
+	        var sequence = jsConsole.read("#sequence");	        var element = jsConsole.readInteger("#value");
+	        var array = sequence.split(',');
+	        array.remove(element);
+	        for (var i = 0; i < array.length; i++) {
+	            jsConsole.write(array[i]);	            if (i != array.length-1) {
+	                jsConsole.write(',');
+	            }	            	        }
+	    }    </script></body></html>

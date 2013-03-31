@@ -1,0 +1,45 @@
+﻿<!--Write a function that checks if a given object contains a given property
+
+    example:
+    var obj  = …;
+    var hasProp = hasProperty(obj,"length");-->
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Property existence</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <style>
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+	</style>
+</head>
+<body>
+    <a href="#" onclick="printResult()">Print!</a>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		
+	<script>	    function checkProperty (obj, searchFor) {	        var hasProperty = false;
+	        for (var prop in obj) {
+	            if (prop == searchFor) {
+	                hasProperty = true;
+	            }
+	        }	        if (hasProperty == true) {
+	            jsConsole.writeLine(obj + " has property " + searchFor);
+	        }	        else {
+	            jsConsole.writeLine(obj + " does not have property " + searchFor);	        }            	    }	    function printResult() {
+	        var objToLookIn = document;	        var searchProperty = "doctype";	        checkProperty(objToLookIn, searchProperty);
+	    }	        </script></body></html>
