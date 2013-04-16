@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DivElementsMoving-CirclePath</title>
+    <style>
+        .moving {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            border-radius: 50px;
+        }
+        
+    </style>
+</head>
+<body onload="startMoving()">
+    <div class="moving first">
+    </div>
+    <div class="moving second">
+    </div>
+    <div class="moving third">
+    </div>
+    <div class="moving forth">
+    </div>
+    <div class="moving fifth">
+    </div>
+    <script>
+        var circleX = 300 | 0;
+        var circleY = 300 | 0;
+        var angle = 0 | 0;
+        var radius = 200 | 0;
+        var angleInterval = 72 | 0;
+        var timeInterval = 100;
+        var step = 0;
+        var divs = document.getElementsByClassName("moving");
+
+        function startMoving() {
+            interval = setInterval(move, timeInterval);
+        }
+
+        function move() {
+            for (var i = 0; i < divs.length; i++, angle = angle + angleInterval) {
+                var angleInRadians = angle * (Math.PI / 180);
+                var left = radius * Math.cos(angleInRadians) + circleX;
+                var top = radius * Math.sin(angleInRadians) + circleY;
+                var div = divs[i];
+                div.style.left = left + "px";
+                div.style.top = top + "px";
+            }
+
+            step++;
+            angle = step;
+        }
+
+    </script>
+</body>
+</html>
