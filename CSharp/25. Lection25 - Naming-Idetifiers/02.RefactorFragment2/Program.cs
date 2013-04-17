@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-class HumanClassTest
+class Program
 {
     enum Gender
     {

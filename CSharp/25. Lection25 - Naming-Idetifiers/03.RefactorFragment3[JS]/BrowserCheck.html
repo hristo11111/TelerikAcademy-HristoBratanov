@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function onClickButton(event, param) {
+            var myWindow = window;
+            var browser = myWindow.navigator.appCodeName;
+            var isMozilla = browser == "Mozilla";
+
+            if (isMozilla) {
+                alert("Yes");
+            }
+
+            else {
+                alert("No");
+            }
+        }
+    </script>
+</body>
+</html>

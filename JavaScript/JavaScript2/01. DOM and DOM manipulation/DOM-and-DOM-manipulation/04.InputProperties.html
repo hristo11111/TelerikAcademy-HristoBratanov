@@ -1,9 +1,23 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Input properties</title>
 </head>
 <body>
+    <p>Works in Chrome and Opera!</p>
+    <textarea id="textarea" placeholder="type something"></textarea>
+    <input type="color" />
+    <input type="color" />
+    <p>Choose colors and click the link</p>
+    <a href="#" onclick="setColors()">Click!</a>
 
+    <script>
+        function setColors() {
+            var colors = document.getElementsByTagName("input");
+            var textArea = document.getElementById("textarea");
+            textArea.style.color = colors[0].value;
+            textArea.style.backgroundColor = colors[1].value;
+        }
+    </script>
 </body>
 </html>
