@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{74866C44-72E0-4463-9AB4-22DAA0B43C78}</ProjectGuid>
+    <ProjectGuid>{A8DD4E9F-B2A9-4991-B384-C08623B5F05F}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DivElements</RootNamespace>
-    <AssemblyName>DivElements</AssemblyName>
+    <RootNamespace>AdvancedFunctions</RootNamespace>
+    <AssemblyName>AdvancedFunctions</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,11 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="02.DivElementsMoving-CirclePath.html" />
-    <Content Include="01.DivElements.html" />
-    <Content Include="03.QuerySelectorShim.html" />
-    <Content Include="04.InputProperties.html" />
-    <Content Include="05.TagCloud.html" />
+    <Content Include="01.DOMWorkingModule.html" />
+    <Content Include="02.MovingDivElementsModule.html" />
+    <Content Include="test.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -90,7 +88,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:17402/</IISUrl>
+          <IISUrl>http://localhost:16857/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

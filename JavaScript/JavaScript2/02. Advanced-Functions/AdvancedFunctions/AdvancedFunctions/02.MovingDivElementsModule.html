@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>02.MovingDivElementsModule</title>
+    <style>
+        body div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position:absolute;
+        }
+    </style>
+</head>
+<body>  
+    <input type="button" id="btn" value="Add new div to circle" />
+    <div class="moving"></div>
+    <script>
+        window.onload = startMoving;
+
+        var circleX = 300 | 0;
+        var circleY = 300 | 0;
+        var angle = 0 | 0;
+        var angleAttribute = document.createAttribute("angleAttr");
+        angleAttribute.nodeValue = 0 | 0;
+        var divs = document.getElementsByTagName("div");
+        divs[0].setAttributeNode(angleAttribute);
+        var radius = 200 | 0;
+        var angleInterval = 0 | 0;
+        var timeInterval = 50;
+        var step = 0;
+        var movingDivs = document.getElementsByClassName("moving");
+
+        function startMoving() {
+            attachEventHandler("#btn", "click", addNewCircleDiv);
+            interval = setInterval(move, timeInterval);
+        }
+
+        function move() {
+            var len = divs.length;
+
+            for (var i = 0; i < len; i++) {
+                var div = movingDivs[i];
+                var angleInRadians = (div.getAttribute("angleAttr")) * (Math.PI / 180);
+                var left = radius * Math.cos(angleInRadians) + circleX;
+                var top = radius * Math.sin(angleInRadians) + circleY;
+                
+                div.style.left = left + "px";
+                div.style.top = top + "px";
+
+                div.attributes.angleAttr.nodeValue++;
+
+            }
+        }        function attachEventHandler(elementSelector, eventName, handler) {
+            var element = document.querySelector(elementSelector);
+            if (element) {
+                //if attachEvent is present
+                if (document.attachEvent) {
+                    element.attachEvent("on" + eventName, handler);
+                }
+                    //else if addEventListener is present
+                else if (document.addEventListener) {
+                    element.addEventListener(eventName, handler, false);
+                }
+                    //else we are running old browser    //and should use the property
+                else {
+                    element[eventName] = eventHandler;
+                }
+            }
+        }
+
+        function addNewCircleDiv() {
+            var circleDiv = document.createElement("div");
+            circleDiv.setAttribute("class", "moving");
+            circleDiv.setAttribute("angleAttr", "0");
+            document.body.appendChild(circleDiv);
+        }
+            </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>01.DOMWorkingModule</title>
+</head>
+<body>
+    <div id="wrapper">
+        <ul>
+            <li class="first"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <ul>
+        <li class="first"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <input type="button" id="btn" />
+    <!--недовършена недовършена недовършена недовършена недовършена недовършена-->
+    <script>
+        var domModule = function () {
+            function appendChild(elementToAppend, parentSelector) {
+                var parentElements = document.querySelectorAll(parentSelector);
+                for (var i = 0; i < parentElements.length; i++) {
+                    var parent = parentElements.item(i);
+                    var elementToApp = document.createElement(elementToAppend);
+                    parent.appendChild(elementToApp);
+                }
+            }
+
+            function removeChild(parentElement, childElement) {
+                var parentElements = document.getElementsByTagName(parentElement);
+
+                for (var i = 0; i < parentElements.length; i++) {
+                    var childElementToRemove = parentElements[i].querySelector(childElement);
+                    for (var child = 0; child < parentElements[i].children.length; child++) {
+                        if (parentElements[i].children[child] == childElementToRemove) {
+                            parentElements[i].removeChild(childElementToRemove);
+                        }
+                    }
+                }
+            }
+
+            function addHandler(elementSelector, eventName, handler) {
+                var element = document.querySelector(elementSelector);
+                if (element) {
+                    //if attachEvent is present
+                    if (document.attachEvent) {
+                        element.attachEvent("on" + eventName, handler);
+                    }
+                        //else if addEventListener is present
+                    else if (document.addEventListener) {
+                        element.addEventListener(eventName, handler, false);
+                    }
+                        //else we are running old browser    //and should use the property
+                    else {
+                        element[eventName] = eventHandler;
+                    }
+                }
+            }
+
+            var buffer = [];
+            var bufferCount = buffer.length;
+            function appendToBuffer() { //след като има повече решения във форума
+            }
+
+            return {
+                appendChild: appendChild,
+                removeChild: removeChild,
+                addHandler: addHandler
+            }
+        }();
+
+        //domModule.appendChild("div", "li");
+        domModule.removeChild("div", "ul");
+        domModule.addHandler("#btn", "click", function () { (alert("clicked!")) });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tag cloud</title>
+    <style>
+        #wrapper, #cloud {
+            width: 220px;
+            border: 1px solid black;
+        }
+
+        a {
+            margin-right: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body onload="generateCloud()">
+    <div id="wrapper">
+        <div id="cloud"></div>
+    </div>
+    <script>
+        function generateCloud() {
+            var i;
+            var tags = ["cms", "javascript", "js", "ASP.NET MVC", ".net", ".net",
+                "css", "wordpress", "xaml", "js", "http", "web", "asp.net",
+                "asp.net MVC", "ASP.NET MVC", "wp", "javascript", "js", "cms", "html",
+                "javascript", "http", "http", "CMS"]
+            var minFontSize = 17;
+            var maxFontSize = 42;
+
+            var tagCloud = generateTagCloud(tags, minFontSize, maxFontSize);
+
+            function generateTagCloud(tags, minFontSize, maxFontSize) {
+                var cloudWrapper = document.getElementById("cloud");
+                var tagsSortedCounted = sortAndCountTags(tags);
+
+                for (var tag in tagsSortedCounted) {
+                    var tagAnchor = document.createElement("a");
+                    var tagText = document.createTextNode(tag);
+                    var emptySpace = document.createTextNode(" ");
+
+                    tagAnchor.appendChild(tagText);
+                    tagAnchor.title = tag;
+                    tagAnchor.href = "#";
+                    tagAnchor.style.fontSize = calculateFontSize(tagsSortedCounted[tag], tagsSortedCounted) + "px";
+                    cloudWrapper.appendChild(tagAnchor);
+                    cloudWrapper.appendChild(emptySpace);
+                }
+            }
+
+            function sortAndCountTags(tagsArray) {
+                for (i = 0; i < tagsArray.length; i++) {
+                    tagsArray[i] = tagsArray[i].toLowerCase();
+                }
+
+                tagsArray.sort();
+
+                var currentElement = tagsArray[0];
+                var oneTagFromEach = {};
+                oneTagFromEach[currentElement] = 0;
+                var countTags = 0 | 0;
+
+                for (var tagPorperty in tagsArray) {
+                    if (currentElement == tagsArray[tagPorperty]) {
+                        countTags++;
+                    }
+                    else {
+                        oneTagFromEach[currentElement] = countTags;
+                        countTags = 1;
+                        currentElement = tagsArray[tagPorperty];
+                        if (tagPorperty == tagsArray.length - 1) {
+                            oneTagFromEach[currentElement] = countTags;
+                        }
+                    }
+                }
+
+                return oneTagFromEach;
+            }
+
+            function calculateFontSize(tagOccurrence, sortedArray) {
+                var sortedKeys = getSortedKeys(sortedArray);
+                var minCount = sortedKeys[0];
+                var maxCount = sortedKeys[sortedKeys.length - 1]
+                var fontSize = (tagOccurrence / maxCount) * (maxFontSize - minFontSize) + minFontSize;
+
+                return fontSize;
+                }
+
+            function getSortedKeys(obj) {
+                var keys = []; 
+
+                for (var key in obj) {
+                    keys.push(obj[key]);
+                }
+
+                return keys.sort(function (a, b) {
+                    return a - b;
+                });
+            }
+        }
+    </script>
+</body>
+</html>
