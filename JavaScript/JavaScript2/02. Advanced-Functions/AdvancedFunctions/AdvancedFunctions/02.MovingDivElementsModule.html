@@ -34,7 +34,7 @@
             var endY = 50;
             var rectangleSpeed = 5;
 
-            //initialize movement onload
+            //initialize movement
             function startMoving() {
                 attachEventHandler("#btn-circle", "click", addNewCircleDiv);
                 attachEventHandler("#btn-rectangle", "click", addNewRectangleDiv);
@@ -56,7 +56,9 @@
                         div.style.top = top + "px";
                         div.attributes.angleAttr.nodeValue++;
                     }
-                }                function moveRectangle() {
+                }
+
+                function moveRectangle() {
                     var len = rectangleDivs.length;
 
                     for (var i = 0; i < len; i++) {
@@ -115,7 +117,9 @@
                 else {
                     return moveRectangle;
                 }
-            }            function attachEventHandler(elementSelector, eventName, handler) {
+            }
+
+            function attachEventHandler(elementSelector, eventName, handler) {
                 var element = document.querySelector(elementSelector);
                 if (element) {
                     //if attachEvent is present
@@ -173,7 +177,11 @@
             return {
                 add: add                
             }
-        }();
-        movingShapes.add("circle");        movingShapes.add("rectangle");    </script>
+        }();
+
+        movingShapes.add("circle");
+        movingShapes.add("rectangle");
+    </script>
+
 </body>
 </html>
