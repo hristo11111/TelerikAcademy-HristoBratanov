@@ -20,7 +20,7 @@
     <input type="button" id="btn" />
     <!--недовършена недовършена недовършена недовършена недовършена недовършена-->
     <script>
-        var domModule = function () {
+        var domModule = (function () {
             function appendChild(elementToAppend, parentSelector) {
                 var parentElements = document.querySelectorAll(parentSelector);
                 for (var i = 0; i < parentElements.length; i++) {
@@ -71,7 +71,7 @@
                 removeChild: removeChild,
                 addHandler: addHandler
             }
-        }();
+        })();
 
         //domModule.appendChild("div", "li");
         domModule.removeChild("div", "ul");

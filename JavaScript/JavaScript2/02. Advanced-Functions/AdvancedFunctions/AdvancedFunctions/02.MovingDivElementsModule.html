@@ -15,7 +15,7 @@
     <input type="button" id="btn-rectangle" value="Add new div to rectangle" />
     
     <script>
-        var movingShapes = function () {
+        var movingShapes = (function () {
             window.onload = startMoving;
 
             var timeInterval = 50;
@@ -173,7 +173,7 @@
             return {
                 add: add                
             }
-        }();
+        })();
 
         movingShapes.add("circle");
         movingShapes.add("rectangle");

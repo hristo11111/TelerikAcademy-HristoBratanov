@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>03.ConsoleWritingModule</title>
+</head>
+<body>
+    <script>
+        var specialConsole = (function () {
+            function writeLine() {
+                if (arguments == 1) {
+                    return console.log(arguments[0]);
+                }
+                else {
+                    var format = arguments[0];
+
+                    for (var i = 1; i < arguments.length; i++) {
+                        var placeHolderToReplace = findPlaceholder(format);
+                        if (placeHolderToReplace === -1) {
+                            break;
+                        }
+
+                        var replacement = arguments[i];
+                        format = format.replace(placeHolderToReplace, replacement);
+                    }
+
+                    return console.log(format);
+                }
+            }
+
+            function findPlaceholder(formatString) {
+                var nextPlaceHIndex = formatString.indexOf("{");
+                if (nextPlaceHIndex === -1) {
+                    return -1;
+                }
+                else {
+                    var lastPlaceHIndex = formatString.indexOf("}", nextPlaceHIndex);
+                    var placeHolder = formatString.substring(nextPlaceHIndex, lastPlaceHIndex + 1);
+
+                    return placeHolder;
+                }
+            }
+
+            function writeError() {
+                specialConsole.writeLine.apply(null, arguments);
+            }
+
+            function writeWarning() {
+                specialConsole.writeLine.apply(null, arguments);
+            }
+            
+            return {
+                writeLine: writeLine,
+                writeError: writeError,
+                writeWarning: writeWarning
+            }
+        })();
+
+        specialConsole.writeLine("Message: Hello!")
+        specialConsole.writeLine("Message: {0}, {1}", "Hello", "Sir!");
+        specialConsole.writeError("Error: Something happened");
+        specialConsole.writeError("Error: {0}", "Something happened");
+        specialConsole.writeWarning("Warning: A warning");
+        specialConsole.writeWarning("Warning: {0}", "A warning")
+
+    </script>
+</body>
+</html>
