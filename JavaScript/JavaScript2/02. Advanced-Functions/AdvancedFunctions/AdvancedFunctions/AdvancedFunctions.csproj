@@ -60,8 +60,6 @@
     <Content Include="01.DOMWorkingModule.html" />
     <Content Include="02.MovingDivElementsModule.html" />
     <Content Include="03.ConsoleWritingModule.html" />
-    <Content Include="HtmlPage1.html" />
-    <Content Include="test.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
