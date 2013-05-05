@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Vehicles</title>
+</head>
+<body>
+    <script>
+        var vehicleNS = (function() {
+            //enumerations
+            var AfterburnerSwitchState = {
+                "ON" : 1,
+                "OFF" : 2
+            }
+
+            var SpinDirection = {
+                "Clockwise" : 1,
+                "CounterClockwise" :2
+            }
+
+            var AmphibiaMode = {
+                "Water" : 1,
+                "Earth" : 2
+            }
+
+            //Function extensions
+            Function.prototype.inherit = function(parent) {
+                this.prototype = new parent();
+                return this;
+            }
+
+            //Parent objects:
+
+            //Vehicle
+            function Vehicle(speed, propulsionUnits) {
+                this.speed = speed;
+                this.propulsionUnits = propulsionUnits;
+            }
+
+            Vehicle.prototype.accelerate = function () {
+                var len = this.propulsionUnits.length;
+
+                for (var i = 0; i < len; i++) {
+                    this.speed = (this.speed | 0) + (this.propulsionUnits[i].getAcceleration() | 0);
+                }
+            }
+
+            //Propulsion units:
+            //Wheel
+            function Wheel(radius) {
+                this.radius = radius;
+            }
+
+            Wheel.prototype.getAcceleration = function() {
+                var acceleration = this.radius | 0;
+                return acceleration;
+            }
+
+            //PropellingNozzle
+            function PropellingNozzle(power, afterburnerSwitchState) {
+                this.power = power;
+                this.afterburnerSwitchState = afterburnerSwitchState;
+            }
+
+            PropellingNozzle.prototype.getAcceleration = function() {
+                var acceleration;
+
+                if (this.afterburnerSwitchState === 1) {
+                    acceleration = this.power * 2;
+                }
+                else {
+                    acceleration = this.power;
+                }
+
+                return acceleration;
+            }
+
+            //Propeller
+            function Propeller(finsCount, spinDirection) {
+                this.finsCount = finsCount;
+                this.spinDirection = spinDirection;
+            }
+
+            Propeller.prototype.getAcceleration = function () {
+                var acceleration;
+                if (this.spinDirection === 1) {
+                    acceleration = this.finsCount;
+                }
+                else {
+                    acceleration = -this.finsCount;
+                }
+
+                return acceleration;
+            }
+
+            //Child objects:
+            //LandVehicles
+            function LandVehicle(speed, propulsionUnit) {
+                Vehicle.apply(this, arguments);
+            }
+
+            LandVehicle.inherit(Vehicle);
+
+            //AirVehicles
+            function AirVehicle(speed, propulsionUnits) {
+                Vehicle.apply(this,arguments);
+            }
+
+            AirVehicle.inherit(Vehicle);
+            
+            //WaterVehicles
+            function WaterVehicle(speed, propulsionUnits) {
+                Vehicle.apply(this,arguments);
+            }
+
+            WaterVehicle.inherit(Vehicle);
+
+            //AmphibiousVehicle
+
+            function AmphibiousVehicle(speed, propulsionUnits, mode) {
+                Vehicle.apply(this, arguments);
+                this.mode = mode;
+                var initialSpeed = speed;
+
+                this.getInitialSpeed = function () {
+                    return initialSpeed;
+                }
+            }
+
+            AmphibiousVehicle.inherit(Vehicle);            
+            AmphibiousVehicle.prototype.accelerate = function () {
+                this.speed = this.getInitialSpeed();
+                if (this.mode === 1) {                    
+                    var len = this.propulsionUnits.length;
+                    for (var i = 0; i < len; i++) {
+                        if ((this.propulsionUnits[i]) instanceof vehicleNS.Propeller) {
+                            this.speed += this.propulsionUnits[i].getAcceleration();
+                        }
+                    }
+                }
+                else {
+                    var len = this.propulsionUnits.length;
+                    for (var i = 0; i < len; i++) {
+                        if ((this.propulsionUnits[i]) instanceof vehicleNS.Wheel) {
+                            this.speed += this.propulsionUnits[i].getAcceleration();
+                        }
+                    }
+                }
+            }
+
+            AmphibiousVehicle.prototype.switchMode = function () {
+                if (this.mode === 1) {
+                    this.mode = 2;
+                }
+                else {
+                    this.mode = 1;
+                }
+            }
+
+            return {
+                Vehicle: Vehicle,
+                LandVehicle: LandVehicle,
+                AirVehicle: AirVehicle,
+                WaterVehicle: WaterVehicle,
+                AmphibiousVehicle: AmphibiousVehicle,
+
+                Wheel: Wheel,
+                PropellingNozzle: PropellingNozzle,
+                Propeller: Propeller,
+
+                AfterburnerSwitchState: AfterburnerSwitchState,
+                SpinDirection: SpinDirection,
+                AmphibiaMode : AmphibiaMode
+            }
+
+        })();
+
+        var wheels = [
+            new vehicleNS.Wheel(10),
+            new vehicleNS.Wheel(10),
+            new vehicleNS.Wheel(10),
+            new vehicleNS.Wheel(10),
+        ];
+
+        var propellingNozzleON = [
+            new vehicleNS.PropellingNozzle(14, vehicleNS.AfterburnerSwitchState.ON)
+        ]
+
+        var propellingNozzleOFF = [
+            new vehicleNS.PropellingNozzle(14, vehicleNS.AfterburnerSwitchState.OFF)
+        ]
+
+        var propellerClockwise = [
+            new vehicleNS.Propeller(50, vehicleNS.SpinDirection.Clockwise)
+        ]
+
+        var propellerCounterClockwise = [
+            new vehicleNS.Propeller(50, vehicleNS.SpinDirection.CounterClockwise)
+        ]
+
+        var amphibiousPropUnits = [
+            new vehicleNS.Propeller(15, vehicleNS.SpinDirection.Clockwise),
+            new vehicleNS.Wheel(10),
+            new vehicleNS.Wheel(10),
+            new vehicleNS.Wheel(10),
+            new vehicleNS.Wheel(10),
+        ]
+
+        for (var i = 0; i < wheels.length; i++) {
+            console.log(wheels[i].getAcceleration());
+        }
+
+        var vehicle = new vehicleNS.LandVehicle(50, wheels);
+        vehicle.accelerate();
+        console.log(vehicle.speed);
+
+        var airVon = new vehicleNS.AirVehicle(26, propellingNozzleON);
+        airVon.accelerate();
+        console.log(airVon.speed);
+
+        var airVoff = new vehicleNS.AirVehicle(26, propellingNozzleOFF);
+        airVoff.accelerate();
+        console.log(airVoff.speed);
+
+        var waterVclockwise = new vehicleNS.WaterVehicle(60, propellerClockwise);
+        waterVclockwise.accelerate();
+        console.log(waterVclockwise.speed);
+
+        var waterVcounterClockwise = new vehicleNS.WaterVehicle(60, propellerCounterClockwise);
+        waterVcounterClockwise.accelerate();
+        console.log(waterVcounterClockwise.speed);
+
+        var amphibia = new vehicleNS.AmphibiousVehicle(100, amphibiousPropUnits, vehicleNS.AmphibiaMode.Earth);
+        amphibia.accelerate();
+        console.log(amphibia.speed);
+
+        amphibia.switchMode();
+        amphibia.accelerate();
+        console.log(amphibia.speed);
+
+    </script>
+</body>
+</html>
