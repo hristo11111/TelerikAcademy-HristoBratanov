@@ -18,7 +18,6 @@
         <li></li>
     </ul>
     <input type="button" id="btn" />
-    <!--недовършена недовършена недовършена недовършена недовършена недовършена-->
     <script>
         var domModule = (function () {
             function appendChild(elementToAppend, parentSelector) {
@@ -63,19 +62,38 @@
 
             var buffer = [];
             var bufferCount = buffer.length;
-            function appendToBuffer() { //TODO
+            function appendToBuffer(parentSelector, newElement) {
+                var parentElement = document.querySelector(parentSelector);
+                var elementToAdd = document.createElement(newElement);
+                buffer.push(new bufferElement(parentElement, elementToAdd));
+                if (buffer.length >= 100) {
+                    appendBufferToDom();
+                }
+            }
+
+            function bufferElement(parentElement, ellementToAdd) {
+                this.parentElement = parentElement;
+                this.ellementToAdd = ellementToAdd;
+            }
+            function appendBufferToDom() {
+                for (var i = 0; i < buffer.length; i++) {
+                    buffer[i].parentElement.appendChild(buffer[i].ellementToAdd);
+                }
+                buffer = [];
             }
 
             return {
                 appendChild: appendChild,
                 removeChild: removeChild,
-                addHandler: addHandler
+                addHandler: addHandler,
+                appendToBuffer: appendToBuffer
             }
         })();
 
-        //domModule.appendChild("div", "li");
+        domModule.appendChild("div", "li");
         domModule.removeChild("div", "ul");
         domModule.addHandler("#btn", "click", function () { (alert("clicked!")) });
+        domModule.appendToBuffer("body", "div");
 
     </script>
 </body>
