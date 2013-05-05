@@ -8,7 +8,7 @@ namespace MinesweeperProject
     class MinesweeperGrid
     {
 
-        MinesweeperCell[,] grid;
+        private MinesweeperCell[,] grid;
         private int rows;
         private int columns;
         private int minesCount;

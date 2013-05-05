@@ -86,6 +86,7 @@ namespace MinesweeperProject
                             {
                                 Console.WriteLine(Grid.ToString());
                                 Score++;
+
                                 NextCommand();
                             }
 

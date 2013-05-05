@@ -36,11 +36,12 @@ namespace MinesweeperProject
             } 
         }
 
+        //this added not documented
         public MinesweeperGrid Grid
         {
             get
             {
-                return grid;
+                return this.grid;
             }
         }
         
