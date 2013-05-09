@@ -9,6 +9,12 @@ public class Student
     private string name;
     private int studentNumber;
 
+    public Student(string name, int studentNumber)
+    {
+        this.Name = name;
+        this.StudentNumber = studentNumber;
+    }
+
     public string Name
     {
         get { return this.name; }
@@ -18,8 +24,9 @@ public class Student
             {
                 throw new ArgumentException("The student's name cannot be null or empty!");
             }
-
+            
             this.name = value;
+            
         }
     }
 
@@ -36,11 +43,5 @@ public class Student
 
             this.studentNumber = value;
         }
-    }
-
-    public Student(string name, int studentNumber)
-    {
-        this.Name = name;
-        this.StudentNumber = studentNumber;
     }
 }

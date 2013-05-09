@@ -14,21 +14,24 @@ namespace TestSchool
             Assert.AreEqual("Ivan", student.Name, "The student's name is not valid");
         }
 
-        [ExpectedException(typeof(ArgumentException), "The student's name cannot be empty")]
+        [ExpectedException(typeof(ArgumentException), 
+            "The student's name cannot be empty")]
         [TestMethod]
         public void TestStudentNameIfNameEmpty()
         {
             Student student = new Student("", 12455);
         }
 
-        [ExpectedException(typeof(ArgumentException), "The student's name cannot be null")]
+        [ExpectedException(typeof(ArgumentException), 
+            "The student's name cannot be null")]
         [TestMethod]
         public void TestStudentNameIfNameNull()
         {
             Student student = new Student(null, 12455);
         }
 
-        [ExpectedException(typeof(ArgumentException), "The student's name cannot be empty spaces")]
+        [ExpectedException(typeof(ArgumentException), 
+            "The student's name cannot be empty spaces")]
         [TestMethod]
         public void TestStudentNameIfNameIsEmptySpaces()
         {
@@ -40,17 +43,20 @@ namespace TestSchool
         public void TestStudentNumberIfValidInput()
         {
             Student student = new Student("Ivan", 12455);
-            Assert.AreEqual(12455, student.StudentNumber, "The student's number is not valid");
+            Assert.AreEqual(12455, student.StudentNumber, 
+                "The student's number is not valid");
         }
 
-        [ExpectedException(typeof(ArgumentException), "The student's number cannot be less than 10000")]
+        [ExpectedException(typeof(ArgumentException), 
+            "The student's number cannot be less than 10000")]
         [TestMethod]
         public void TestStudentNumberifNumberLessThan10000()
         {
             Student student = new Student("Ivan", 9999);
         }
 
-        [ExpectedException(typeof(ArgumentException), "The student's number cannot be more than 99999")]
+        [ExpectedException(typeof(ArgumentException), 
+            "The student's number cannot be more than 99999")]
         [TestMethod]
         public void TestStudentNumberifNumberMoreThan99999()
         {
