@@ -16,7 +16,6 @@ namespace Abstraction
             }
             set
             {
-                this.radius = value;
                 if (IsValidDimension(value))
                 {
                     this.radius = value;

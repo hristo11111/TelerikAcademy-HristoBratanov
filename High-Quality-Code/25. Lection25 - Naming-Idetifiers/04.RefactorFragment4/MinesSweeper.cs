@@ -138,8 +138,8 @@ namespace MinesSweeper
                     DrawField(minesField);
                     Console.WriteLine("Enter your nickname: ");
                     string name = Console.ReadLine();
-                    Player points = new Player(name, counter);
-                    champions.Add(points);
+                    Player player = new Player(name, counter);
+                    champions.Add(player);
                     UpdateChart(champions);
                     field = CreateField();
                     minesField = PlaceMines();
