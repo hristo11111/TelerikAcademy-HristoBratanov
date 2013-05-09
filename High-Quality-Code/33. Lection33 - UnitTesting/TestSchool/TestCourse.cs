@@ -9,11 +9,7 @@ namespace TestSchool
         [TestMethod]
         public void CourseRemoveStudentIfCountLessThan1()
         {
-            Course course = new Course();
-            course.RemoveStudentByNumber(10001);
-            int courseCount = course.Students.Count;
-
-            Assert.AreEqual
+            
 
         }
     }

@@ -59,13 +59,13 @@
   <ItemGroup>
     <Content Include="03.WebStoragePolyfill.html" />
     <Content Include="04.DrawGraphics.html" />
+    <Content Include="05.BouncingCircle.html" />
     <Content Include="Images\binClosed.png" />
     <Content Include="Images\binOpened.png" />
     <Content Include="Images\trash.png" />
     <Content Include="01.02.PutTheTrashInTheBin.html" />
     <Content Include="scripts\web-storage-objects.js" />
     <Content Include="scripts\web-storage-polyfill.js" />
-    <Content Include="test.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
