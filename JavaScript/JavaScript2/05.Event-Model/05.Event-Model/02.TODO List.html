@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TODO list</title>
+    <script type="text/javascript" src="images/web-storage-polyfill.js"></script>
+    <script type="text/javascript" src="images/web-storage-objects.js"></script>
+    <style>
+        li {
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" />
+    <button id="add">Add</button> 
+    <button id="remove">Remove</button> 
+    <button id="show-hide">Show/Hide</button>
+    <p>TODO list:</p>
+    <ul id="list"></ul>
+
+    <script>
+        var addBtn = document.getElementById("add");
+        addBtn.addEventListener("click", add, false);
+
+        var removeBtn = document.getElementById("remove");
+        removeBtn.addEventListener("click", remove, false);
+
+        var showHideBtn = document.getElementById("show-hide");
+        showHideBtn.addEventListener("click", showHide, false);
+
+        function add() {
+            var list = document.getElementById("list");
+            var item = document.getElementsByTagName("input")[0].value;
+            var listItem = document.createElement("li");
+            listItem.innerHTML = item;
+            list.appendChild(listItem);
+        }
+
+        function remove() {
+            var list = document.getElementById("list");
+            var item = document.getElementsByTagName("input")[0].value;
+            for (var i = 0; i < list.childNodes.length; i++) {
+                if (list.childNodes[i].innerHTML === item) {
+                    list.removeChild(list.childNodes[i])
+                }
+            }
+        }
+
+        function showHide() {
+            var list = document.getElementById("list");
+            if (list.style.display === "none") {
+                list.style.display = "block"
+            }
+            else {
+                list.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>
