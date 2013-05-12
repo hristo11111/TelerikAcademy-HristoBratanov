@@ -22,7 +22,7 @@ public class Student
         {
             if (string.IsNullOrWhiteSpace(value))
             {
-                throw new ArgumentException("The student's name cannot be null or empty!");
+                throw new ArgumentNullException("The student's name cannot be null or empty!");
             }
             
             this.name = value;

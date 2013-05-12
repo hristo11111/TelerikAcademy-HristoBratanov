@@ -14,7 +14,7 @@ namespace TestSchool
             Assert.AreEqual("Ivan", student.Name, "The student's name is not valid");
         }
 
-        [ExpectedException(typeof(ArgumentException), 
+        [ExpectedException(typeof(ArgumentNullException), 
             "The student's name cannot be empty")]
         [TestMethod]
         public void TestStudentNameIfNameEmpty()
@@ -22,7 +22,7 @@ namespace TestSchool
             Student student = new Student("", 12455);
         }
 
-        [ExpectedException(typeof(ArgumentException), 
+        [ExpectedException(typeof(ArgumentNullException), 
             "The student's name cannot be null")]
         [TestMethod]
         public void TestStudentNameIfNameNull()
@@ -30,7 +30,7 @@ namespace TestSchool
             Student student = new Student(null, 12455);
         }
 
-        [ExpectedException(typeof(ArgumentException), 
+        [ExpectedException(typeof(ArgumentNullException), 
             "The student's name cannot be empty spaces")]
         [TestMethod]
         public void TestStudentNameIfNameIsEmptySpaces()

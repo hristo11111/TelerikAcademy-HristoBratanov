@@ -59,6 +59,11 @@
   <ItemGroup>
     <Content Include="01.Carousel.html" />
     <Content Include="02.TODO List.html" />
+    <Content Include="images\bear.jpg" />
+    <Content Include="images\catanddog.jpg" />
+    <Content Include="images\eagle.jpg" />
+    <Content Include="images\lion.jpg" />
+    <Content Include="images\monkey.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

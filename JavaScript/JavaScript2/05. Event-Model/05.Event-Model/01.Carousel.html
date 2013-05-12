@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Carousel</title>
+    <style>
+        li {
+            display: none;
+        }
+
+            li:first-child {
+                display:inline;
+            }
+
+    </style>
+
+</head>
+
+<body onload="attachButtons()">
+    <ul>
+        <li><img src="images/bear.jpg" width="300" height="300" alt="bear" /></li>
+        <li><img src="images/catanddog.jpg" width="300" height="300" alt="catanddog" /></li>
+        <li><img src="images/eagle.jpg" width="300" height="300" alt="eagle" /></li>
+        <li><img src="images/lion.jpg" width="300" height="300" alt="lion" /></li>
+        <li><img src="images/monkey.jpg" width="300" height="300" alt="monkey" /></li>
+    </ul>
+    <button id="left">Left</button>
+    <button id="right">Right</button>
+    
+    <script>
+        function attachButtons() {
+            var leftBtn = document.getElementById("left");
+            leftBtn.addEventListener("click", spinImagesLeft, false);
+            var rightBtn = document.getElementById("right");
+            rightBtn.addEventListener("click", spinImagesRight, false);
+        }
+
+        var imageIndex = 0;
+        var images = document.getElementsByTagName("li");
+
+        function spinImagesRight() {
+            images[imageIndex].style.display = "none";
+            imageIndex++;
+
+            checkImageIndexIfMax();
+            images[imageIndex].style.display = "inline";
+        }
+
+        function spinImagesLeft() {
+            images[imageIndex].style.display = "none";
+            imageIndex--;
+
+            checkImageIndexIfMin();
+            images[imageIndex].style.display = "inline";
+        }
+
+        function checkImageIndexIfMax() {
+            if (imageIndex == 5) {
+                imageIndex = 0;
+            }
+        }
+
+        function checkImageIndexIfMin() {
+            if (imageIndex == -1) {
+                imageIndex = 4;
+            }
+        }
+
+    </script>
+</body>
+</html>
