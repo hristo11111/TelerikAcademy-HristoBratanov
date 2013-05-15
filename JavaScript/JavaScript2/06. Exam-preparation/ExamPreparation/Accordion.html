@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Accordion</title>
+    <script type="text/javascript" src="scripts/accordion-engine.js"></script>
+    <script type="text/javascript" src="scripts/web-storage-objects.js"></script>
+    <style>
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="accordion"></div>
+    <script type="text/javascript">
+        var accordion = controls.getAccordion("#accordion");
+        
+        var web = accordion.add("Web");
+        var html = web.add("HTML");
+        var css = web.add("CSS");
+        var JavaScript = web.add("JavaScript");
+        var jQuery = web.add("jQuery");
+        var aspNet = web.add("ASP.NET MVC");
+
+        var desktop = accordion.add("Desktop");
+        var android = desktop.add("Android");
+        var winPhone = desktop.add("Windows Phone");
+        var iOS = desktop.add("iOS");
+        var hybrid = desktop.add("Hybrid");
+
+        var mobile = accordion.add("Mobile");
+
+        var embedded = accordion.add("Embedded");
+        
+
+        accordion.render();
+    </script>
+</body>
+</html>
