@@ -1,0 +1,9 @@
+1. 
+	a)Source control system - https://github.com/hristo11111/TelerikAcademy-HristoBratanov
+	b)not done
+	c)JustCode.png and StyleCop.png in main folder.
+	d)SandCastleClosed.png and SandCastleOpened.png in main folder.
+	e)obfuscator.png
+	
+2. I did'n make any T4 template.
+3. Look at 1.a)
