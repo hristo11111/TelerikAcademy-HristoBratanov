@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.DoubleOccurances", "01.DoubleOccurances\01.DoubleOccurances.csproj", "{066F97B9-8697-4E9F-871C-CDD6F1DAFA13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.OddNumberOfTimes", "02.OddNumberOfTimes\02.OddNumberOfTimes.csproj", "{EE582714-BE02-4B0D-A0F0-32C154956F58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CountWordsInFile", "03.CountWordsInFile\03.CountWordsInFile.csproj", "{D674044D-DDD3-41A0-A1FE-C59632154143}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{066F97B9-8697-4E9F-871C-CDD6F1DAFA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066F97B9-8697-4E9F-871C-CDD6F1DAFA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066F97B9-8697-4E9F-871C-CDD6F1DAFA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066F97B9-8697-4E9F-871C-CDD6F1DAFA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE582714-BE02-4B0D-A0F0-32C154956F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE582714-BE02-4B0D-A0F0-32C154956F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE582714-BE02-4B0D-A0F0-32C154956F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE582714-BE02-4B0D-A0F0-32C154956F58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D674044D-DDD3-41A0-A1FE-C59632154143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D674044D-DDD3-41A0-A1FE-C59632154143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D674044D-DDD3-41A0-A1FE-C59632154143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D674044D-DDD3-41A0-A1FE-C59632154143}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

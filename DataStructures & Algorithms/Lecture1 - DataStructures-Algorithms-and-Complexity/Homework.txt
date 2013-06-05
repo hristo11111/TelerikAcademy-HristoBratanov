@@ -1,0 +1,6 @@
+1.Problem - answer: O(n^2).
+There are two nested loops.
+
+2.Problem - answer: O(n).
+There are two nested loops but there is if statement the frist, that is why the complexity
+is not O(n*m).
