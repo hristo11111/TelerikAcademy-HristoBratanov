@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.MaximalPath", "01.MaximalPath\01.MaximalPath.csproj", "{E3AE333A-03A8-4414-9B1D-39488E32D728}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.EmployeesSalaries", "02.EmployeesSalaries\02.EmployeesSalaries.csproj", "{DCACB080-BF70-4384-89E0-ABD0B1A75AA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{E3AE333A-03A8-4414-9B1D-39488E32D728}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3AE333A-03A8-4414-9B1D-39488E32D728}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3AE333A-03A8-4414-9B1D-39488E32D728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCACB080-BF70-4384-89E0-ABD0B1A75AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCACB080-BF70-4384-89E0-ABD0B1A75AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCACB080-BF70-4384-89E0-ABD0B1A75AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCACB080-BF70-4384-89E0-ABD0B1A75AA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

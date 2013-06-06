@@ -1,6 +1,11 @@
 1.Problem - answer: O(n^2).
-There are two nested loops.
+The complexity of the first loop is O(n).
+The complexity of the nested loop is O(n).
 
-2.Problem - answer: O(n).
-There are two nested loops but there is if statement the frist, that is why the complexity
-is not O(n*m).
+so, the overall complexity is O(n^2).
+
+2.Problem - answer: O(n*m).
+The complexity of the first loop is O(n).
+The complexity of the nested loop is O(m).
+
+so, the overall complexity is O(n*m).
