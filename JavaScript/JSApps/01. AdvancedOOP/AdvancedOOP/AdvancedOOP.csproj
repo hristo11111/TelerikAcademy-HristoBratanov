@@ -60,6 +60,9 @@
     <Content Include="02.SchoolRepositoryClassical.html" />
     <Content Include="01.SchoolRepositoryPrototypal.html" />
     <Content Include="03.ImageSlider.html" />
+    <Content Include="04.FavoritesSiteBar.html" />
+    <Content Include="scripts\classical-oop.js" />
+    <Content Include="scripts\favorites-bar.js" />
     <Content Include="scripts\slider.js" />
     <Content Include="scripts\prototypal-oop.js" />
     <Content Include="scripts\schoolClassicalOOP.js" />
