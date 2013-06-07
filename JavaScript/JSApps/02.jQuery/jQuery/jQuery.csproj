@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{82226770-E4D0-40EF-B14E-D174E61442DE}</ProjectGuid>
+    <ProjectGuid>{0B601E66-222A-4733-B3E6-C9EEF4639FD2}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AdvancedOOP</RootNamespace>
-    <AssemblyName>AdvancedOOP</AssemblyName>
+    <RootNamespace>jQuery</RootNamespace>
+    <AssemblyName>jQuery</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,13 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="02.SchoolRepositoryClassical.html" />
-    <Content Include="01.SchoolRepositoryPrototypal.html" />
-    <Content Include="03.ImageSlider.html" />
-    <Content Include="scripts\JavaScript1.js" />
-    <Content Include="scripts\prototypal-oop.js" />
-    <Content Include="scripts\schoolClassicalOOP.js" />
-    <Content Include="scripts\schoolPrototypalOOP.js" />
+    <Content Include="01.Slider.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +70,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -92,7 +89,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:14268/</IISUrl>
+          <IISUrl>http://localhost:15816/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

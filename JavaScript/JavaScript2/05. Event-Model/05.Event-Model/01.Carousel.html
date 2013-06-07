@@ -54,14 +54,14 @@
         }
 
         function checkImageIndexIfMax() {
-            if (imageIndex == 5) {
+            if (imageIndex == images.length) {
                 imageIndex = 0;
             }
         }
 
         function checkImageIndexIfMin() {
             if (imageIndex == -1) {
-                imageIndex = 4;
+                imageIndex = images.length - 1;
             }
         }
 
