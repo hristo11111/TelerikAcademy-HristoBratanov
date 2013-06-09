@@ -23,13 +23,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.First50SequenceElements"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.ShortOperationsSequence", "10.ShortOperationsSequence\10.ShortOperationsSequence.csproj", "{267FB8CA-8CBB-4436-B80D-078AF98EFE9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.Students", "11.Students\11.Students.csproj", "{9A6F060C-3AB6-44A6-A2D5-9BFDAC658219}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "-11.Students", "11.Students\-11.Students.csproj", "{9A6F060C-3AB6-44A6-A2D5-9BFDAC658219}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.LinkedList", "12.LinkedList\12.LinkedList.csproj", "{F8EC728B-1DA9-4901-872B-84BB34D09E51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.LinkedList", "12.LinkedList\11.LinkedList.csproj", "{F8EC728B-1DA9-4901-872B-84BB34D09E51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.AutoResizableStack", "13.AutoResizableStack\13.AutoResizableStack.csproj", "{B460C90C-95E9-468D-AD10-834DFF07156F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.AutoResizableStack", "13.AutoResizableStack\12.AutoResizableStack.csproj", "{B460C90C-95E9-468D-AD10-834DFF07156F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.Queue-DynamicLinkedList", "14.Queue-DynamicLinkedList\14.Queue-DynamicLinkedList.csproj", "{FA8E112E-D037-42DA-86F7-B8A4985ABCB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.Queue-DynamicLinkedList", "14.Queue-DynamicLinkedList\13.Queue-DynamicLinkedList.csproj", "{FA8E112E-D037-42DA-86F7-B8A4985ABCB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,17 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Slider</title>
-    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <style>
+        .slidesWrapper {
+            width: 700px;
+            height: 500px;
+            border: 3px solid darkred;
+        }
+
+        .buttonsWrapper {
+            margin-top: 10px;
+            margin-left: 280px;
+        }
+    </style>
 </head>
 <body>
-    <div id="slider">
-        <p>dada</p>
-    </div>
-    
-    <script>
-        var slider = $("#slider");
-        console.log(slider.html());
-    </script>
-    
+    <div class="wrapper"></div>
+
+    <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="scripts/slider.js"></script>    
+    <script type="text/javascript" src="scripts/prototypal-oop.js"></script>    
 </body>
 </html>

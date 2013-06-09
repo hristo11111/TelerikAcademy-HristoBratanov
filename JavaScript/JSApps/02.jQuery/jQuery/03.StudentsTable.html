@@ -1,0 +1,50 @@
+﻿<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+  <style type="text/css">
+      table, td, th {
+          border: 1px solid black;
+          border-collapse:collapse;
+          padding: 5px;
+      }
+  </style>
+</head>
+<body>
+<table id="people-list">
+
+</table>
+
+  <script type="text/javascript">
+
+      function onLoadSuccess(people) {
+          var peopleHTML = "<thead>" +
+                                "<tr>" +
+                                    "<th>First name</th>" +
+                                    "<th>Last name</th>" +
+                                    "<th>Grade</th>" +
+                                "</tr>"+
+                            "</thead>" +
+                            "<tbody>";
+          for (var i = 0; i < people.length; i += 1) {
+              peopleHTML +=
+                        "<tr>" +
+                              "<td>" + people[i].firstname + "</td>" +
+                              "<td>" + people[i].lastname + "</td>" +
+                              "<td>" + people[i].grade + "</td>" +
+                        "</tr>"
+          }
+
+          peopleHTML += "</tbody>"
+          $("#people-list").html(peopleHTML);
+      }
+
+      function onLoadError(err) {
+          console.error(err);
+      }
+
+      $.getJSON("data.js").success(onLoadSuccess).error(onLoadError);
+      $.getJSON("data.js", onLoadSuccess).error(onLoadError);
+  </script>
+</body>
+</html>

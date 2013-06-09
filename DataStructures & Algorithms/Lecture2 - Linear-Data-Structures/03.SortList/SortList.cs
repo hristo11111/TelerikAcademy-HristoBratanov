@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Write a program that reads a sequence of integers (List<int>) ending 
+//with an empty line and sorts them in an increasing order.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

@@ -58,6 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="01.Slider.html" />
+    <Content Include="02.DOM-Insert.html" />
+    <Content Include="03.StudentsTable.html" />
+    <Content Include="04.BackgroundChange.html" />
+    <Content Include="scripts\dom-insert.js" />
+    <Content Include="scripts\slider.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -71,9 +76,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

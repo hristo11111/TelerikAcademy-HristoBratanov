@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        ul, li, div {
+            margin: 0;
+            padding: 0;
+        }
+
+        .red, .black{
+            width: 100px;
+            height: 100px;
+            margin-left: 10px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .wrapper li{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="wrapper">
+        <li class="red"></li>
+    </ul>
+    <div>
+        <button id="before">InsertBefore</button>
+        <button id="after">InsertAfter</button>
+    </div>
+
+    <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="scripts/dom-insert.js"></script>
+</body>
+</html>
