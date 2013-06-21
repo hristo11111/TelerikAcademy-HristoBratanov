@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.TraverseWindowsDir", "02.TraverseWindowsDir.csproj", "{F1999982-CCDC-43E4-887D-D3A151FB43F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "..\test\test.csproj", "{2A060204-D5D3-48B2-BE95-BDE7E183A003}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.FoldersTree", "..\02.FoldersTree\03.FoldersTree.csproj", "{1620E412-E123-476D-A469-F6F7F42F3AB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ReadTreeAndProcess", "..\01.ReadTreeAndProcess\01.ReadTreeAndProcess.csproj", "{7D4E8959-C322-4174-8FD2-F60E2B869365}"
@@ -19,10 +17,6 @@ Global
 		{F1999982-CCDC-43E4-887D-D3A151FB43F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1999982-CCDC-43E4-887D-D3A151FB43F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1999982-CCDC-43E4-887D-D3A151FB43F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2A060204-D5D3-48B2-BE95-BDE7E183A003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A060204-D5D3-48B2-BE95-BDE7E183A003}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A060204-D5D3-48B2-BE95-BDE7E183A003}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A060204-D5D3-48B2-BE95-BDE7E183A003}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1620E412-E123-476D-A469-F6F7F42F3AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1620E412-E123-476D-A469-F6F7F42F3AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1620E412-E123-476D-A469-F6F7F42F3AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU

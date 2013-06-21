@@ -4,7 +4,6 @@ using System.Linq;
 
 class ReadTreeAndProcess
 {
-    static int count;
     static List<TreeNode<int>> path = new List<TreeNode<int>>();
     static List<List<TreeNode<int>>> allPaths = new List<List<TreeNode<int>>>();
 

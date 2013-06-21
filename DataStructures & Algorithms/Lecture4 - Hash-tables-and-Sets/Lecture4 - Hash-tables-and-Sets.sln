@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.OddNumberOfTimes", "02.O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CountWordsInFile", "03.CountWordsInFile\03.CountWordsInFile.csproj", "{D674044D-DDD3-41A0-A1FE-C59632154143}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.HashTable", "04.HashTable\04.HashTable.csproj", "{16A1B237-08E6-4CEA-9665-36C007C980C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Set-In-HashSet", "05.Set-In-HashSet\05.Set-In-HashSet.csproj", "{FDB1CEC6-13D4-4E9D-BB46-047825FE0601}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,14 @@ Global
 		{D674044D-DDD3-41A0-A1FE-C59632154143}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D674044D-DDD3-41A0-A1FE-C59632154143}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D674044D-DDD3-41A0-A1FE-C59632154143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A1B237-08E6-4CEA-9665-36C007C980C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A1B237-08E6-4CEA-9665-36C007C980C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A1B237-08E6-4CEA-9665-36C007C980C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A1B237-08E6-4CEA-9665-36C007C980C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB1CEC6-13D4-4E9D-BB46-047825FE0601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB1CEC6-13D4-4E9D-BB46-047825FE0601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB1CEC6-13D4-4E9D-BB46-047825FE0601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB1CEC6-13D4-4E9D-BB46-047825FE0601}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
