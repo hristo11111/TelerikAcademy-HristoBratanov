@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestIncreasSubsequen", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCommonSumsequence", "LongestCommonSumsequence\LongestCommonSumsequence.csproj", "{DF422028-49EE-4DE4-B2F3-19995851F881}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.MediumDistance", "02.MediumDistance\02.MediumDistance.csproj", "{F4E06127-5E2C-41A2-8AB2-452413DFF332}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{DF422028-49EE-4DE4-B2F3-19995851F881}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF422028-49EE-4DE4-B2F3-19995851F881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF422028-49EE-4DE4-B2F3-19995851F881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E06127-5E2C-41A2-8AB2-452413DFF332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E06127-5E2C-41A2-8AB2-452413DFF332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E06127-5E2C-41A2-8AB2-452413DFF332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E06127-5E2C-41A2-8AB2-452413DFF332}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
