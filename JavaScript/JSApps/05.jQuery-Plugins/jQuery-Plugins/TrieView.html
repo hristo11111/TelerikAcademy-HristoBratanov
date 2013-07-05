@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TrieView</title>
+    <script src="scripts/jquery-1.10.1.min.js"></script>
+    <script src="scripts/treeView.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li class="1"><a href="#">Item</a>
+            <ul>
+                <li><a href="#">SubItem</a></li>
+                <li><a href="#">SubItem</a></li>
+                <li><a href="#">SubItem</a>
+                    <ul>
+                        <li><a href="#">SubItem</a>
+                            <ul>
+                                <li><a href="#">SubItem</a></li>
+                                <li><a href="#">SubItem</a></li>
+                                <li><a href="#">SubItem</a></li>
+                                <li><a href="#">SubItem</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SubItem</a></li>
+                        <li><a href="#">SubItem</a></li>
+                        <li><a href="#">SubItem</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SubItem</a></li>
+            </ul>
+        </li>
+        <li class="2"><a href="#">Item</a></li>
+        <li class="3"><a href="#">Item</a></li>
+        <li class="4"><a href="#">Item</a>
+            <ul>
+                <li><a href="#">SubItem</a></li>
+                <li><a href="#">SubItem</a></li>
+                <li><a href="#">SubItem</a>
+                    <ul>
+                        <li><a href="#">SubItem</a></li>
+                        <li><a href="#">SubItem</a></li>
+                        <li><a href="#">SubItem</a></li>
+                        <li><a href="#">SubItem</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SubItem</a></li>
+            </ul>
+        </li>
+        <li class="5"><a href="#">Item</a></li>
+        <li class="6"><a href="#">Item</a></li>
+    </ul>
+
+    <script>
+        $(".list > li").treeView();
+    </script>
+</body>
+</html>

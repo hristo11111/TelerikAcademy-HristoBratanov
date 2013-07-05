@@ -1,0 +1,74 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/q.js"></script>
+</head>
+<body>
+    <button id="drop-bomb">Drop Bomb</button>
+    <div id="bomb" style="font-size: 20em; color: red"></div>
+    <div id="bomb-report" style="font-size: 10em"></div>
+
+    <script>
+        function dropBomb() {
+            var def = Q.defer();
+
+            setTimeout(function () {
+                document.getElementById("bomb").innerHTML += "BOOM";
+                var time = new Date();
+                def.resolve(time);
+            }, 3000);
+
+            return def.promise;
+        }
+
+        function reportDropBomb(time) {
+            document.getElementById("bomb-report").innerHTML += "bomb dropped at: " + time;
+        }
+
+        document.getElementById("drop-bomb").onclick = function () {
+            dropBomb().then(reportDropBomb);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--function dropBomb() {
+            var deferred = Q.defer();
+
+            setTimeout(function () {
+                document.getElementById("bomb").innerHTML = "BOOM";
+                var bombDropDateTime = new Date();
+                deferred.resolve(bombDropDateTime);
+            }, 3000);
+
+            return deferred.promise;
+        }
+
+        function reportBombDrop(time) {
+            document.getElementById("bomb-report").innerHTML = "Bomb dropped at "
+            + time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+        }
+
+        document.getElementById("drop-bomb").onclick = function () {
+            dropBomb().then(reportBombDrop);
+        }-->

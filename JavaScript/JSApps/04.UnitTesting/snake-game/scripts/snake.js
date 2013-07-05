@@ -26,7 +26,7 @@ var snakeGame = (function() {
 
   var obstacleFillColor = "#000000";
   var obstacleStrokeColor = "#000000";
-  var defaultObstacleCount = 15;
+  var defaultObstacleCount = 2;
 
   var GameObject = Class.create({
     init: function(position, size, fcolor, scolor) {
@@ -272,6 +272,14 @@ var snakeGame = (function() {
           piece.position.y += this.maxY;
           piece.position.y %= this.maxY;
         }
+      }
+
+      var snakeHead = this.snake.pieces[0];
+      for (i = 1; i < this.snake.size; i += 1) {
+          piece = this.snake.pieces[i];
+          if (snakeHead.position.x == piece.position.x && snakeHead.position.y == piece.position.y) {
+              this.snake.consume(piece);
+          }
       }
 
       for (var i = 0; i < this.gameObjects.length; i += 1) {

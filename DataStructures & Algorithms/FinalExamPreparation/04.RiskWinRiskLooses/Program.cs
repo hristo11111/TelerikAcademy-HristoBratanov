@@ -1,244 +1,122 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Diagnostics;
 
 class Program
 {
-    static int res = -1;
-    static int bigCounter = 0;
-
-    static void Main()
+    static void Main(string[] args)
     {
-        string initialCombination = Console.ReadLine();
-        int[] initial = new int[initialCombination.Length];
-        for (int i = 0; i < initialCombination.Length; i++)
+        // TestGenerator.GenerateTests(); return;
+
+        string startCombination = Console.ReadLine();
+        string finalCombination = Console.ReadLine();
+        int forbiddenCombinationsCount = int.Parse(Console.ReadLine());
+        List<string> forbiddenCombinations =
+            new List<string>(forbiddenCombinationsCount);
+        for (int i = 1; i <= forbiddenCombinationsCount; i++)
         {
-            initial[i] = initialCombination[i] - 48;
+            forbiddenCombinations.Add(Console.ReadLine());
         }
 
-        string targetCombination = Console.ReadLine();
-        int[] target = new int[targetCombination.Length];
-        for (int i = 0; i < targetCombination.Length; i++)
+        LowestButtonsCountFinder finder = new LowestButtonsCountFinder(
+            startCombination, finalCombination, forbiddenCombinations);
+
+        Console.WriteLine(finder.Find());
+    }
+}
+
+class LowestButtonsCountFinder
+{
+    const int MaxNumber = 99999;
+    const int WheelsCount = 5;
+    private readonly int startEdge;
+    private readonly int endEdge;
+    private readonly bool[] isForbiddenEdge;
+    private readonly int[] powerOf10;
+
+    public LowestButtonsCountFinder(string startCombination, string finalCombination, List<string> forbiddenCombinations)
+    {
+        powerOf10 = new int[WheelsCount];
+        powerOf10[0] = 1;
+        for (int i = 1; i < WheelsCount; i++)
         {
-            target[i] = targetCombination[i] - 48;
+            powerOf10[i] = powerOf10[i - 1] * 10;
         }
-
-        int forbidenCombinations = int.Parse(Console.ReadLine());
-        HashSet<string> forbiden = new HashSet<string>();
-        for (int i = 0; i < forbidenCombinations; i++)
+        this.startEdge = int.Parse(startCombination);
+        this.endEdge = int.Parse(finalCombination);
+        this.isForbiddenEdge = new bool[MaxNumber + 1]; // All false by default
+        foreach (string forbiddenCombination in forbiddenCombinations)
         {
-            forbiden.Add(Console.ReadLine());
+            this.isForbiddenEdge[int.Parse(forbiddenCombination)] = true;
         }
-
-        bool reversed = false;
-        int count = 0;
-
-        for (int i = 0; i < 5; i++)
-        {
-            if (initial[i] == target[i])
-            {   
-                continue;
-            }
-
-            if (initial[i] < target[i] && Math.Abs(initial[i] - target[i]) <= 5)
-	        {
-                reversed = false;
-                while (initial[i] != target[i])
-                {
-                    if (!reversed)
-	                {
-		                initial[i]++;
-                        if (initial[i] == -1 || initial[i] == 10)
-                        {
-                            initial[i] = CheckAndCorrectWheelDigit(initial[i]);
-                        }
-                        count++;
-	                }
-                    else
-	                {
-                        initial[i]--;
-                        if (initial[i] == -1 || initial[i] == 10)
-                        {
-                            initial[i] = CheckAndCorrectWheelDigit(initial[i]);
-                        }
-                        count++;
-	                }
-                    
-                    if (CheckIfForbiden(initial, forbiden))
-                    {
-                        if (reversed)
-	                    {
-		                    Console.WriteLine(res);
-                            return;
-	                    }
-                        else
-                        {
-                            initial[i] = initial[i] - count;
-                            count = 0;
-                        }
-                    } 
-                }
-
-                bigCounter += count;
-                count = 0;
-	        }
-
-            else if (initial[i] < target[i] && Math.Abs(initial[i] - target[i]) > 5)
-	        {
-                reversed = true;
-                while (initial[i] != target[i])
-                {
-                    if (!reversed)
-	                {
-		                initial[i]++;
-                        if (initial[i] == -1 || initial[i] == 10)
-                        {
-                            initial[i] = CheckAndCorrectWheelDigit(initial[i]);
-                        }
-                        count++;
-	                }
-                    else
-	                {
-                        initial[i]--;
-                        if (initial[i] == -1 || initial[i] == 10)
-                        {
-                            initial[i] = CheckAndCorrectWheelDigit(initial[i]);
-                        }
-                        count++;
-	                }
-                    
-                    if (CheckIfForbiden(initial, forbiden))
-                    {
-                        if (!reversed)
-	                    {
-		                    Console.WriteLine(res);
-                            return;
-	                    }
-                        else
-                        {
-                            initial[i] = initial[i] - count;
-                            count = 0;
-                        }
-                    } 
-                }
-
-                bigCounter += count;
-                count = 0;
-	        }
-
-            else if (initial[i] > target[i] && Math.Abs(initial[i] - target[i]) <= 5)
-	        {
-                reversed = true;
-                while (initial[i] != target[i])
-                {
-                    if (!reversed)
-	                {
-		                initial[i]++;
-                        if (initial[i] == -1 || initial[i] == 10)
-                        {
-                            initial[i] = CheckAndCorrectWheelDigit(initial[i]);
-                        }
-                        count++;
-	                }
-                    else
-	                {
-                        initial[i]--;
-                        if (initial[i] == -1 || initial[i] == 10)
-                        {
-                            initial[i] = CheckAndCorrectWheelDigit(initial[i]);
-                        }
-                        count++;
-	                }
-                    
-                    if (CheckIfForbiden(initial, forbiden))
-                    {
-                        if (reversed)
-	                    {
-		                    Console.WriteLine(res);
-                            return;
-	                    }
-                        else
-                        {
-                            initial[i] = initial[i] - count;
-                            count = 0;
-                        }
-                    } 
-                }
-
-                bigCounter += count;
-                count = 0;
-	        }
-
-            else if (initial[i] > target[i] && Math.Abs(initial[i] - target[i]) > 5)
-	        {
-                reversed = false;
-                while (initial[i] != target[i])
-                {
-                    if (!reversed)
-	                {
-		                initial[i]++;
-                        if (initial[i] == -1 || initial[i] == 10)
-                        {
-                            initial[i] = CheckAndCorrectWheelDigit(initial[i]);
-                        }
-                        count++;
-	                }
-                    else
-	                {
-                        initial[i]--;
-                        if (initial[i] == -1 || initial[i] == 10)
-                        {
-                            initial[i] = CheckAndCorrectWheelDigit(initial[i]);
-                        }
-                        count++;
-	                }
-                    
-                    if (CheckIfForbiden(initial, forbiden))
-                    {
-                        if (!reversed)
-	                    {
-		                    Console.WriteLine(res);
-                            return;
-	                    }
-                        else
-                        {
-                            initial[i] = initial[i] - count;
-                            count = 0;
-                        }
-                    } 
-                }
-
-                bigCounter += count;
-                count = 0;
-	        }
-        }
-
-        Console.WriteLine(bigCounter);
     }
 
-    private static bool CheckIfForbiden(int[] initial, HashSet<string> forbiden)
+    public int Find()
     {
-        foreach (var item in forbiden)
+        int result = BFS(this.startEdge, this.endEdge);
+        return result;
+    }
+
+    private int BFS(int startEdge, int endEdge)
+    {
+        bool[] used = new bool[MaxNumber + 1];
+        int level = 0;
+        Queue<int> nodesQueue = new Queue<int>();
+        nodesQueue.Enqueue(startEdge);
+        while (nodesQueue.Count > 0)
         {
-            if (item.CompareTo(string.Join(string.Empty, initial)) == 0)
+            Queue<int> nextLevelNodes = new Queue<int>();
+            level++;
+            while (nodesQueue.Count > 0)
             {
-                return true;
+                int node = nodesQueue.Dequeue();
+                if (node == endEdge)
+                {
+                    return level - 1;
+                }
+
+                // Pressing the left button
+                for (int i = 0; i < WheelsCount; i++)
+                {
+                    int newNode = node;
+                    int digit = (node / powerOf10[i]) % 10;
+                    if (digit == 9)
+                    {
+                        newNode -= 9 * powerOf10[i];
+                    }
+                    else
+                    {
+                        newNode += powerOf10[i];
+                    }
+                    if (used[newNode]) continue;
+                    if (isForbiddenEdge[newNode]) continue;
+                    used[newNode] = true;
+                    nextLevelNodes.Enqueue(newNode);
+                }
+
+                // Pressing the right button
+                for (int i = 0; i < WheelsCount; i++)
+                {
+                    int newNode = node;
+                    int digit = (node / powerOf10[i]) % 10;
+                    if (digit == 0)
+                    {
+                        newNode += 9 * powerOf10[i];
+                    }
+                    else
+                    {
+                        newNode -= powerOf10[i];
+                    }
+                    if (used[newNode]) continue;
+                    if (isForbiddenEdge[newNode]) continue;
+                    used[newNode] = true;
+                    nextLevelNodes.Enqueue(newNode);
+                }
             }
+            nodesQueue = nextLevelNodes;
         }
-
-        return false;
-    }
-
-    private static int CheckAndCorrectWheelDigit(int digit)
-    {
-        if (digit == -1)
-        {
-            digit = 9;
-        }
-        else if (digit == 10)
-        {
-            digit = 0;
-        }
-
-        return digit;
+        return -1;
     }
 }
