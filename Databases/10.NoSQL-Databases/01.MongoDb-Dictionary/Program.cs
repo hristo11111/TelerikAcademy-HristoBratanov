@@ -75,10 +75,14 @@ namespace _01.MongoDb_Dictionary
                 from w in wordCollection.AsQueryable<Word>()
                 select w;
 
+            StringBuilder sb = new StringBuilder();
             foreach (Word item in words)
             {
-                Console.WriteLine(item.name + " --> " + item.translation);
+                sb.Append(item.name + " --> " + item.translation);
+                sb.Append("\n");
             }
+
+            Console.WriteLine(sb);
         }
 
         private static void AddNewWordAndTranslation(MongoCollection<Word> wordCollection)
