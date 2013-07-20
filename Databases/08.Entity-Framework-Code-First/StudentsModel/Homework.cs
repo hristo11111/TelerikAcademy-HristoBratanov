@@ -18,5 +18,9 @@ namespace StudentsModel
         [ForeignKey("Student")]
         public int StudentId { get; set; }
         public virtual Student Student { get; set; }
+
+        public Homework()
+        {
+        }
     }
 }

@@ -49,8 +49,6 @@ namespace ConsoleStudents.Client
             }
 
             db.SaveChanges();
-            
-            
         }
     }
 }
