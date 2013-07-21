@@ -15,6 +15,7 @@ namespace _01.MongoDb_Dictionary
             MongoServer server = client.GetServer();
             var dictionaryDB = server.GetDatabase("dictionary");
             var wordCollection = dictionaryDB.GetCollection<Word>("words");
+            var wordCollectionQueery = dictionaryDB.GetCollection<Word>("words").AsQueryable();
 
             Console.WriteLine("This is MongoDB console dictionary");
 
@@ -43,35 +44,30 @@ namespace _01.MongoDb_Dictionary
                 switch (parsedCommand)
                 {
                     case 1: AddNewWordAndTranslation(wordCollection); break;
-                    case 2: ListWordsAndTranslations(wordCollection); break;
-                    case 3: FindTranslation(wordCollection); break;
+                    case 2: ListWordsAndTranslations(wordCollectionQueery); break;
+                    case 3: FindTranslation(wordCollectionQueery); break;
                     default:
                         break;
                 }
             }
         }
 
-        private static void FindTranslation(MongoCollection<Word> wordCollection)
+        private static void FindTranslation(IQueryable<Word> wordCollection)
         {
             Console.Write("Search for: ");
             var searchWord = Console.ReadLine();
 
-            var word =
-                from w in wordCollection.AsQueryable<Word>()
-                where w.name == searchWord
-                select w;
+            var word = wordCollection.Where(w => w.name == searchWord).ToList();
 
-            foreach (var item in word)
+            foreach (Word item in word)
             {
-                Console.WriteLine("Translation: " + item.translation);
+                Console.WriteLine("Translation: " + item.translation);    
             }
         }
 
-        private static void ListWordsAndTranslations(MongoCollection<Word> wordCollection)
+        private static void ListWordsAndTranslations(IQueryable<Word> wordCollection)
         {
-            var words =
-                from w in wordCollection.AsQueryable<Word>()
-                select w;
+            var words = wordCollection.ToList();
 
             StringBuilder sb = new StringBuilder();
             foreach (Word item in words)
