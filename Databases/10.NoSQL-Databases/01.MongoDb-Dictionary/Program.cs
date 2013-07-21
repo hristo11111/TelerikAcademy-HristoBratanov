@@ -15,7 +15,7 @@ namespace _01.MongoDb_Dictionary
             MongoServer server = client.GetServer();
             var dictionaryDB = server.GetDatabase("dictionary");
             var wordCollection = dictionaryDB.GetCollection<Word>("words");
-            var wordCollectionQueery = dictionaryDB.GetCollection<Word>("words").AsQueryable();
+            var wordCollectionQueery = wordCollection.AsQueryable();
 
             Console.WriteLine("This is MongoDB console dictionary");
 
