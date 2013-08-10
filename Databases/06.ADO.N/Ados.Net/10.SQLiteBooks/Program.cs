@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Data.SQLite;
 using System.Globalization;
+using Mono.Data.Sqlite;
 
 namespace _10.SQLiteBooks
 {
@@ -17,6 +18,8 @@ namespace _10.SQLiteBooks
 
             dbCon = new SQLiteConnection(connString);
             dbCon.Open();
+
+            dbCon.
 
             using (dbCon)
             {
@@ -51,6 +54,10 @@ namespace _10.SQLiteBooks
         {
             Console.Write("Search for book? Enter title: ");
             string searchBook = Console.ReadLine();
+
+            var dada = 
+                from some in dbCon.
+                
 
             SQLiteCommand cmd = new SQLiteCommand("SELECT BookTitle, Author, PublishDate, ISBN " +
                 "FROM Books WHERE BookTitle = '" + searchBook + "'", dbCon);

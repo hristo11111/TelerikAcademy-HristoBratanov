@@ -12,7 +12,7 @@ class Program
 {
     static void Main()
     {
-        string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\WorkFiles\scores.xlsx;Extended Properties=""Excel 12.0 Xml;HDR=Yes;""";
+        string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\WorkFiles\scorttt.xlsx;Extended Properties=""Excel 12.0 Xml;HDR=Yes;""";
 
         OleDbConnection dbCon = new OleDbConnection(connectionString);
 

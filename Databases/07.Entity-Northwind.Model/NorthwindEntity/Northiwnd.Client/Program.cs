@@ -14,19 +14,20 @@ namespace Northiwnd.Client
             //TASK2. Create a DAO class with static methods which provide functionality for inserting, 
             //modifying and deleting customers. Write a testing class.
 
-            //InsertCustomer("ABCDE", "Microsoft", "Gosho Goshev", "Manager", "Drujba 3",
-            //    "Sofia", "Mladost", "5417", "Bulgaria", "0882545454", "055487521");
-            //ModifyCustomerName("ABCDE", "Petio Peshev");
-            //DeleteCustomer("ABCDE");
+            InsertCustomer("ABCDE", "Microsoft", "Gosho Goshev", "Manager", "Drujba 3",
+                "Sofia", "Mladost", "5417", "Bulgaria", "0882545454", "055487521");
+            ModifyCustomerName("ABCDE", "Petio Peshev");
+            DeleteCustomer("ABCDE");
 
             //TASK3. Write a method that finds all customers who have orders made in 1997 and shipped to Canada.
-            //FindCustomersSpecificOrders("1997", "Canada");
+            FindCustomersSpecificOrders("1997", "Canada");
 
             //TASK4. Implement previous by using native SQL query and executing it through the DbContext.
-            //FindCustomersSpecificOrders_SQL("1997", "Canada");
+            FindCustomersSpecificOrders_SQL("1997", "Canada");
 
             //TASK5. Write a method that finds all the sales by specified region and period (start / end dates).
-            //FindSales("OR", new DateTime(1990, 01, 01), new DateTime(2000, 06, 06));
+            FindSales("OR", new DateTime(1990, 01, 01), new DateTime(2000, 06, 06));
+
         }
 
         private static void FindSales(string region, DateTime orderedDate, DateTime shippedDate)

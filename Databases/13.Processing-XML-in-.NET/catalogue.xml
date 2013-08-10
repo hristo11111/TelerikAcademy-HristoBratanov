@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalogue xmlns:catalogue="urn:catalogue">
+  <album>
+    <name>Album1</name>
+    <artist>M. Jackson</artist>
+    <year>1998-01-05</year>
+    <producer>Virgin records</producer>
+    <price>12.5</price>
+    <songs>
+      <song>
+        <title>1.Title</title>
+        <duration>5.32</duration>
+      </song>
+      <song>
+        <title>2.Title</title>
+        <duration>6.7</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album2</name>
+    <artist>B. Spears</artist>
+    <year>2006-11-22</year>
+    <producer>Virgin records</producer>
+    <price>3.5</price>
+    <songs>
+      <song>
+        <title>3.Title</title>
+        <duration>4.24</duration>
+      </song>
+      <song>
+        <title>4.Title</title>
+        <duration>3.47</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album3</name>
+    <artist>M. Jackson</artist>
+    <year>1998-02-22</year>
+    <producer>Virgin records</producer>
+    <price>23.5</price>
+    <songs>
+      <song>
+        <title>5.Title</title>
+        <duration>5.32</duration>
+      </song>
+      <song>
+        <title>6.Title</title>
+        <duration>6.7</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>

@@ -1,0 +1,2907 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directories>
+  <directory name="temp">
+    <file />
+    <name>ExamTechSupport.rar</name>
+    <type>.rar</type>
+    <file />
+    <name>northbackup.sql</name>
+    <type>.sql</type>
+    <file />
+    <name>northwind_log.ldf</name>
+    <type>.ldf</type>
+    <file />
+    <name>NORTHWND.MDF</name>
+    <type>.MDF</type>
+    <file />
+    <name>pass.txt</name>
+    <type>.txt</type>
+    <file />
+    <name>scores.xlsx</name>
+    <type>.xlsx</type>
+    <file />
+    <name>TechnicalSupportExam.docx</name>
+    <type>.docx</type>
+    <file />
+    <name>world.sql</name>
+    <type>.sql</type>
+    <directory name="01">
+      <file />
+      <name>TechnicalSupportExam.doc</name>
+      <type>.doc</type>
+      <directory name="HashTable">
+        <file />
+        <name>HashTable.sln</name>
+        <type>.sln</type>
+        <file />
+        <name>HashTable.v11.suo</name>
+        <type>.suo</type>
+        <directory name="HashTable">
+          <file />
+          <name>App.config</name>
+          <type>.config</type>
+          <file />
+          <name>HashTable.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableEnumerator.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableSample.csproj</name>
+          <type>.csproj</type>
+          <file />
+          <name>Sample.cs</name>
+          <type>.cs</type>
+          <directory name="bin">
+            <directory name="Debug">
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTable.vshost.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.vshost.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.vshost.exe.manifest</name>
+              <type>.manifest</type>
+            </directory>
+          </directory>
+          <directory name="obj">
+            <directory name="Debug">
+              <file />
+              <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTableSample.csproj.FileListAbsolute.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>HashTableSample.csprojResolveAssemblyReference.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+              <type>.cs</type>
+              <directory name="TempPE" />
+            </directory>
+          </directory>
+          <directory name="Properties">
+            <file />
+            <name>AssemblyInfo.cs</name>
+            <type>.cs</type>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="02">
+      <file />
+      <name>Telerik-TS-Practical-Exam-Part-One.docx</name>
+      <type>.docx</type>
+      <file />
+      <name>Telerik-TS-Practical-Exam-Part-One.txt</name>
+      <type>.txt</type>
+    </directory>
+    <directory name="03">
+      <file />
+      <name>Techical Support Intermediate Exam.docx</name>
+      <type>.docx</type>
+      <directory name="HashTable">
+        <file />
+        <name>HashTable.sln</name>
+        <type>.sln</type>
+        <file />
+        <name>HashTable.v11.suo</name>
+        <type>.suo</type>
+        <directory name="HashTable">
+          <file />
+          <name>App.config</name>
+          <type>.config</type>
+          <file />
+          <name>HashTable.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableEnumerator.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableSample.csproj</name>
+          <type>.csproj</type>
+          <file />
+          <name>Sample.cs</name>
+          <type>.cs</type>
+          <directory name="bin">
+            <directory name="Debug">
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTable.vshost.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.vshost.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.vshost.exe.manifest</name>
+              <type>.manifest</type>
+            </directory>
+          </directory>
+          <directory name="obj">
+            <directory name="Debug">
+              <file />
+              <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTableSample.csproj.FileListAbsolute.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>HashTableSample.csprojResolveAssemblyReference.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+              <type>.cs</type>
+              <directory name="TempPE" />
+            </directory>
+          </directory>
+          <directory name="Properties">
+            <file />
+            <name>AssemblyInfo.cs</name>
+            <type>.cs</type>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="04">
+      <file />
+      <name>TechnicalSupportMidExam.docx</name>
+      <type>.docx</type>
+      <directory name="HashTable">
+        <file />
+        <name>HashTable.sln</name>
+        <type>.sln</type>
+        <file />
+        <name>HashTable.v11.suo</name>
+        <type>.suo</type>
+        <directory name="HashTable">
+          <file />
+          <name>App.config</name>
+          <type>.config</type>
+          <file />
+          <name>HashTable.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableEnumerator.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableSample.csproj</name>
+          <type>.csproj</type>
+          <file />
+          <name>Sample.cs</name>
+          <type>.cs</type>
+          <directory name="bin">
+            <directory name="Debug">
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTable.vshost.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.vshost.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.vshost.exe.manifest</name>
+              <type>.manifest</type>
+            </directory>
+          </directory>
+          <directory name="obj">
+            <directory name="Debug">
+              <file />
+              <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTableSample.csproj.FileListAbsolute.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>HashTableSample.csprojResolveAssemblyReference.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+              <type>.cs</type>
+              <directory name="TempPE" />
+            </directory>
+          </directory>
+          <directory name="Properties">
+            <file />
+            <name>AssemblyInfo.cs</name>
+            <type>.cs</type>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="05">
+      <file />
+      <name>TechnicalSupportCourseExam.docx</name>
+      <type>.docx</type>
+      <directory name="HashTable">
+        <file />
+        <name>HashTable.sln</name>
+        <type>.sln</type>
+        <file />
+        <name>HashTable.v11.suo</name>
+        <type>.suo</type>
+        <directory name="HashTable">
+          <file />
+          <name>App.config</name>
+          <type>.config</type>
+          <file />
+          <name>HashTable.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableEnumerator.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableSample.csproj</name>
+          <type>.csproj</type>
+          <file />
+          <name>Sample.cs</name>
+          <type>.cs</type>
+          <directory name="bin">
+            <directory name="Debug">
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTable.vshost.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.vshost.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.vshost.exe.manifest</name>
+              <type>.manifest</type>
+            </directory>
+          </directory>
+          <directory name="obj">
+            <directory name="Debug">
+              <file />
+              <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTableSample.csproj.FileListAbsolute.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>HashTableSample.csprojResolveAssemblyReference.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+              <type>.cs</type>
+              <directory name="TempPE" />
+            </directory>
+          </directory>
+          <directory name="Properties">
+            <file />
+            <name>AssemblyInfo.cs</name>
+            <type>.cs</type>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="06">
+      <file />
+      <name>RadMenuIconsChanged.rar</name>
+      <type>.rar</type>
+      <file />
+      <name>TicketAnswer.pdf</name>
+      <type>.pdf</type>
+      <directory name="RadMenuIcons">
+        <file />
+        <name>RadMenuIcons.sln</name>
+        <type>.sln</type>
+        <file />
+        <name>RadMenuIcons.sln.DotSettings</name>
+        <type>.DotSettings</type>
+        <file />
+        <name>RadMenuIcons.v11.suo</name>
+        <type>.suo</type>
+        <directory name="RadMenuIcons">
+          <file />
+          <name>App.xaml</name>
+          <type>.xaml</type>
+          <file />
+          <name>App.xaml.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>MainWindow.xaml</name>
+          <type>.xaml</type>
+          <file />
+          <name>MainWindow.xaml.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>RadMenuIcons.csproj</name>
+          <type>.csproj</type>
+          <directory name="bin">
+            <directory name="Debug">
+              <file />
+              <name>RadMenuIcons.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>RadMenuIcons.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Telerik.Windows.Controls.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Telerik.Windows.Controls.Navigation.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Telerik.Windows.Controls.Navigation.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Telerik.Windows.Controls.Navigation.xml</name>
+              <type>.xml</type>
+              <file />
+              <name>Telerik.Windows.Controls.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Telerik.Windows.Controls.xml</name>
+              <type>.xml</type>
+              <file />
+              <name>Telerik.Windows.Data.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Telerik.Windows.Data.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Telerik.Windows.Data.xml</name>
+              <type>.xml</type>
+            </directory>
+          </directory>
+          <directory name="Icons">
+            <file />
+            <name>editCopy.png</name>
+            <type>.png</type>
+            <file />
+            <name>editCut.png</name>
+            <type>.png</type>
+            <file />
+            <name>editPaste.png</name>
+            <type>.png</type>
+            <file />
+            <name>editRedo.png</name>
+            <type>.png</type>
+            <file />
+            <name>editUndo.png</name>
+            <type>.png</type>
+            <file />
+            <name>fileClose.png</name>
+            <type>.png</type>
+            <file />
+            <name>fileNew.png</name>
+            <type>.png</type>
+            <file />
+            <name>fileOpen.png</name>
+            <type>.png</type>
+          </directory>
+          <directory name="lib">
+            <file />
+            <name>Telerik.Windows.Controls.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Telerik.Windows.Controls.Navigation.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Telerik.Windows.Controls.Navigation.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Telerik.Windows.Controls.Navigation.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>Telerik.Windows.Controls.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Telerik.Windows.Controls.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>Telerik.Windows.Data.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Telerik.Windows.Data.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Telerik.Windows.Data.xml</name>
+            <type>.xml</type>
+          </directory>
+          <directory name="obj">
+            <directory name="x86">
+              <directory name="Debug">
+                <file />
+                <name>App.g.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>App.g.i.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+                <type>.cache</type>
+                <file />
+                <name>MainWindow.baml</name>
+                <type>.baml</type>
+                <file />
+                <name>MainWindow.g.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>MainWindow.g.i.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>RadMenuIcons.csproj.FileListAbsolute.txt</name>
+                <type>.txt</type>
+                <file />
+                <name>RadMenuIcons.csproj.GenerateResource.Cache</name>
+                <type>.Cache</type>
+                <file />
+                <name>RadMenuIcons.csprojResolveAssemblyReference.cache</name>
+                <type>.cache</type>
+                <file />
+                <name>RadMenuIcons.exe</name>
+                <type>.exe</type>
+                <file />
+                <name>RadMenuIcons.g.resources</name>
+                <type>.resources</type>
+                <file />
+                <name>RadMenuIcons.pdb</name>
+                <type>.pdb</type>
+                <file />
+                <name>RadMenuIcons.Properties.Resources.resources</name>
+                <type>.resources</type>
+                <file />
+                <name>RadMenuIcons_Content.g.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>RadMenuIcons_Content.g.i.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>RadMenuIcons_MarkupCompile.cache</name>
+                <type>.cache</type>
+                <file />
+                <name>RadMenuIcons_MarkupCompile.i.cache</name>
+                <type>.cache</type>
+                <directory name="TempPE" />
+              </directory>
+            </directory>
+          </directory>
+          <directory name="Properties">
+            <file />
+            <name>AssemblyInfo.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>Resources.Designer.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>Resources.resx</name>
+            <type>.resx</type>
+            <file />
+            <name>Settings.Designer.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>Settings.settings</name>
+            <type>.settings</type>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="07">
+      <file />
+      <name>RadMenuIcons-Homework.docx</name>
+      <type>.docx</type>
+      <directory name="RadMenuIcons-SampleSolution-Homework">
+        <file />
+        <name>RadMenuIcons.sln</name>
+        <type>.sln</type>
+        <file />
+        <name>RadMenuIcons.v11.suo</name>
+        <type>.suo</type>
+        <directory name="RadMenuIcons">
+          <file />
+          <name>App.xaml</name>
+          <type>.xaml</type>
+          <file />
+          <name>App.xaml.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>MainWindow.xaml</name>
+          <type>.xaml</type>
+          <file />
+          <name>MainWindow.xaml.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>RadMenuIcons.csproj</name>
+          <type>.csproj</type>
+          <directory name="bin">
+            <directory name="Debug">
+              <file />
+              <name>RadMenuIcons.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>RadMenuIcons.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Telerik.Windows.Controls.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Telerik.Windows.Controls.Navigation.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Telerik.Windows.Controls.Navigation.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Telerik.Windows.Controls.Navigation.xml</name>
+              <type>.xml</type>
+              <file />
+              <name>Telerik.Windows.Controls.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Telerik.Windows.Controls.xml</name>
+              <type>.xml</type>
+              <file />
+              <name>Telerik.Windows.Data.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Telerik.Windows.Data.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Telerik.Windows.Data.xml</name>
+              <type>.xml</type>
+            </directory>
+          </directory>
+          <directory name="Icons">
+            <file />
+            <name>editCopy.png</name>
+            <type>.png</type>
+            <file />
+            <name>editCut.png</name>
+            <type>.png</type>
+            <file />
+            <name>editPaste.png</name>
+            <type>.png</type>
+            <file />
+            <name>editRedo.png</name>
+            <type>.png</type>
+            <file />
+            <name>editUndo.png</name>
+            <type>.png</type>
+            <file />
+            <name>fileClose.png</name>
+            <type>.png</type>
+            <file />
+            <name>fileNew.png</name>
+            <type>.png</type>
+            <file />
+            <name>fileOpen.png</name>
+            <type>.png</type>
+          </directory>
+          <directory name="lib">
+            <file />
+            <name>Telerik.Windows.Controls.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Telerik.Windows.Controls.Navigation.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Telerik.Windows.Controls.Navigation.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Telerik.Windows.Controls.Navigation.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>Telerik.Windows.Controls.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Telerik.Windows.Controls.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>Telerik.Windows.Data.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Telerik.Windows.Data.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Telerik.Windows.Data.xml</name>
+            <type>.xml</type>
+          </directory>
+          <directory name="obj">
+            <directory name="x86">
+              <directory name="Debug">
+                <file />
+                <name>App.g.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>App.g.i.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+                <type>.cache</type>
+                <file />
+                <name>MainWindow.baml</name>
+                <type>.baml</type>
+                <file />
+                <name>MainWindow.g.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>MainWindow.g.i.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>RadMenuIcons.csproj.FileListAbsolute.txt</name>
+                <type>.txt</type>
+                <file />
+                <name>RadMenuIcons.csproj.GenerateResource.Cache</name>
+                <type>.Cache</type>
+                <file />
+                <name>RadMenuIcons.csprojResolveAssemblyReference.cache</name>
+                <type>.cache</type>
+                <file />
+                <name>RadMenuIcons.exe</name>
+                <type>.exe</type>
+                <file />
+                <name>RadMenuIcons.g.resources</name>
+                <type>.resources</type>
+                <file />
+                <name>RadMenuIcons.pdb</name>
+                <type>.pdb</type>
+                <file />
+                <name>RadMenuIcons.Properties.Resources.resources</name>
+                <type>.resources</type>
+                <file />
+                <name>RadMenuIcons_Content.g.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>RadMenuIcons_Content.g.i.cs</name>
+                <type>.cs</type>
+                <file />
+                <name>RadMenuIcons_MarkupCompile.cache</name>
+                <type>.cache</type>
+                <file />
+                <name>RadMenuIcons_MarkupCompile.i.cache</name>
+                <type>.cache</type>
+                <directory name="TempPE" />
+              </directory>
+            </directory>
+          </directory>
+          <directory name="Properties">
+            <file />
+            <name>AssemblyInfo.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>Resources.Designer.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>Resources.resx</name>
+            <type>.resx</type>
+            <file />
+            <name>Settings.Designer.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>Settings.settings</name>
+            <type>.settings</type>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="08">
+      <file />
+      <name>RadMenuIcons.zip</name>
+      <type>.zip</type>
+      <file />
+      <name>TicketResponse.docx</name>
+      <type>.docx</type>
+      <directory name="RadMenuIcons">
+        <directory name="RadMenuIcons">
+          <file />
+          <name>RadMenuIcons.sln</name>
+          <type>.sln</type>
+          <file />
+          <name>RadMenuIcons.v11.suo</name>
+          <type>.suo</type>
+          <directory name="RadMenuIcons">
+            <file />
+            <name>App.xaml</name>
+            <type>.xaml</type>
+            <file />
+            <name>App.xaml.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>MainWindow.xaml</name>
+            <type>.xaml</type>
+            <file />
+            <name>MainWindow.xaml.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>RadMenuIcons.csproj</name>
+            <type>.csproj</type>
+            <directory name="bin">
+              <directory name="Debug">
+                <file />
+                <name>RadMenuIcons.exe</name>
+                <type>.exe</type>
+                <file />
+                <name>RadMenuIcons.pdb</name>
+                <type>.pdb</type>
+                <file />
+                <name>Telerik.Windows.Controls.dll</name>
+                <type>.dll</type>
+                <file />
+                <name>Telerik.Windows.Controls.Navigation.dll</name>
+                <type>.dll</type>
+                <file />
+                <name>Telerik.Windows.Controls.Navigation.pdb</name>
+                <type>.pdb</type>
+                <file />
+                <name>Telerik.Windows.Controls.Navigation.xml</name>
+                <type>.xml</type>
+                <file />
+                <name>Telerik.Windows.Controls.pdb</name>
+                <type>.pdb</type>
+                <file />
+                <name>Telerik.Windows.Controls.xml</name>
+                <type>.xml</type>
+                <file />
+                <name>Telerik.Windows.Data.dll</name>
+                <type>.dll</type>
+                <file />
+                <name>Telerik.Windows.Data.pdb</name>
+                <type>.pdb</type>
+                <file />
+                <name>Telerik.Windows.Data.xml</name>
+                <type>.xml</type>
+              </directory>
+            </directory>
+            <directory name="Icons">
+              <file />
+              <name>editCopy.png</name>
+              <type>.png</type>
+              <file />
+              <name>editCut.png</name>
+              <type>.png</type>
+              <file />
+              <name>editPaste.png</name>
+              <type>.png</type>
+              <file />
+              <name>editRedo.png</name>
+              <type>.png</type>
+              <file />
+              <name>editUndo.png</name>
+              <type>.png</type>
+              <file />
+              <name>fileClose.png</name>
+              <type>.png</type>
+              <file />
+              <name>fileNew.png</name>
+              <type>.png</type>
+              <file />
+              <name>fileOpen.png</name>
+              <type>.png</type>
+            </directory>
+            <directory name="lib">
+              <file />
+              <name>Telerik.Windows.Controls.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Telerik.Windows.Controls.Navigation.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Telerik.Windows.Controls.Navigation.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Telerik.Windows.Controls.Navigation.xml</name>
+              <type>.xml</type>
+              <file />
+              <name>Telerik.Windows.Controls.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Telerik.Windows.Controls.xml</name>
+              <type>.xml</type>
+              <file />
+              <name>Telerik.Windows.Data.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Telerik.Windows.Data.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Telerik.Windows.Data.xml</name>
+              <type>.xml</type>
+            </directory>
+            <directory name="obj">
+              <directory name="x86">
+                <directory name="Debug">
+                  <file />
+                  <name>App.g.cs</name>
+                  <type>.cs</type>
+                  <file />
+                  <name>App.g.i.cs</name>
+                  <type>.cs</type>
+                  <file />
+                  <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+                  <type>.cache</type>
+                  <file />
+                  <name>MainWindow.baml</name>
+                  <type>.baml</type>
+                  <file />
+                  <name>MainWindow.g.cs</name>
+                  <type>.cs</type>
+                  <file />
+                  <name>MainWindow.g.i.cs</name>
+                  <type>.cs</type>
+                  <file />
+                  <name>RadMenuIcons.csproj.FileListAbsolute.txt</name>
+                  <type>.txt</type>
+                  <file />
+                  <name>RadMenuIcons.csproj.GenerateResource.Cache</name>
+                  <type>.Cache</type>
+                  <file />
+                  <name>RadMenuIcons.csprojResolveAssemblyReference.cache</name>
+                  <type>.cache</type>
+                  <file />
+                  <name>RadMenuIcons.exe</name>
+                  <type>.exe</type>
+                  <file />
+                  <name>RadMenuIcons.g.resources</name>
+                  <type>.resources</type>
+                  <file />
+                  <name>RadMenuIcons.pdb</name>
+                  <type>.pdb</type>
+                  <file />
+                  <name>RadMenuIcons.Properties.Resources.resources</name>
+                  <type>.resources</type>
+                  <file />
+                  <name>RadMenuIcons_Content.g.cs</name>
+                  <type>.cs</type>
+                  <file />
+                  <name>RadMenuIcons_Content.g.i.cs</name>
+                  <type>.cs</type>
+                  <file />
+                  <name>RadMenuIcons_MarkupCompile.cache</name>
+                  <type>.cache</type>
+                  <file />
+                  <name>RadMenuIcons_MarkupCompile.i.cache</name>
+                  <type>.cache</type>
+                  <directory name="TempPE" />
+                </directory>
+              </directory>
+            </directory>
+            <directory name="Properties">
+              <file />
+              <name>AssemblyInfo.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>Resources.Designer.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>Resources.resx</name>
+              <type>.resx</type>
+              <file />
+              <name>Settings.Designer.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>Settings.settings</name>
+              <type>.settings</type>
+            </directory>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="Codefirst">
+      <file />
+      <name>Codefirst.sln</name>
+      <type>.sln</type>
+      <file />
+      <name>Codefirst.v11.suo</name>
+      <type>.suo</type>
+      <directory name="Console.Client">
+        <file />
+        <name>App.config</name>
+        <type>.config</type>
+        <file />
+        <name>Console.Client.csproj</name>
+        <type>.csproj</type>
+        <file />
+        <name>packages.config</name>
+        <type>.config</type>
+        <file />
+        <name>Program.cs</name>
+        <type>.cs</type>
+        <directory name="bin">
+          <directory name="Debug">
+            <file />
+            <name>Console.Client.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>Console.Client.exe.config</name>
+            <type>.config</type>
+            <file />
+            <name>Console.Client.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Console.Client.vshost.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>Console.Client.vshost.exe.config</name>
+            <type>.config</type>
+            <file />
+            <name>EntityFramework.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>EntityFramework.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>Students.Data.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students.Data.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Students.Model.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students.Model.pdb</name>
+            <type>.pdb</type>
+          </directory>
+          <directory name="Release" />
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>Console.Client.csproj.FileListAbsolute.txt</name>
+            <type>.txt</type>
+            <file />
+            <name>Console.Client.csprojResolveAssemblyReference.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>Console.Client.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>Console.Client.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE" />
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+      <directory name="Console2.Client">
+        <file />
+        <name>App.config</name>
+        <type>.config</type>
+        <file />
+        <name>Console2.Client.csproj</name>
+        <type>.csproj</type>
+        <file />
+        <name>packages.config</name>
+        <type>.config</type>
+        <file />
+        <name>Program.cs</name>
+        <type>.cs</type>
+        <directory name="bin">
+          <directory name="Debug">
+            <file />
+            <name>Console2.Client.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>Console2.Client.exe.config</name>
+            <type>.config</type>
+            <file />
+            <name>Console2.Client.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Console2.Client.vshost.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>Console2.Client.vshost.exe.config</name>
+            <type>.config</type>
+            <file />
+            <name>Console2.Client.vshost.exe.manifest</name>
+            <type>.manifest</type>
+            <file />
+            <name>EntityFramework.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>EntityFramework.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>Students.Model.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students.Model.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Students2.Data.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students2.Data.pdb</name>
+            <type>.pdb</type>
+          </directory>
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>Console2.Client.csproj.FileListAbsolute.txt</name>
+            <type>.txt</type>
+            <file />
+            <name>Console2.Client.csprojResolveAssemblyReference.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>Console2.Client.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>Console2.Client.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE" />
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+      <directory name="packages">
+        <file />
+        <name>repositories.config</name>
+        <type>.config</type>
+        <directory name="EntityFramework.5.0.0">
+          <file />
+          <name>EntityFramework.5.0.0.nupkg</name>
+          <type>.nupkg</type>
+          <directory name="Content">
+            <file />
+            <name>App.config.transform</name>
+            <type>.transform</type>
+            <file />
+            <name>Web.config.transform</name>
+            <type>.transform</type>
+          </directory>
+          <directory name="lib">
+            <directory name="net40">
+              <file />
+              <name>EntityFramework.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>EntityFramework.xml</name>
+              <type>.xml</type>
+            </directory>
+            <directory name="net45">
+              <file />
+              <name>EntityFramework.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>EntityFramework.xml</name>
+              <type>.xml</type>
+            </directory>
+          </directory>
+          <directory name="tools">
+            <file />
+            <name>about_EntityFramework.help.txt</name>
+            <type>.txt</type>
+            <file />
+            <name>EntityFramework.PowerShell.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>EntityFramework.PowerShell.Utility.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>EntityFramework.PS3.psd1</name>
+            <type>.psd1</type>
+            <file />
+            <name>EntityFramework.psd1</name>
+            <type>.psd1</type>
+            <file />
+            <name>EntityFramework.psm1</name>
+            <type>.psm1</type>
+            <file />
+            <name>init.ps1</name>
+            <type>.ps1</type>
+            <file />
+            <name>install.ps1</name>
+            <type>.ps1</type>
+            <file />
+            <name>migrate.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>Redirect.config</name>
+            <type>.config</type>
+            <file />
+            <name>Redirect.VS11.config</name>
+            <type>.config</type>
+          </directory>
+        </directory>
+      </directory>
+      <directory name="Students.Data">
+        <file />
+        <name>App.config</name>
+        <type>.config</type>
+        <file />
+        <name>packages.config</name>
+        <type>.config</type>
+        <file />
+        <name>Students.Data.csproj</name>
+        <type>.csproj</type>
+        <file />
+        <name>StudentsContext.cs</name>
+        <type>.cs</type>
+        <directory name="bin">
+          <directory name="Debug">
+            <file />
+            <name>EntityFramework.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>EntityFramework.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>Students.Data.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students.Data.dll.config</name>
+            <type>.config</type>
+            <file />
+            <name>Students.Data.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Students.Model.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students.Model.pdb</name>
+            <type>.pdb</type>
+          </directory>
+          <directory name="Release" />
+        </directory>
+        <directory name="Migrations">
+          <file />
+          <name>201307170649577_InitialCreate.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>201307170649577_InitialCreate.Designer.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>201307170649577_InitialCreate.resx</name>
+          <type>.resx</type>
+          <file />
+          <name>Configuration.cs</name>
+          <type>.cs</type>
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>Students.Data.csproj.FileListAbsolute.txt</name>
+            <type>.txt</type>
+            <file />
+            <name>Students.Data.csproj.GenerateResource.Cache</name>
+            <type>.Cache</type>
+            <file />
+            <name>Students.Data.csprojResolveAssemblyReference.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>Students.Data.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students.Data.Migrations.InitialCreate.resources</name>
+            <type>.resources</type>
+            <file />
+            <name>Students.Data.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE" />
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+      <directory name="Students.Model">
+        <file />
+        <name>App.config</name>
+        <type>.config</type>
+        <file />
+        <name>Course.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>Homework.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>packages.config</name>
+        <type>.config</type>
+        <file />
+        <name>Student.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>Students.Model.csproj</name>
+        <type>.csproj</type>
+        <directory name="bin">
+          <directory name="Debug">
+            <file />
+            <name>EntityFramework.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>EntityFramework.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>Students.Model.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students.Model.dll.config</name>
+            <type>.config</type>
+            <file />
+            <name>Students.Model.pdb</name>
+            <type>.pdb</type>
+          </directory>
+          <directory name="Release" />
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>Students.Model.csproj.FileListAbsolute.txt</name>
+            <type>.txt</type>
+            <file />
+            <name>Students.Model.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students.Model.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE" />
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+      <directory name="Students2.Data">
+        <file />
+        <name>App.config</name>
+        <type>.config</type>
+        <file />
+        <name>packages.config</name>
+        <type>.config</type>
+        <file />
+        <name>Students2.Data.csproj</name>
+        <type>.csproj</type>
+        <file />
+        <name>StudentsContext.cs</name>
+        <type>.cs</type>
+        <directory name="bin">
+          <directory name="Debug">
+            <file />
+            <name>EntityFramework.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>EntityFramework.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>Students.Model.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students.Model.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Students2.Data.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students2.Data.dll.config</name>
+            <type>.config</type>
+            <file />
+            <name>Students2.Data.pdb</name>
+            <type>.pdb</type>
+          </directory>
+          <directory name="Release" />
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>Students2.Data.csproj.FileListAbsolute.txt</name>
+            <type>.txt</type>
+            <file />
+            <name>Students2.Data.csprojResolveAssemblyReference.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>Students2.Data.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Students2.Data.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE" />
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="exam">
+      <file />
+      <name>TechnicalSupportExam.docx</name>
+      <type>.docx</type>
+      <directory name="HashTable">
+        <file />
+        <name>HashTable.sln</name>
+        <type>.sln</type>
+        <file />
+        <name>HashTable.v11.suo</name>
+        <type>.suo</type>
+        <directory name=".JustCode">
+          <file />
+          <name>HashTable.solution-user.settings.xml</name>
+          <type>.xml</type>
+        </directory>
+        <directory name="HashTable">
+          <file />
+          <name>App.config</name>
+          <type>.config</type>
+          <file />
+          <name>HashTable.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableEnumerator.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableSample.csproj</name>
+          <type>.csproj</type>
+          <file />
+          <name>Sample.cs</name>
+          <type>.cs</type>
+          <directory name="bin">
+            <directory name="Debug">
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTable.vshost.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.vshost.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.vshost.exe.manifest</name>
+              <type>.manifest</type>
+            </directory>
+          </directory>
+          <directory name="obj">
+            <directory name="Debug">
+              <file />
+              <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTableSample.csproj.FileListAbsolute.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>HashTableSample.csprojResolveAssemblyReference.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+              <type>.cs</type>
+              <directory name="TempPE" />
+            </directory>
+          </directory>
+          <directory name="Properties">
+            <file />
+            <name>AssemblyInfo.cs</name>
+            <type>.cs</type>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="exam preparation databases">
+      <directory name="ExamPreparation">
+        <file />
+        <name>ExamPreparation.sln</name>
+        <type>.sln</type>
+        <file />
+        <name>ExamPreparation.v11.suo</name>
+        <type>.suo</type>
+        <directory name="Bookmarks-Model">
+          <file />
+          <name>App.Config</name>
+          <type>.Config</type>
+          <file />
+          <name>Bookmark.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>Bookmarks-Model.csproj</name>
+          <type>.csproj</type>
+          <file />
+          <name>BookmarksModel.Context.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>BookmarksModel.Context.tt</name>
+          <type>.tt</type>
+          <file />
+          <name>BookmarksModel.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>BookmarksModel.Designer.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>BookmarksModel.edmx</name>
+          <type>.edmx</type>
+          <file />
+          <name>BookmarksModel.edmx.diagram</name>
+          <type>.diagram</type>
+          <file />
+          <name>BookmarksModel.tt</name>
+          <type>.tt</type>
+          <file />
+          <name>Class1.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>packages.config</name>
+          <type>.config</type>
+          <file />
+          <name>Tag.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>User.cs</name>
+          <type>.cs</type>
+          <directory name="bin">
+            <directory name="Debug">
+              <file />
+              <name>Bookmarks-Model.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Bookmarks-Model.dll.config</name>
+              <type>.config</type>
+              <file />
+              <name>Bookmarks-Model.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>EntityFramework.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>EntityFramework.xml</name>
+              <type>.xml</type>
+            </directory>
+            <directory name="Release" />
+          </directory>
+          <directory name="obj">
+            <directory name="Debug">
+              <file />
+              <name>Bookmarks-Model.csproj.FileListAbsolute.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>Bookmarks-Model.csprojResolveAssemblyReference.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>Bookmarks-Model.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Bookmarks-Model.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+              <type>.cs</type>
+              <directory name="edmxResourcesToEmbed">
+                <file />
+                <name>BookmarksModel.csdl</name>
+                <type>.csdl</type>
+                <file />
+                <name>BookmarksModel.msl</name>
+                <type>.msl</type>
+                <file />
+                <name>BookmarksModel.ssdl</name>
+                <type>.ssdl</type>
+              </directory>
+              <directory name="TempPE">
+                <file />
+                <name>BookmarksModel.cs.dll</name>
+                <type>.dll</type>
+                <file />
+                <name>BookmarksModel.Designer.cs.dll</name>
+                <type>.dll</type>
+              </directory>
+            </directory>
+          </directory>
+          <directory name="Properties">
+            <file />
+            <name>AssemblyInfo.cs</name>
+            <type>.cs</type>
+          </directory>
+        </directory>
+        <directory name="Bookmarks.Client">
+          <file />
+          <name>App.config</name>
+          <type>.config</type>
+          <file />
+          <name>Bookmarks.Client.csproj</name>
+          <type>.csproj</type>
+          <file />
+          <name>Bookmarks.Client.csproj.user</name>
+          <type>.user</type>
+          <file />
+          <name>Bookmarks.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>bookmarks.xml</name>
+          <type>.xml</type>
+          <file />
+          <name>packages.config</name>
+          <type>.config</type>
+          <directory name="bin">
+            <directory name="Debug">
+              <file />
+              <name>Bookmarks-Model.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Bookmarks-Model.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Bookmarks.Client.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>Bookmarks.Client.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>Bookmarks.Client.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>Bookmarks.Client.vshost.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>Bookmarks.Client.vshost.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>Bookmarks.Client.vshost.exe.manifest</name>
+              <type>.manifest</type>
+              <file />
+              <name>EntityFramework.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>EntityFramework.xml</name>
+              <type>.xml</type>
+            </directory>
+            <directory name="Release" />
+          </directory>
+          <directory name="obj">
+            <directory name="Debug">
+              <file />
+              <name>Bookmarks.Client.csproj.FileListAbsolute.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>Bookmarks.Client.csprojResolveAssemblyReference.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>Bookmarks.Client.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>Bookmarks.Client.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+              <type>.cs</type>
+              <directory name="TempPE" />
+            </directory>
+          </directory>
+          <directory name="Properties">
+            <file />
+            <name>AssemblyInfo.cs</name>
+            <type>.cs</type>
+          </directory>
+        </directory>
+        <directory name="packages">
+          <file />
+          <name>repositories.config</name>
+          <type>.config</type>
+          <directory name="EntityFramework.5.0.0">
+            <file />
+            <name>EntityFramework.5.0.0.nupkg</name>
+            <type>.nupkg</type>
+            <directory name="Content">
+              <file />
+              <name>App.config.transform</name>
+              <type>.transform</type>
+              <file />
+              <name>Web.config.transform</name>
+              <type>.transform</type>
+            </directory>
+            <directory name="lib">
+              <directory name="net40">
+                <file />
+                <name>EntityFramework.dll</name>
+                <type>.dll</type>
+                <file />
+                <name>EntityFramework.xml</name>
+                <type>.xml</type>
+              </directory>
+              <directory name="net45">
+                <file />
+                <name>EntityFramework.dll</name>
+                <type>.dll</type>
+                <file />
+                <name>EntityFramework.xml</name>
+                <type>.xml</type>
+              </directory>
+            </directory>
+            <directory name="tools">
+              <file />
+              <name>about_EntityFramework.help.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>EntityFramework.PowerShell.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>EntityFramework.PowerShell.Utility.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>EntityFramework.PS3.psd1</name>
+              <type>.psd1</type>
+              <file />
+              <name>EntityFramework.psd1</name>
+              <type>.psd1</type>
+              <file />
+              <name>EntityFramework.psm1</name>
+              <type>.psm1</type>
+              <file />
+              <name>init.ps1</name>
+              <type>.ps1</type>
+              <file />
+              <name>install.ps1</name>
+              <type>.ps1</type>
+              <file />
+              <name>migrate.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>Redirect.config</name>
+              <type>.config</type>
+              <file />
+              <name>Redirect.VS11.config</name>
+              <type>.config</type>
+            </directory>
+          </directory>
+        </directory>
+        <directory name="SearcherFromXML">
+          <file />
+          <name>App.config</name>
+          <type>.config</type>
+          <file />
+          <name>packages.config</name>
+          <type>.config</type>
+          <file />
+          <name>Program.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>SearcherFromXML.csproj</name>
+          <type>.csproj</type>
+          <file />
+          <name>SearcherFromXML.csproj.user</name>
+          <type>.user</type>
+          <file />
+          <name>simple-query.xml</name>
+          <type>.xml</type>
+          <directory name="bin">
+            <directory name="Debug">
+              <file />
+              <name>Bookmarks-Model.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Bookmarks-Model.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>EntityFramework.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>EntityFramework.xml</name>
+              <type>.xml</type>
+              <file />
+              <name>SearcherFromXML.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>SearcherFromXML.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>SearcherFromXML.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>SearcherFromXML.vshost.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>SearcherFromXML.vshost.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>SearcherFromXML.vshost.exe.manifest</name>
+              <type>.manifest</type>
+            </directory>
+          </directory>
+          <directory name="obj">
+            <directory name="Debug">
+              <file />
+              <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>SearcherFromXML.csproj.FileListAbsolute.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>SearcherFromXML.csprojResolveAssemblyReference.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>SearcherFromXML.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>SearcherFromXML.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+              <type>.cs</type>
+              <directory name="TempPE" />
+            </directory>
+          </directory>
+          <directory name="Properties">
+            <file />
+            <name>AssemblyInfo.cs</name>
+            <type>.cs</type>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="HashTable">
+      <file />
+      <name>HashTable.sln</name>
+      <type>.sln</type>
+      <file />
+      <name>HashTable.v11.suo</name>
+      <type>.suo</type>
+      <directory name=".JustCode">
+        <file />
+        <name>HashTable.solution-user.settings.xml</name>
+        <type>.xml</type>
+      </directory>
+      <directory name="HashTable">
+        <file />
+        <name>App.config</name>
+        <type>.config</type>
+        <file />
+        <name>HashTable.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>HashTableEnumerator.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>HashTableSample.csproj</name>
+        <type>.csproj</type>
+        <file />
+        <name>Sample.cs</name>
+        <type>.cs</type>
+        <directory name="bin">
+          <directory name="Debug">
+            <file />
+            <name>HashTable.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>HashTable.exe.config</name>
+            <type>.config</type>
+            <file />
+            <name>HashTable.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>HashTable.vshost.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>HashTable.vshost.exe.config</name>
+            <type>.config</type>
+            <file />
+            <name>HashTable.vshost.exe.manifest</name>
+            <type>.manifest</type>
+          </directory>
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>HashTable.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>HashTable.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>HashTableSample.csproj.FileListAbsolute.txt</name>
+            <type>.txt</type>
+            <file />
+            <name>HashTableSample.csprojResolveAssemblyReference.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE" />
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="NoSQLHomework">
+      <file />
+      <name>NoSQLHomework.sln</name>
+      <type>.sln</type>
+      <file />
+      <name>NoSQLHomework.v11.suo</name>
+      <type>.suo</type>
+      <directory name="MongoDbDictionary">
+        <file />
+        <name>App.xaml</name>
+        <type>.xaml</type>
+        <file />
+        <name>App.xaml.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>MainWindow.xaml</name>
+        <type>.xaml</type>
+        <file />
+        <name>MainWindow.xaml.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>MongoDbDictionary.csproj</name>
+        <type>.csproj</type>
+        <file />
+        <name>WordEntity.cs</name>
+        <type>.cs</type>
+        <directory name="bin">
+          <directory name="Debug">
+            <file />
+            <name>MongoDB.Bson.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>MongoDB.Bson.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>MongoDB.Bson.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>MongoDB.Driver.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>MongoDB.Driver.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>MongoDB.Driver.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>MongoDbDictionary.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>MongoDbDictionary.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>MongoDbDictionary.vshost.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>MongoDbDictionary.vshost.exe.manifest</name>
+            <type>.manifest</type>
+          </directory>
+        </directory>
+        <directory name="obj">
+          <directory name="x86">
+            <directory name="Debug">
+              <file />
+              <name>App.g.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>App.g.i.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>MainWindow.baml</name>
+              <type>.baml</type>
+              <file />
+              <name>MainWindow.g.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>MainWindow.g.i.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>MongoDbDictionary.csproj.FileListAbsolute.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>MongoDbDictionary.csproj.GenerateResource.Cache</name>
+              <type>.Cache</type>
+              <file />
+              <name>MongoDbDictionary.csprojResolveAssemblyReference.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>MongoDbDictionary.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>MongoDbDictionary.g.resources</name>
+              <type>.resources</type>
+              <file />
+              <name>MongoDbDictionary.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>MongoDbDictionary.Properties.Resources.resources</name>
+              <type>.resources</type>
+              <file />
+              <name>MongoDbDictionary_MarkupCompile.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>MongoDbDictionary_MarkupCompile.i.cache</name>
+              <type>.cache</type>
+              <directory name="TempPE" />
+            </directory>
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>Resources.Designer.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>Resources.resx</name>
+          <type>.resx</type>
+          <file />
+          <name>Settings.Designer.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>Settings.settings</name>
+          <type>.settings</type>
+        </directory>
+      </directory>
+      <directory name="RedisDictionary">
+        <file />
+        <name>app.config</name>
+        <type>.config</type>
+        <file />
+        <name>App.xaml</name>
+        <type>.xaml</type>
+        <file />
+        <name>App.xaml.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>MainWindow.xaml</name>
+        <type>.xaml</type>
+        <file />
+        <name>MainWindow.xaml.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>RedisDictionary.csproj</name>
+        <type>.csproj</type>
+        <file />
+        <name>WordEntity.cs</name>
+        <type>.cs</type>
+        <directory name="bin">
+          <directory name="Debug">
+            <file />
+            <name>RedisDictionary.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>RedisDictionary.exe.config</name>
+            <type>.config</type>
+            <file />
+            <name>RedisDictionary.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>RedisDictionary.vshost.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>RedisDictionary.vshost.exe.config</name>
+            <type>.config</type>
+            <file />
+            <name>RedisDictionary.vshost.exe.manifest</name>
+            <type>.manifest</type>
+            <file />
+            <name>ServiceStack.Common.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>ServiceStack.Common.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>ServiceStack.Interfaces.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>ServiceStack.Interfaces.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>ServiceStack.Redis.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>ServiceStack.Redis.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>ServiceStack.Text.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>ServiceStack.Text.pdb</name>
+            <type>.pdb</type>
+          </directory>
+        </directory>
+        <directory name="obj">
+          <directory name="x86">
+            <directory name="Debug">
+              <file />
+              <name>App.g.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>App.g.i.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>MainWindow.baml</name>
+              <type>.baml</type>
+              <file />
+              <name>MainWindow.g.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>MainWindow.g.i.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>RedisDictionary.csproj.FileListAbsolute.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>RedisDictionary.csproj.GenerateResource.Cache</name>
+              <type>.Cache</type>
+              <file />
+              <name>RedisDictionary.csprojResolveAssemblyReference.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>RedisDictionary.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>RedisDictionary.g.resources</name>
+              <type>.resources</type>
+              <file />
+              <name>RedisDictionary.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>RedisDictionary.Properties.Resources.resources</name>
+              <type>.resources</type>
+              <file />
+              <name>RedisDictionary_MarkupCompile.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>RedisDictionary_MarkupCompile.i.cache</name>
+              <type>.cache</type>
+              <directory name="TempPE" />
+            </directory>
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>Resources.Designer.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>Resources.resx</name>
+          <type>.resx</type>
+          <file />
+          <name>Settings.Designer.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>Settings.settings</name>
+          <type>.settings</type>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="OpenAccessModel1">
+      <file />
+      <name>OpenAccessModel1.sln</name>
+      <type>.sln</type>
+      <file />
+      <name>OpenAccessModel1.v11.suo</name>
+      <type>.suo</type>
+      <file />
+      <name>Sample-Sales-Reports.zip</name>
+      <type>.zip</type>
+      <directory name="OpenAccessModel1">
+        <file />
+        <name>OpenAccessModel1.csproj</name>
+        <type>.csproj</type>
+        <file />
+        <name>packages.config</name>
+        <type>.config</type>
+        <directory name="bin">
+          <directory name="Debug">
+            <file />
+            <name>Ionic.Zip.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Ionic.Zip.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>OpenAccessModel1.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>OpenAccessModel1.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>Telerik.OpenAccess.35.Extensions.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Telerik.OpenAccess.35.Extensions.xml</name>
+            <type>.xml</type>
+          </directory>
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>OpenAccessModel1.csproj.FileListAbsolute.txt</name>
+            <type>.txt</type>
+            <file />
+            <name>OpenAccessModel1.csprojResolveAssemblyReference.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>OpenAccessModel1.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>OpenAccessModel1.oa</name>
+            <type>.oa</type>
+            <file />
+            <name>OpenAccessModel1.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE" />
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+      <directory name="OpenAccessModel2">
+        <file />
+        <name>App.Config</name>
+        <type>.Config</type>
+        <file />
+        <name>EntitiesModel.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>EntitiesModel.rlinq</name>
+        <type>.rlinq</type>
+        <file />
+        <name>EntitiesModel.rlinq.diagram</name>
+        <type>.diagram</type>
+        <file />
+        <name>OpenAccessModel2.csproj</name>
+        <type>.csproj</type>
+        <directory name="bin">
+          <directory name="Debug" />
+        </directory>
+        <directory name="NewFolder">
+          <file />
+          <name>Books.generated.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>Cities.generated.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>Countries.generated.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>Countrylanguages.generated.cs</name>
+          <type>.cs</type>
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE">
+              <file />
+              <name>EntitiesModel.cs.dll</name>
+              <type>.dll</type>
+            </directory>
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+      <directory name="OpenAccessModel3">
+        <file />
+        <name>App.Config</name>
+        <type>.Config</type>
+        <file />
+        <name>Book.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>City.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>Country.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>Countrylanguage.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>EntitiesModel.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>EntitiesModel.rlinq</name>
+        <type>.rlinq</type>
+        <file />
+        <name>EntitiesModel.rlinq.diagram</name>
+        <type>.diagram</type>
+        <file />
+        <name>OpenAccessModel3.csproj</name>
+        <type>.csproj</type>
+        <directory name="bin">
+          <directory name="Debug" />
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE">
+              <file />
+              <name>EntitiesModel.cs.dll</name>
+              <type>.dll</type>
+            </directory>
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+      <directory name="OpenAccessModel4">
+        <file />
+        <name>App.Config</name>
+        <type>.Config</type>
+        <file />
+        <name>Book.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>City.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>Country.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>Countrylanguage.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>EntitiesModel.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>EntitiesModel.rlinq</name>
+        <type>.rlinq</type>
+        <file />
+        <name>EntitiesModel.rlinq.diagram</name>
+        <type>.diagram</type>
+        <file />
+        <name>OpenAccessModel4.csproj</name>
+        <type>.csproj</type>
+        <directory name="bin">
+          <directory name="Debug" />
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE">
+              <file />
+              <name>EntitiesModel.cs.dll</name>
+              <type>.dll</type>
+            </directory>
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+      <directory name="OpenAccessModel5">
+        <file />
+        <name>App.Config</name>
+        <type>.Config</type>
+        <file />
+        <name>Books.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>Cities.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>Countries.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>Countrylanguages.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>EntitiesModel.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>EntitiesModel.rlinq</name>
+        <type>.rlinq</type>
+        <file />
+        <name>EntitiesModel.rlinq.diagram</name>
+        <type>.diagram</type>
+        <file />
+        <name>OpenAccessModel5.csproj</name>
+        <type>.csproj</type>
+        <directory name="bin">
+          <directory name="Debug" />
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE">
+              <file />
+              <name>EntitiesModel.cs.dll</name>
+              <type>.dll</type>
+            </directory>
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+      <directory name="packages">
+        <file />
+        <name>repositories.config</name>
+        <type>.config</type>
+        <directory name="DotNetZip.1.9.1.8">
+          <file />
+          <name>DotNetZip.1.9.1.8.nupkg</name>
+          <type>.nupkg</type>
+          <directory name="lib">
+            <directory name="net20">
+              <file />
+              <name>Ionic.Zip.dll</name>
+              <type>.dll</type>
+              <file />
+              <name>Ionic.Zip.xml</name>
+              <type>.xml</type>
+            </directory>
+            <directory name="sl">
+              <file />
+              <name>Ionic.Zip.dll</name>
+              <type>.dll</type>
+            </directory>
+          </directory>
+        </directory>
+      </directory>
+      <directory name="Supermarket.Client">
+        <file />
+        <name>Class1.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>Supermarket.Client.csproj</name>
+        <type>.csproj</type>
+        <directory name="bin">
+          <directory name="Debug" />
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE" />
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+      <directory name="SupermarketModel">
+        <file />
+        <name>App.Config</name>
+        <type>.Config</type>
+        <file />
+        <name>EntitiesModel.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>EntitiesModel.rlinq</name>
+        <type>.rlinq</type>
+        <file />
+        <name>EntitiesModel.rlinq.diagram</name>
+        <type>.diagram</type>
+        <file />
+        <name>Measures.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>Products.generated.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>SupermarketModel.csproj</name>
+        <type>.csproj</type>
+        <file />
+        <name>Vendors.generated.cs</name>
+        <type>.cs</type>
+        <directory name="bin">
+          <directory name="Debug" />
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <directory name="TempPE">
+              <file />
+              <name>EntitiesModel.cs.dll</name>
+              <type>.dll</type>
+            </directory>
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+      <directory name="TestProj">
+        <file />
+        <name>App.config</name>
+        <type>.config</type>
+        <file />
+        <name>packages.config</name>
+        <type>.config</type>
+        <file />
+        <name>Program.cs</name>
+        <type>.cs</type>
+        <file />
+        <name>TestProj.csproj</name>
+        <type>.csproj</type>
+        <directory name="bin">
+          <directory name="Debug">
+            <file />
+            <name>Ionic.Zip.dll</name>
+            <type>.dll</type>
+            <file />
+            <name>Ionic.Zip.xml</name>
+            <type>.xml</type>
+            <file />
+            <name>TestProj.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>TestProj.exe.config</name>
+            <type>.config</type>
+            <file />
+            <name>TestProj.pdb</name>
+            <type>.pdb</type>
+            <file />
+            <name>TestProj.vshost.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>TestProj.vshost.exe.config</name>
+            <type>.config</type>
+            <file />
+            <name>TestProj.vshost.exe.manifest</name>
+            <type>.manifest</type>
+            <directory name="Extracted Files">
+              <directory name="20-Jul-2013">
+                <file />
+                <name>Bourgas-Plaza-Sales-Report-20-Jul-2013.xls</name>
+                <type>.xls</type>
+                <file />
+                <name>Kaspichan-Center-Sales-Report-20-Jul-2013.xls</name>
+                <type>.xls</type>
+                <file />
+                <name>Zmeyovo-Sales-Report-20-Jul-2013.xls</name>
+                <type>.xls</type>
+              </directory>
+              <directory name="21-Jul-2013">
+                <file />
+                <name>Bourgas-Plaza-Sales-Report-21-Jul-2013.xls</name>
+                <type>.xls</type>
+                <file />
+                <name>Kaspichan-Center-Sales-Report-21-Jul-2013.xls</name>
+                <type>.xls</type>
+                <file />
+                <name>Plovdiv-Stolipinovo-Sales-Report-21-Jul-2013.xls</name>
+                <type>.xls</type>
+                <file />
+                <name>Zmeyovo-Sales-Report-21-Jul-2013.xls</name>
+                <type>.xls</type>
+              </directory>
+              <directory name="22-Jul-2013">
+                <file />
+                <name>Bourgas-Plaza-Sales-Report-22-Jul-2013.xls</name>
+                <type>.xls</type>
+                <file />
+                <name>Kaspichan-Center-Sales-Report-22-Jul-2013.xls</name>
+                <type>.xls</type>
+                <file />
+                <name>Plovdiv-Stolipinovo-Sales-Report-22-Jul-2013.xls</name>
+                <type>.xls</type>
+              </directory>
+            </directory>
+          </directory>
+        </directory>
+        <directory name="obj">
+          <directory name="Debug">
+            <file />
+            <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+            <type>.cache</type>
+            <file />
+            <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+            <type>.cs</type>
+            <file />
+            <name>TestProj.csproj.FileListAbsolute.txt</name>
+            <type>.txt</type>
+            <file />
+            <name>TestProj.exe</name>
+            <type>.exe</type>
+            <file />
+            <name>TestProj.pdb</name>
+            <type>.pdb</type>
+            <directory name="TempPE" />
+          </directory>
+        </directory>
+        <directory name="Properties">
+          <file />
+          <name>AssemblyInfo.cs</name>
+          <type>.cs</type>
+        </directory>
+      </directory>
+    </directory>
+    <directory name="sdad">
+      <file />
+      <name>TechnicalSupportExam.docx</name>
+      <type>.docx</type>
+      <directory name="HashTable">
+        <file />
+        <name>HashTable.sln</name>
+        <type>.sln</type>
+        <file />
+        <name>HashTable.v11.suo</name>
+        <type>.suo</type>
+        <directory name=".JustCode">
+          <file />
+          <name>HashTable.solution-user.settings.xml</name>
+          <type>.xml</type>
+        </directory>
+        <directory name="HashTable">
+          <file />
+          <name>App.config</name>
+          <type>.config</type>
+          <file />
+          <name>HashTable.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableEnumerator.cs</name>
+          <type>.cs</type>
+          <file />
+          <name>HashTableSample.csproj</name>
+          <type>.csproj</type>
+          <file />
+          <name>Sample.cs</name>
+          <type>.cs</type>
+          <directory name="bin">
+            <directory name="Debug">
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTable.vshost.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.vshost.exe.config</name>
+              <type>.config</type>
+              <file />
+              <name>HashTable.vshost.exe.manifest</name>
+              <type>.manifest</type>
+            </directory>
+          </directory>
+          <directory name="obj">
+            <directory name="Debug">
+              <file />
+              <name>DesignTimeResolveAssemblyReferencesInput.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>HashTable.exe</name>
+              <type>.exe</type>
+              <file />
+              <name>HashTable.pdb</name>
+              <type>.pdb</type>
+              <file />
+              <name>HashTableSample.csproj.FileListAbsolute.txt</name>
+              <type>.txt</type>
+              <file />
+              <name>HashTableSample.csprojResolveAssemblyReference.cache</name>
+              <type>.cache</type>
+              <file />
+              <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+              <type>.cs</type>
+              <file />
+              <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+              <type>.cs</type>
+              <directory name="TempPE" />
+            </directory>
+          </directory>
+          <directory name="Properties">
+            <file />
+            <name>AssemblyInfo.cs</name>
+            <type>.cs</type>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+  </directory>
+</directories>

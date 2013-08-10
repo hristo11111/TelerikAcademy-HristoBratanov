@@ -44,5 +44,7 @@ namespace NorthwindEntity.Model
         public virtual Employee Employee1 { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
         public virtual ICollection<Territory> Territories { get; set; }
+
+        public IEnumerable<object> EntityTerritories { get; set; }
     }
 }

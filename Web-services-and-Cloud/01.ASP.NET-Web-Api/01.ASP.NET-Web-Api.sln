@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStoreMvcApplication", "MusicStoreMvcApplication\MusicStoreMvcApplication.csproj", "{B50093E0-35E3-4F67-9E67-4EEC51A21D90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore-Client", "MusicStore-Client\MusicStore-Client.csproj", "{BBA71928-B8F3-4BE4-9C33-2691A7A2BFA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore-Model", "MusicStore-Model\MusicStore-Model.csproj", "{35F13227-9FBB-490F-B9F6-B647742845F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.HttpClient-Class-Application", "02.HttpClient-Class-Application\02.HttpClient-Class-Application.csproj", "{92BC5528-936C-4A6E-8B0C-E2D15C1523C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B50093E0-35E3-4F67-9E67-4EEC51A21D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50093E0-35E3-4F67-9E67-4EEC51A21D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50093E0-35E3-4F67-9E67-4EEC51A21D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50093E0-35E3-4F67-9E67-4EEC51A21D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBA71928-B8F3-4BE4-9C33-2691A7A2BFA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA71928-B8F3-4BE4-9C33-2691A7A2BFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA71928-B8F3-4BE4-9C33-2691A7A2BFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA71928-B8F3-4BE4-9C33-2691A7A2BFA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F13227-9FBB-490F-B9F6-B647742845F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F13227-9FBB-490F-B9F6-B647742845F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F13227-9FBB-490F-B9F6-B647742845F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F13227-9FBB-490F-B9F6-B647742845F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92BC5528-936C-4A6E-8B0C-E2D15C1523C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92BC5528-936C-4A6E-8B0C-E2D15C1523C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92BC5528-936C-4A6E-8B0C-E2D15C1523C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92BC5528-936C-4A6E-8B0C-E2D15C1523C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

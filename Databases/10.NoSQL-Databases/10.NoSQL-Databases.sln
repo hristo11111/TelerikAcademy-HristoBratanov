@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.MongoDb-Dictionary", "01.MongoDb-Dictionary\01.MongoDb-Dictionary.csproj", "{0ADA129D-2860-44FD-8D4E-F245F194ADC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Redis-Dictionary", "02.Redis-Dictionary\02.Redis-Dictionary.csproj", "{6DC7AD7F-FC0F-4E47-889B-854A9B83E722}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{0ADA129D-2860-44FD-8D4E-F245F194ADC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ADA129D-2860-44FD-8D4E-F245F194ADC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ADA129D-2860-44FD-8D4E-F245F194ADC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DC7AD7F-FC0F-4E47-889B-854A9B83E722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DC7AD7F-FC0F-4E47-889B-854A9B83E722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DC7AD7F-FC0F-4E47-889B-854A9B83E722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DC7AD7F-FC0F-4E47-889B-854A9B83E722}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
