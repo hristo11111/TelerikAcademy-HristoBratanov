@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="11626c87-e5f2-4bad-897a-cff39790dea7" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <introduction>
+      
+      <para>This is Third SubArticle</para>
+    </introduction>
+    
+    <section address="Section1">
+      <title>Optional section title</title>
+      <content>
+        <para>Add one or more sections with content</para>
+      </content>
+    </section>
+    <externalLink>
+ 		<linkText> Sandcastle Styles</linkText> 
+		<linkAlternateText> Visit Sandcastle Styles</linkAlternateText> 
+		<linkUri>http://www.codeplex.com/SandcastleStyles</linkUri>
+		<linkTarget>_self</linkTarget> 
+	</externalLink> 
+	<relatedTopics topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50">
+		<externalLink> 
+			<linkText> Telerik</linkText> 
+			<linkUri>http://www.telerik.com</linkUri>
+			<linkTarget>_blank</linkTarget>
+ 		</externalLink>
+ 	</relatedTopics>
+  </developerConceptualDocument>
+</topic>

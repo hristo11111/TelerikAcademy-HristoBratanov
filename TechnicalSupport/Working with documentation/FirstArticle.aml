@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="ff20590e-7d11-4c42-9693-4e12b8e0aaae" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>My first article</para>
+    </introduction>
+    <alert class="value">
+    <section address="Section1">
+      <title>Title1</title>
+      <content>
+        <para>Content to title1</para>
+        <section>
+      		<title>Title of subsection</title>
+      		<content>
+        		<para>Content of subtitle</para>
+        		<para><legacyBold>Bold text</legacyBold></para>
+ 				<para><legacyItalic>Italic text</legacyItalic></para>
+ 				<para><legacyUnderline>Underline</legacyUnderline></para>
+ 				<para><literal>Highlight text</literal></para>
+ 				<mediaLink>
+					<caption>Image caption</caption>
+					<image xlink:href="ninja"/>
+	       		</mediaLink> 
+      		</content>
+      	</section>
+      </content>
+    </section>
+    </alert>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

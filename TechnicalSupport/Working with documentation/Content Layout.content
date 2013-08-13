@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics>
+  <Topic id="5de08765-c2bb-48c9-b59e-3f2516a55c44" visible="False" isMSHVRoot="true" title="Main article" />
+  <Topic id="ff20590e-7d11-4c42-9693-4e12b8e0aaae" visible="True" isExpanded="true" isSelected="true" title="First Article">
+    <Topic id="cc78cd52-eeb5-47d5-bd65-1071164c54bd" visible="True" title="First SubArticle" />
+    <Topic id="c5226286-30a8-4d98-b926-5d644aff6f6a" visible="True" title="Second SubArticle" />
+    <Topic id="11626c87-e5f2-4bad-897a-cff39790dea7" visible="True" title="Third SubArticle" />
+  </Topic>
+</Topics>
