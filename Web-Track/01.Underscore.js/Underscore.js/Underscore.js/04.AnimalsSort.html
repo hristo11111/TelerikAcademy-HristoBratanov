@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/class.js"></script>
+    <script src="Scripts/underscore.js"></script>
+</head>
+<body>
+    <script>
+        var Animal = Class.create({
+            init: function (name, species, legs) {
+                this.name = name;
+                this.species = species;
+                this.legs = legs;
+            },
+            toString: function() {
+                return this.name + " " +
+                    this.species + " " + this.legs + " legs";
+            }
+        });
+
+        var animals = [
+            new Animal("Animal1", "Species1", 5),
+            new Animal("Animal2", "Species2", 8),
+            new Animal("Animal3", "Species2", 5),
+            new Animal("Animal4", "Species4", 2),
+            new Animal("Animal5", "Species1", 7),
+            new Animal("Animal6", "Species6", 8),
+            new Animal("Animal7", "Species1", 6),
+        ];
+
+        var animalsGrouped = _.groupBy(animals, "species");
+        for (var array in animalsGrouped) {
+            animalsGrouped[array] = _.sortBy(animalsGrouped[array], function (el) {
+                return el.legs;
+            });
+        }
+
+        _.each(animalsGrouped, function (el) {
+            console.log(el.toString());
+        });
+    </script>
+</body>
+</html>

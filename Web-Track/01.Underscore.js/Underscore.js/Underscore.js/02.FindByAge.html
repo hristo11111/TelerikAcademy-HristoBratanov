@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/class.js"></script>
+    <script src="Scripts/underscore.js"></script>
+</head>
+<body>
+    <script>
+        var minAge = 18;
+        var maxAge = 24;
+
+        var Student = Class.create({
+            init: function (fname, lname, age) {
+                this.fname = fname;
+                this.lname = lname;
+                this.age = age;
+            },
+            toString: function () {
+                return this.fname + " " + this.lname;
+            }
+        });
+
+        var students = [
+            new Student("Petyr", "Petrov", 12),
+            new Student("Zhivko", "Vasilev", 16),
+            new Student("Algel", "Kochev", 5),
+            new Student("Georgi", "Petrov", 55),
+            new Student("Gerogi", "Zlatanov", 32)
+        ];
+
+        var studentsBetweenRange = _.filter(students,
+            function(el) {
+                return el.age < minAge && el.age < maxAge
+            });
+
+        _.each(studentsBetweenRange,
+            function (el) {
+                console.log(el.toString() + " age: " + el.age);
+            });
+    </script>
+</body>
+</html>
