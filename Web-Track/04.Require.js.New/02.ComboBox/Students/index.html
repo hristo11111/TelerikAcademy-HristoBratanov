@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/Libs/require.js" data-main="Scripts/app-config"></script>
+    <style>
+        div, ul, li select, option {
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            float: left;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="students-marks"></div>
+    <script type="x-people-template" id="people-template">
+        <strong><a href="#">{{name}}</a></strong>
+    </script>
+    <script type="x-marks-template" id="marks-template">
+        <ul>
+            <li>age: {{age}}</li>
+            <li><img src={{avatar}} /></li>
+        </ul>
+    </script>
+</body>
+</html>

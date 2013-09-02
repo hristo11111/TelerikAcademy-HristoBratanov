@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="min/everlive.all.min.js"></script>
+    <script src="Scripts/libs/sha1.js"></script>
+    <script src="Scripts/libs/require.js" data-main="Scripts/app"></script>
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">                          
+        <header>
+            <ul id="menu-holder">
+                <li><a href="#/register-login">Register/Login</a></li>
+                <li><a id="my-games" href="#">My games</a></li>
+                <li><a id="join-games" href="#">Join games</a></li>
+            </ul>
+        </header>
+    </div>
+    <div id="main-content">
+        <div id="action-holder"></div>
+    </div>
+
+    <script>
+        var el = new Everlive('v6RA3SHckjeSfF6z');
+        el.Users.login('hristo',
+            '1234')
+            .then(function () {
+                return el.data('Posts').get();
+            })
+            .then(function(data) {
+                // data.result contains an array of ojbects
+                alert(JSON.stringify(data.result));
+            },
+            function(error) {
+                alert(error.message);
+            });
+    </script>
+</body>
+</html>

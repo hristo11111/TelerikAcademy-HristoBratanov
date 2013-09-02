@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="postsApp">
+<head>
+    <title>Posts application</title>
+    <script src="Scripts/lib/angular/angular.js"></script>
+    <script src="Scripts/js/app.js"></script>
+    <script src="Scripts/js/controllers.js"></script>
+    <script src="Scripts/lib/underscore.js"></script>
+</head>
+<body ng-controller="PostsListCtrl">
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#/posts">AllPosts</a>
+                </li>
+                <li>
+                    <a href="#/categories/">Posts by Categories</a>
+                </li>
+                <li>
+                    <a href="#/posts/create">Create a post</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div ng-view></div>
+</body>
+</html>

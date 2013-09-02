@@ -1,0 +1,12 @@
+﻿<h1>Transactions</h1>
+<ul data-template="transactions-template" data-bind="source: transactions">
+</ul>
+
+<script type="text/x-kendo-template" id="transactions-template">
+    <li>
+        <strong>Type: </strong>
+        <span data-bind="text: Type"></span>
+        <strong>Amount: </strong>
+        <span data-bind="text: Amount"></span>
+    </li>
+</script>

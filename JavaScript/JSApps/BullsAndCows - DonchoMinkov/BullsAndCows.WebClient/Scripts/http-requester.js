@@ -21,6 +21,7 @@ var httpRequester = (function () {
 			error: error
 		});
 	}
+
 	return {
 		getJSON: getJSON,
 		postJSON: postJSON
