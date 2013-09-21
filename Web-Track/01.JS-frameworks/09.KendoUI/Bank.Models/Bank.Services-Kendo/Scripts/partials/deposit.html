@@ -1,0 +1,8 @@
+﻿<fieldset>
+    <legend>Make a deposit</legend>
+    <label for="tb-amount">Amount</label>
+    <input data-bind="value: Amount" type="text" id="tb-amount" />
+    <button data-bind="click: deposit">Deposit</button>
+    <strong>Deposited money: </strong> 
+    <span data-bind="text: Amount" ></span> <!--does not work like ot should-->
+</fieldset>

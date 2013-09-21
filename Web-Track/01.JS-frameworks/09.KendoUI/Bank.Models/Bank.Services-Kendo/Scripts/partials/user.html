@@ -1,0 +1,23 @@
+﻿<h1>User</h1>
+<ul data-template="user-template" data-bind="source: user">
+</ul>
+
+<!--<fieldset>
+    <legend>Deposit or Withdraw</legend>
+    <label for="tb-withdraw-amount">Amount: </label>
+    <input data-bind="value: Amount" type="text" id="tb-withdraw-amount" />
+    <a data-bind="click: deposit" href="#/deposit">Deposit</a>
+    <a data-bind="click: withdraw" href="#/withdraw">Withdraw</a>
+</fieldset>-->
+
+<script type="text/x-kendo-template" id="user-template">
+    <li>
+        <strong>User: </strong>
+        <span data-bind="text: UserName"></span>
+        <strong>Balance: </strong>
+        <span data-bind="text: Balance"></span>
+        <a href="\#/deposit">Deposit</a>
+        <a href="\#/withdraw">Withdraw</a>
+        <a href="\#/transactions">Transactions</a>
+    </li>
+</script>

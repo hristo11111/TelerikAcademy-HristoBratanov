@@ -1,0 +1,29 @@
+﻿<ul data-template="ul-template-todo" data-bind="source: todos" class="k-group">
+</ul>
+<script id="ul-template-todo" type="text/x-kendo-template">
+        <li class="k-item">
+            <a href="\#/lists/#=id#">
+                title: <span data-bind="text: title"></span>
+            </a>
+            # for (var j = 0; j < todos.length; j++) { #
+                    <ul>
+                        <li>
+                            text: <span>#= todos[j].text #</span>
+                            <br />
+                            is done: <span>#= todos[j].isDone #</span>
+                        </li>
+                    </ul>
+                #
+            } #
+        </li>
+</script>
+
+<!--<fieldset>
+    <legend>Create TODO-list</legend>
+    <label for="tb-subject">Title</label>
+    <input data-bind="value: title" type="text" id="tb-title" />
+
+
+
+    <button data-bind="click: createAppointment">Create</button>
+</fieldset>-->

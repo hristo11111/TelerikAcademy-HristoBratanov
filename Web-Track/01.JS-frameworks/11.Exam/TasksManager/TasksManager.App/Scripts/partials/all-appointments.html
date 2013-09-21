@@ -1,0 +1,27 @@
+﻿<ul data-template="ul-template" data-bind="source: appointments" class="k-group">
+</ul>
+<script id="ul-template" type="text/x-kendo-template">
+    <li class="k-item">
+        subject: <span id="subject" data-bind="text: subject"></span>
+        <br />
+        description: <span id="description" data-bind="text: description"></span>
+        <br />
+        Creation date: <span id="createdAt" data-bind="text: createdAt"></span>
+        <br />
+        Appointment date: <span id="appointmentDate" data-bind="text: appointmentDate"></span>
+        <br />
+        Duration: <span id="duration" data-bind="text: duration"></span>
+    </li>
+</script>
+<fieldset>
+    <legend>Create appointment</legend>
+    <label for="tb-subject">Subject</label>
+    <input data-bind="value: subject" type="text" id="tb-subject" />
+    <label for="tb-description">Description</label>
+    <input data-bind="value: description" type="text" id="description" />
+    <label for="tb-appointmentDate">Appointment date</label>
+    <input data-bind="value: appointmentDate" type="text" id="appointmentDate" />
+    <label for="tb-duration">Duration</label>
+    <input data-bind="value: duration" type="text" id="duration" />
+    <button data-bind="click: createAppointment">Create</button>
+</fieldset>
