@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="WorldDbModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="WorldDbModelStoreContainer">
+          <EntitySet Name="Continents" EntityType="WorldDbModel.Store.Continents" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Countries" EntityType="WorldDbModel.Store.Countries" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Towns" EntityType="WorldDbModel.Store.Towns" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_dbo_Countries_dbo_Continents_Continent_ContintentId" Association="WorldDbModel.Store.FK_dbo_Countries_dbo_Continents_Continent_ContintentId">
+            <End Role="Continents" EntitySet="Continents" />
+            <End Role="Countries" EntitySet="Countries" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Towns_dbo_Countries_Country_CountryId" Association="WorldDbModel.Store.FK_dbo_Towns_dbo_Countries_Country_CountryId">
+            <End Role="Countries" EntitySet="Countries" />
+            <End Role="Towns" EntitySet="Towns" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Continents">
+          <Key>
+            <PropertyRef Name="ContintentId" />
+          </Key>
+          <Property Name="ContintentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ContinentName" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Countries">
+          <Key>
+            <PropertyRef Name="CountryId" />
+          </Key>
+          <Property Name="CountryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CountryName" Type="nvarchar(max)" />
+          <Property Name="Language" Type="nvarchar(max)" />
+          <Property Name="Image" Type="varbinary(max)" />
+          <Property Name="Continent_ContintentId" Type="int" />
+        </EntityType>
+        <EntityType Name="Towns">
+          <Key>
+            <PropertyRef Name="TownId" />
+          </Key>
+          <Property Name="TownId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TownName" Type="nvarchar(max)" />
+          <Property Name="Country_CountryId" Type="int" />
+        </EntityType>
+        <Association Name="FK_dbo_Countries_dbo_Continents_Continent_ContintentId">
+          <End Role="Continents" Type="WorldDbModel.Store.Continents" Multiplicity="0..1" />
+          <End Role="Countries" Type="WorldDbModel.Store.Countries" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Continents">
+              <PropertyRef Name="ContintentId" />
+            </Principal>
+            <Dependent Role="Countries">
+              <PropertyRef Name="Continent_ContintentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Towns_dbo_Countries_Country_CountryId">
+          <End Role="Countries" Type="WorldDbModel.Store.Countries" Multiplicity="0..1" />
+          <End Role="Towns" Type="WorldDbModel.Store.Towns" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Countries">
+              <PropertyRef Name="CountryId" />
+            </Principal>
+            <Dependent Role="Towns">
+              <PropertyRef Name="Country_CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WorldDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Continent">
+          <Key>
+            <PropertyRef Name="ContintentId" />
+          </Key>
+          <Property Name="ContintentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ContinentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Countries" Relationship="Self.FK_dbo_Countries_dbo_Continents_Continent_ContintentId" FromRole="Continents" ToRole="Countries" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="CountryId" />
+          </Key>
+          <Property Name="CountryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CountryName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Language" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Continent_ContintentId" Type="Int32" />
+          <NavigationProperty Name="Continent" Relationship="Self.FK_dbo_Countries_dbo_Continents_Continent_ContintentId" FromRole="Countries" ToRole="Continents" />
+          <NavigationProperty Name="Towns" Relationship="Self.FK_dbo_Towns_dbo_Countries_Country_CountryId" FromRole="Countries" ToRole="Towns" />
+          <Property Type="Binary" Name="Image" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Town">
+          <Key>
+            <PropertyRef Name="TownId" />
+          </Key>
+          <Property Name="TownId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TownName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Country_CountryId" Type="Int32" />
+          <NavigationProperty Name="Country" Relationship="Self.FK_dbo_Towns_dbo_Countries_Country_CountryId" FromRole="Towns" ToRole="Countries" />
+        </EntityType>
+        <Association Name="FK_dbo_Countries_dbo_Continents_Continent_ContintentId">
+          <End Role="Continents" Type="Self.Continent" Multiplicity="0..1" />
+          <End Role="Countries" Type="Self.Country" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Continents">
+              <PropertyRef Name="ContintentId" />
+            </Principal>
+            <Dependent Role="Countries">
+              <PropertyRef Name="Continent_ContintentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Towns_dbo_Countries_Country_CountryId">
+          <End Role="Countries" Type="Self.Country" Multiplicity="0..1" />
+          <End Role="Towns" Type="Self.Town" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Countries">
+              <PropertyRef Name="CountryId" />
+            </Principal>
+            <Dependent Role="Towns">
+              <PropertyRef Name="Country_CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="WorldDbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Continents" EntityType="Self.Continent" />
+          <EntitySet Name="Countries" EntityType="Self.Country" />
+          <EntitySet Name="Towns" EntityType="Self.Town" />
+          <AssociationSet Name="FK_dbo_Countries_dbo_Continents_Continent_ContintentId" Association="Self.FK_dbo_Countries_dbo_Continents_Continent_ContintentId">
+            <End Role="Continents" EntitySet="Continents" />
+            <End Role="Countries" EntitySet="Countries" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Towns_dbo_Countries_Country_CountryId" Association="Self.FK_dbo_Towns_dbo_Countries_Country_CountryId">
+            <End Role="Countries" EntitySet="Countries" />
+            <End Role="Towns" EntitySet="Towns" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WorldDbModelStoreContainer" CdmEntityContainer="WorldDbEntities">
+          <EntitySetMapping Name="Continents">
+            <EntityTypeMapping TypeName="WorldDbModel.Continent">
+              <MappingFragment StoreEntitySet="Continents">
+                <ScalarProperty Name="ContintentId" ColumnName="ContintentId" />
+                <ScalarProperty Name="ContinentName" ColumnName="ContinentName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Countries">
+            <EntityTypeMapping TypeName="WorldDbModel.Country">
+              <MappingFragment StoreEntitySet="Countries">
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+                <ScalarProperty Name="Language" ColumnName="Language" />
+                <ScalarProperty Name="Continent_ContintentId" ColumnName="Continent_ContintentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Towns">
+            <EntityTypeMapping TypeName="WorldDbModel.Town">
+              <MappingFragment StoreEntitySet="Towns">
+                <ScalarProperty Name="TownId" ColumnName="TownId" />
+                <ScalarProperty Name="TownName" ColumnName="TownName" />
+                <ScalarProperty Name="Country_CountryId" ColumnName="Country_CountryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

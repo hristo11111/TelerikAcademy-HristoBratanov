@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TodoDbModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="TodoDbModelStoreContainer">
+          <EntitySet Name="Categories" EntityType="TodoDbModel.Store.Categories" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TodoItems" EntityType="TodoDbModel.Store.TodoItems" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_dbo_TodoItems_dbo_Categories_Catefory_CategoryId" Association="TodoDbModel.Store.FK_dbo_TodoItems_dbo_Categories_Catefory_CategoryId">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="TodoItems" EntitySet="TodoItems" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="CategoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryName" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="TodoItems">
+          <Key>
+            <PropertyRef Name="TodoId" />
+          </Key>
+          <Property Name="TodoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+          <Property Name="Text" Type="nvarchar(max)" />
+          <Property Name="DateLastChanged" Type="datetime" Nullable="false" />
+          <Property Name="Catefory_CategoryId" Type="int" />
+        </EntityType>
+        <Association Name="FK_dbo_TodoItems_dbo_Categories_Catefory_CategoryId">
+          <End Role="Categories" Type="TodoDbModel.Store.Categories" Multiplicity="0..1" />
+          <End Role="TodoItems" Type="TodoDbModel.Store.TodoItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="CategoryId" />
+            </Principal>
+            <Dependent Role="TodoItems">
+              <PropertyRef Name="Catefory_CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TodoDbModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TodoDbEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Categories" EntityType="TodoDbModel.Category" />
+          <EntitySet Name="TodoItems" EntityType="TodoDbModel.TodoItem" />
+          <AssociationSet Name="FK_dbo_TodoItems_dbo_Categories_Catefory_CategoryId" Association="TodoDbModel.FK_dbo_TodoItems_dbo_Categories_Catefory_CategoryId">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="TodoItems" EntitySet="TodoItems" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="CategoryId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="TodoItems" Relationship="TodoDbModel.FK_dbo_TodoItems_dbo_Categories_Catefory_CategoryId" FromRole="Categories" ToRole="TodoItems" />
+        </EntityType>
+        <EntityType Name="TodoItem">
+          <Key>
+            <PropertyRef Name="TodoId" />
+          </Key>
+          <Property Name="TodoId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Text" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DateLastChanged" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Catefory_CategoryId" Type="Int32" />
+          <NavigationProperty Name="Category" Relationship="TodoDbModel.FK_dbo_TodoItems_dbo_Categories_Catefory_CategoryId" FromRole="TodoItems" ToRole="Categories" />
+        </EntityType>
+        <Association Name="FK_dbo_TodoItems_dbo_Categories_Catefory_CategoryId">
+          <End Role="Categories" Type="TodoDbModel.Category" Multiplicity="0..1" />
+          <End Role="TodoItems" Type="TodoDbModel.TodoItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="CategoryId" />
+            </Principal>
+            <Dependent Role="TodoItems">
+              <PropertyRef Name="Catefory_CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TodoDbModelStoreContainer" CdmEntityContainer="TodoDbEntities">
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="TodoDbModel.Category">
+              <MappingFragment StoreEntitySet="Categories">
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TodoItems">
+            <EntityTypeMapping TypeName="TodoDbModel.TodoItem">
+              <MappingFragment StoreEntitySet="TodoItems">
+                <ScalarProperty Name="TodoId" ColumnName="TodoId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="DateLastChanged" ColumnName="DateLastChanged" />
+                <ScalarProperty Name="Catefory_CategoryId" ColumnName="Catefory_CategoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

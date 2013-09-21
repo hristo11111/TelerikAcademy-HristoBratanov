@@ -1,0 +1,2 @@
+Only one country implemented in the 2nd problem.
+TODO: The English language implementation, which will be almost the same as the Bulgarian part.

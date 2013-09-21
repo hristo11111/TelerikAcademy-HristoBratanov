@@ -1,0 +1,1 @@
+﻿$('#messages-container').scrollTop(10000);
