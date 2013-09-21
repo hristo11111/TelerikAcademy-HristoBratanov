@@ -1,0 +1,10 @@
+﻿#messages-container {
+    float:left;
+    height: 200px;
+    border: 1px solid red;
+    overflow:scroll;
+}
+
+#new-message-wrapper {
+    margin-left: 10px;
+}

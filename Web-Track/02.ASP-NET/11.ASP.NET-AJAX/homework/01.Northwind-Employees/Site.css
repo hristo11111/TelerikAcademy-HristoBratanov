@@ -1,0 +1,10 @@
+﻿
+
+#UpdateProgress
+{
+    color: White;
+    background: Red;
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted #FFAAAA;
+}
