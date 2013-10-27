@@ -1,0 +1,18 @@
+Working with repository pattern and Unit of work. Extend entity user.
+
+After .Models and .Data are created:
+1. Copy paste files for project .Data
+2. Optional: change connection string. Remove AttachDbFilename so you can use localdb.
+3. Move ApplicationUser class from .Web to .Models.
+	- create ApplicationUser.cs in .Models. Should inherit User from Aspnet.identity.entity.
+	- install Aspnet.identity.entitiy framework from nuget in .Models
+	- install Aspnet.identity.entitiy framework from nuget in .Data
+	- DataContext in .Data should inherit IdentityDbContextWithCustomUser<ApplicationUser>
+	- Delete IdentityModels.cs from .Web.
+4. In ApplicationController.cs in .Web - add (new DataContext()) 
+		public AccountController() 
+        {
+            IdentityManager = new AuthenticationIdentityManager(new IdentityStore(new DataContext()));
+        }
+5. Replace all instances of User to ApplicationUser in ApplicationController.cs.
+	

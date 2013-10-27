@@ -1,0 +1,24 @@
+﻿@model temp.Models.Movie
+
+<dt>
+    @Html.DisplayNameFor(model => model.Year)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.Year)
+</dd>
+<dt>
+    Leading female role @Html.DisplayNameFor(model => model.LeadingFemaleActor.Name)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.LeadingFemaleActor.Name)
+</dd>
+
+<dt>
+    Leading male role @Html.DisplayNameFor(model => model.LeadingMaleActor.Name)
+</dt>
+
+<dd>
+    @Html.DisplayFor(model => model.LeadingMaleActor.Name)
+</dd>

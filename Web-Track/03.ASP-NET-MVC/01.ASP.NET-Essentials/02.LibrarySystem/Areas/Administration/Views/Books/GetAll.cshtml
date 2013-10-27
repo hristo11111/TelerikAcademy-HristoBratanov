@@ -1,0 +1,17 @@
+﻿@using _02.LibrarySystem.Areas.Administration.Models
+@model IEnumerable<Book>
+@{
+    ViewBag.Title = "GetAll";
+}
+
+<h2>All books</h2>
+
+@foreach (var item in Model)
+{
+    @Html.Partial("_BookInfoPartial", item);
+}
+
+@section NewBooks {
+    <h2>New books (section): </h2>
+    <span>There are no new books at this moment</span>
+}

@@ -1,0 +1,41 @@
+﻿@model Tweeter.Models.Tag
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Tag</legend>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+    </dl>
+    <p><strong>@Html.DisplayNameFor(model => model.Tweets)</strong></p>
+    <ul>
+        @foreach (var item in Model.Tweets)
+        {
+            if (item.Content.Length > 20)
+            {
+                <li>@Html.ActionLink(@item.Content.Substring(0, 20) + "...", "Details", "Tweets", new { id = item.Id }, null)</li>
+            }
+            else
+            {
+                <li>@Html.ActionLink(@item.Content, "Details", "Tweets", new { id = item.Id }, null)</li>
+            }
+        }
+    </ul>
+
+</fieldset>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+

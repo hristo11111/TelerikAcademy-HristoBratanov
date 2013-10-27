@@ -1,0 +1,43 @@
+﻿@model Tweeter.Models.Tweet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Tweet</legend>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTweeded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTweeded)
+        </dd>
+        <p>@Html.DisplayNameFor(model => model.Tags)</p>
+        @foreach (var item in Model.Tags)
+        {
+            @Html.ActionLink(item.Name, "Details", "Tags", new { id=item.Id }, null);
+            @Html.Raw(' ');
+        }
+    </dl>
+</fieldset>
+<p>
+    @if (User.IsInRole("Administrator"))
+    {
+        @Html.ActionLink("Edit", "Edit", new { id=Model.Id })
+        @Html.Raw(" |")
+    }
+    
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,15 @@
+﻿@using _02.LibrarySystem.Areas.Administration.Models
+@model IEnumerable<Customer>
+
+@{
+    ViewBag.Title = "Users";
+}
+
+<h2>Users</h2>
+
+@foreach (var item in Model)
+{
+    @Html.Partial("_UserInfoPartial", item);
+}
+
+

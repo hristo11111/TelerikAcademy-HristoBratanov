@@ -1,0 +1,32 @@
+﻿
+@model IEnumerable<MoviesSystem.Models.Actor>
+
+@{
+    var selectList = Model.Select(x => new SelectListItem()
+    {
+        Selected = false,
+        Text = x.Name
+    });
+}
+
+
+<h2>Create new movie</h2>
+
+@using (Html.BeginForm("Create", "Movies", FormMethod.Post))
+{
+    @Html.Label("Title");
+    @Html.TextBox("Title");
+    @Html.Label("Director");
+    @Html.TextBox("Director");
+    @Html.Label("Year");
+    @Html.TextBox("Year");
+    @Html.Label("Leading female role")
+    @Html.DropDownList("leadingFemaleRole", selectList);
+    @Html.Label("Leading male role")
+    @Html.DropDownList("leadingMaleRole", selectList);
+    
+    <p>
+        <input type="submit" value="Create"/>
+    </p>
+}
+

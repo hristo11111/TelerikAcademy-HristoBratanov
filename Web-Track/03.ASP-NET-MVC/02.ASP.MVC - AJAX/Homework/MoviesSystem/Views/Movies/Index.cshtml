@@ -1,0 +1,44 @@
+﻿
+@model IList<MoviesSystem.Models.Movie>
+
+@{
+    ViewBag.Title = "GetAll";
+}
+
+<h2>Movies</h2>
+
+<div>
+    @Html.ActionLink("Create new", "Create")
+</div>
+
+@using (Ajax.BeginForm("Search", "Movies", new AjaxOptions
+    {
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "all-movies-wrapper",
+        OnComplete = "HideActorsContent"
+    }))
+{
+    <input type="text" name="query"/>
+    <input type="submit" value="Search"/>
+}
+
+<div id="all-movies-wrapper">
+   @Html.Partial("_MoviesPartial", Model);
+</div>
+
+<div id="movie-content">
+    <h1>Actors</h1>
+    <div id="actors-content">
+
+    </div>
+</div>
+
+<script>
+    function ShowActorsContent() {
+        $("#movie-content").show();
+    }
+
+    function HideActorsContent() {
+        $("#movie-content").hide();
+    }
+</script>

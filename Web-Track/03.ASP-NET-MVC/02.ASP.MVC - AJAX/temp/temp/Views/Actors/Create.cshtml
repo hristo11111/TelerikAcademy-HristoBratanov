@@ -1,0 +1,63 @@
+﻿@model temp.Models.Actor
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset class="form-horizontal">
+        <legend>Actor</legend>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label" })
+            <div class="controls">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.Age, new { @class = "control-label" })
+            <div class="controls">
+                @Html.EditorFor(model => model.Age)
+                @Html.ValidationMessageFor(model => model.Age, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.StudioName, new { @class = "control-label" })
+            <div class="controls">
+                @Html.EditorFor(model => model.StudioName)
+                @Html.ValidationMessageFor(model => model.StudioName, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.StudioAddress, new { @class = "control-label" })
+            <div class="controls">
+                @Html.EditorFor(model => model.StudioAddress)
+                @Html.ValidationMessageFor(model => model.StudioAddress, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Create" class="btn" />
+        </div>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

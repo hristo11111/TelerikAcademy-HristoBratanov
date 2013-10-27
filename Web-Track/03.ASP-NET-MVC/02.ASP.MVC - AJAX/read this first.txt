@@ -1,0 +1,2 @@
+In "temp" solution you will find more CRUD operations.
+There are more AJAX operations in "Homework" solution.

@@ -1,0 +1,17 @@
+﻿@model IList<MoviesSystem.Models.Movie>
+
+@for (int i = 0; i < Model.Count(); i++)
+{
+    <ul>
+        <li><strong>Title: @Model[i].Title</strong></li>
+        <li>Director: @Model[i].Director</li>
+        <li>Year: @Model[i].Year</li>
+    </ul>
+    @Ajax.ActionLink("See leading actors", "Index", new { id = Model[i].Id }, new AjaxOptions
+            {
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "actors-content",
+                OnSuccess = "ShowActorsContent"
+            })
+
+}
